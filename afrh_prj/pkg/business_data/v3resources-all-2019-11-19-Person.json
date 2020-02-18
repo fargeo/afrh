@@ -1,0 +1,1253 @@
+{
+    "business_data": {
+        "resources": [
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "525ae553-5816-42fb-846c-fd994b590568",
+                    "resourceinstanceid": "525ae553-5816-42fb-846c-fd994b590568"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8ab8-398a-11ea-b9b7-027f24e6fd6b": "<p style=\"margin-bottom: 20px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit;\">Edward Clark was appointed Architect of the Capitol Extension in 1865 by President Andrew Johnson to fill the vacancy caused by Thomas U. Walter\u2019s resignation. Under way for over 14 years, the interior of the U.S. Capitol extension was at this point complete, and only the outside porticoes needed to be finished.</p><p style=\"margin-bottom: 20px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit;\">In 1867, with the completion of the&nbsp;<a href=\"https://www.aoc.gov/capitol-buildings/about-us-capitol-building\" title=\"About the U.S. Capitol Building\" style=\"margin: 0px; padding: 0px; border: 0px; outline-style: none; outline-width: initial; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; word-wrap: break-word;\">Capitol Building\u2019s</a>&nbsp;extension fast approaching, Congress directed Clark to take over the Capitol-related responsibilities formerly held by the commissioner of public buildings. Thus, he would take responsibility for the care and maintenance of the Capitol and its grounds. Clark\u2019s title soon changed to Architect of the Capitol, dropping the word \"Extension\" to reflect the broader responsibilities of the new office. Clark is considered the first Architect of the Capitol as the term refers to the head of a congressional agency.</p><p style=\"margin-bottom: 20px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit;\">Born in Philadelphia in 1822, Clark came to Washington as an architectural student in Walter\u2019s office and served in various capacities during his master\u2019s tenure. In his own term he completed the Capitol extension and new dome projects and oversaw the construction of the western terraces that were designed by the landscape architect&nbsp;<a href=\"https://www.aoc.gov/capitol-grounds/frederick-law-olmsted\" title=\"Frederick Law Olmsted\" style=\"margin: 0px; padding: 0px; border: 0px; outline-style: none; outline-width: initial; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; word-wrap: break-word;\">Frederick Law Olmsted</a>. Also during his administration, the&nbsp;<a href=\"https://www.aoc.gov/capitol-buildings/library-congress\" title=\"Library of Congress\" class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; outline-style: none; outline-width: initial; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; word-wrap: break-word;\">Library of Congress</a>&nbsp;moved to its own building, and the west central interior of the Capitol was reconstructed. Clark died in 1902 while still in office.</p><p style=\"margin-bottom: 20px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit;\">(Biography provided by the Architect of the Capitol,&nbsp;https://www.aoc.gov/architect-of-the-capitol/edward-clark, accessed 22 February 2017)</p>",
+                            "5b2c8ab9-398a-11ea-b9b7-027f24e6fd6b": "153476a0-3d30-4a0b-a4c8-ee7742397fa7"
+                        },
+                        "nodegroup_id": "5b2c8a9c-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6b71d6-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "5b2c8aba-398a-11ea-b9b7-027f24e6fd6b": [
+                                "3f71e579-52dd-4125-94c8-db2c42fe4985"
+                            ],
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6bed00-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "5b2c8aba-398a-11ea-b9b7-027f24e6fd6b": [
+                                "aaf378b5-77d8-4859-b8b5-28f8f9376ea7"
+                            ],
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6c8f9e-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Edward Clark"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6d14e6-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "5b2c8ac7-398a-11ea-b9b7-027f24e6fd6b": [
+                                "6f6a61a6-db6e-4443-8b76-cf2722d48c60"
+                            ],
+                            "5b2c8ace-398a-11ea-b9b7-027f24e6fd6b": "1822-08-15"
+                        },
+                        "nodegroup_id": "5b2c8aae-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6d9394-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "5b2c8ac6-398a-11ea-b9b7-027f24e6fd6b": "1902-01-06",
+                            "5b2c8ac7-398a-11ea-b9b7-027f24e6fd6b": [
+                                "96e21e85-975d-449e-ade5-3e2203726718"
+                            ]
+                        },
+                        "nodegroup_id": "5b2c8aae-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "525ae553-5816-42fb-846c-fd994b590568",
+                        "sortorder": 0,
+                        "tileid": "fb6e31e6-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "e6094968-29d6-4309-89d8-a51e57ac3609",
+                    "resourceinstanceid": "e6094968-29d6-4309-89d8-a51e57ac3609"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Adams & Schwab"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e6094968-29d6-4309-89d8-a51e57ac3609",
+                        "sortorder": 0,
+                        "tileid": "fb6eb26a-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "9f4747af-16e4-4cf0-904c-18ed65ade868"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e6094968-29d6-4309-89d8-a51e57ac3609",
+                        "sortorder": 0,
+                        "tileid": "fb6f2ee8-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "e1dcb908-7f31-476c-b497-537fd1b5a276",
+                    "resourceinstanceid": "e1dcb908-7f31-476c-b497-537fd1b5a276"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "William H. Degges"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e1dcb908-7f31-476c-b497-537fd1b5a276",
+                        "sortorder": 0,
+                        "tileid": "fb6faec2-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "e8f9112a-1213-4b29-9459-b511ec42a81f"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e1dcb908-7f31-476c-b497-537fd1b5a276",
+                        "sortorder": 0,
+                        "tileid": "fb702208-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "8b97ada5-f18d-4219-8b86-3acd0bd32600",
+                    "resourceinstanceid": "8b97ada5-f18d-4219-8b86-3acd0bd32600"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Entwistle & Barron"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "8b97ada5-f18d-4219-8b86-3acd0bd32600",
+                        "sortorder": 0,
+                        "tileid": "fb7090da-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "fa8ae680-9661-4640-9add-d8d60d6dea31"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "8b97ada5-f18d-4219-8b86-3acd0bd32600",
+                        "sortorder": 0,
+                        "tileid": "fb70f69c-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "01b2509b-3d8d-4afe-ab5b-690a0e5bc7a7",
+                    "resourceinstanceid": "01b2509b-3d8d-4afe-ab5b-690a0e5bc7a7"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Alfred H. Granger"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "01b2509b-3d8d-4afe-ab5b-690a0e5bc7a7",
+                        "sortorder": 0,
+                        "tileid": "fb71608c-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "01b2509b-3d8d-4afe-ab5b-690a0e5bc7a7",
+                        "sortorder": 0,
+                        "tileid": "fb71c356-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "0050bb8c-20ab-4784-a186-f255df681fcf",
+                    "resourceinstanceid": "0050bb8c-20ab-4784-a186-f255df681fcf"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Bernard R. Green"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "0050bb8c-20ab-4784-a186-f255df681fcf",
+                        "sortorder": 0,
+                        "tileid": "fb722a26-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "0050bb8c-20ab-4784-a186-f255df681fcf",
+                        "sortorder": 0,
+                        "tileid": "fb728eda-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "50bf6bf7-561b-4637-9f86-76e8521c827a",
+                    "resourceinstanceid": "50bf6bf7-561b-4637-9f86-76e8521c827a"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Rutherford B. Hayes"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "50bf6bf7-561b-4637-9f86-76e8521c827a",
+                        "sortorder": 0,
+                        "tileid": "fb72faa0-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "50bf6bf7-561b-4637-9f86-76e8521c827a",
+                        "sortorder": 0,
+                        "tileid": "fb7367f6-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "18ea6fa5-5594-4cbd-a724-ea0ace57a4a6",
+                    "resourceinstanceid": "18ea6fa5-5594-4cbd-a724-ea0ace57a4a6"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Hayes, Seay, Mattern & Mattern"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "18ea6fa5-5594-4cbd-a724-ea0ace57a4a6",
+                        "sortorder": 0,
+                        "tileid": "fb73ff4a-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "18ea6fa5-5594-4cbd-a724-ea0ace57a4a6",
+                        "sortorder": 0,
+                        "tileid": "fb747f7e-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "66d68d63-af17-483f-8f3c-51c11850aaa1",
+                    "resourceinstanceid": "66d68d63-af17-483f-8f3c-51c11850aaa1"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Irwin Porter & Sons"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "66d68d63-af17-483f-8f3c-51c11850aaa1",
+                        "sortorder": 0,
+                        "tileid": "fb74eed2-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "66d68d63-af17-483f-8f3c-51c11850aaa1",
+                        "sortorder": 0,
+                        "tileid": "fb7555b6-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "506761ce-08d1-4c9a-ae60-628cb27866fa",
+                    "resourceinstanceid": "506761ce-08d1-4c9a-ae60-628cb27866fa"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Abraham Lincoln"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "506761ce-08d1-4c9a-ae60-628cb27866fa",
+                        "sortorder": 0,
+                        "tileid": "fb75bc22-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "506761ce-08d1-4c9a-ae60-628cb27866fa",
+                        "sortorder": 0,
+                        "tileid": "fb761cf8-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "98eb9704-103a-45d9-8ab1-b440657a0404",
+                    "resourceinstanceid": "98eb9704-103a-45d9-8ab1-b440657a0404"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "M. Greenwood (Cincinnati, Ohio)"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "98eb9704-103a-45d9-8ab1-b440657a0404",
+                        "sortorder": 0,
+                        "tileid": "fb768440-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "d92b15bf-5736-417d-a8bf-93fc40032500"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "98eb9704-103a-45d9-8ab1-b440657a0404",
+                        "sortorder": 0,
+                        "tileid": "fb76e764-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "fe24bc05-49ff-40ab-9ffa-d2ccb9a0f632",
+                    "resourceinstanceid": "fe24bc05-49ff-40ab-9ffa-d2ccb9a0f632"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Hugh N. McAuley"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "fe24bc05-49ff-40ab-9ffa-d2ccb9a0f632",
+                        "sortorder": 0,
+                        "tileid": "fb774df8-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "fe24bc05-49ff-40ab-9ffa-d2ccb9a0f632",
+                        "sortorder": 0,
+                        "tileid": "fb77b504-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "a40de894-532e-4572-94e8-4da1837ee354",
+                    "resourceinstanceid": "a40de894-532e-4572-94e8-4da1837ee354"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Barton Stone Alexander"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "a40de894-532e-4572-94e8-4da1837ee354",
+                        "sortorder": 0,
+                        "tileid": "fb781c42-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "a40de894-532e-4572-94e8-4da1837ee354",
+                        "sortorder": 0,
+                        "tileid": "fb787fc0-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "7dc58f61-78a0-49f9-8cac-9b2348f1bedf",
+                    "resourceinstanceid": "7dc58f61-78a0-49f9-8cac-9b2348f1bedf"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Crosby P. Miller"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7dc58f61-78a0-49f9-8cac-9b2348f1bedf",
+                        "sortorder": 0,
+                        "tileid": "fb78ea8c-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7dc58f61-78a0-49f9-8cac-9b2348f1bedf",
+                        "sortorder": 0,
+                        "tileid": "fb794ce8-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "e135644b-e556-40d9-b1d8-080b3a53245e",
+                    "resourceinstanceid": "e135644b-e556-40d9-b1d8-080b3a53245e"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Richard Morgan"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e135644b-e556-40d9-b1d8-080b3a53245e",
+                        "sortorder": 0,
+                        "tileid": "fb79b2d2-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f52f99df-1b54-4162-9765-2ed13f20eab2"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e135644b-e556-40d9-b1d8-080b3a53245e",
+                        "sortorder": 0,
+                        "tileid": "fb7ea4cc-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "d62234dd-ed04-4170-9a8e-411bb9bb643f",
+                    "resourceinstanceid": "d62234dd-ed04-4170-9a8e-411bb9bb643f"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "N.P. Ames Foundry (Springfield, MA)"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "d62234dd-ed04-4170-9a8e-411bb9bb643f",
+                        "sortorder": 0,
+                        "tileid": "fb7f38e2-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "d92b15bf-5736-417d-a8bf-93fc40032500"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "d62234dd-ed04-4170-9a8e-411bb9bb643f",
+                        "sortorder": 0,
+                        "tileid": "fb7fc85c-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "453b2260-081c-42d2-bf96-f16fdc2d8f47",
+                    "resourceinstanceid": "453b2260-081c-42d2-bf96-f16fdc2d8f47"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Poindexter & Fleming"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "453b2260-081c-42d2-bf96-f16fdc2d8f47",
+                        "sortorder": 0,
+                        "tileid": "fb805be6-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "453b2260-081c-42d2-bf96-f16fdc2d8f47",
+                        "sortorder": 0,
+                        "tileid": "fb80eb4c-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "585b76cc-a139-4311-a13d-0b977eea4257",
+                    "resourceinstanceid": "585b76cc-a139-4311-a13d-0b977eea4257"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "William Poindexter"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "585b76cc-a139-4311-a13d-0b977eea4257",
+                        "sortorder": 0,
+                        "tileid": "fb817cc4-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "585b76cc-a139-4311-a13d-0b977eea4257",
+                        "sortorder": 0,
+                        "tileid": "fb8204c8-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "478008f1-d151-42b0-8a9b-142d0f6a85c6",
+                    "resourceinstanceid": "478008f1-d151-42b0-8a9b-142d0f6a85c6"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Porter & Lockie"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "478008f1-d151-42b0-8a9b-142d0f6a85c6",
+                        "sortorder": 0,
+                        "tileid": "fb8292f8-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "478008f1-d151-42b0-8a9b-142d0f6a85c6",
+                        "sortorder": 0,
+                        "tileid": "fb831f0c-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "e130dcaf-a551-4bba-b828-04ef9274fd3d",
+                    "resourceinstanceid": "e130dcaf-a551-4bba-b828-04ef9274fd3d"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "George Washington Riggs"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e130dcaf-a551-4bba-b828-04ef9274fd3d",
+                        "sortorder": 0,
+                        "tileid": "fb83aa62-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "e130dcaf-a551-4bba-b828-04ef9274fd3d",
+                        "sortorder": 0,
+                        "tileid": "fb842fc8-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "af4a6fd8-557c-4cdd-b5b0-6d859b3d6878",
+                    "resourceinstanceid": "af4a6fd8-557c-4cdd-b5b0-6d859b3d6878"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "John Stephens Sewell"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "af4a6fd8-557c-4cdd-b5b0-6d859b3d6878",
+                        "sortorder": 0,
+                        "tileid": "fb84bdd0-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "af4a6fd8-557c-4cdd-b5b0-6d859b3d6878",
+                        "sortorder": 0,
+                        "tileid": "fb85439a-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "7d09149e-c4be-4cb3-b7db-1ea27f18cd40",
+                    "resourceinstanceid": "7d09149e-c4be-4cb3-b7db-1ea27f18cd40"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "John Skirving"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7d09149e-c4be-4cb3-b7db-1ea27f18cd40",
+                        "sortorder": 0,
+                        "tileid": "fb85cfb8-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "e8f9112a-1213-4b29-9459-b511ec42a81f"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7d09149e-c4be-4cb3-b7db-1ea27f18cd40",
+                        "sortorder": 0,
+                        "tileid": "fb865064-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "48fc516a-5018-486b-acbc-acc9ffb15a4f",
+                    "resourceinstanceid": "48fc516a-5018-486b-acbc-acc9ffb15a4f"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "John L. Smithmeyer"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "48fc516a-5018-486b-acbc-acc9ffb15a4f",
+                        "sortorder": 0,
+                        "tileid": "fb86d002-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f00987b0-f0e7-43c3-bd37-3e1f0fd56b14"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "48fc516a-5018-486b-acbc-acc9ffb15a4f",
+                        "sortorder": 0,
+                        "tileid": "fb874a82-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "40cc8154-a328-4965-b9a0-d22e6d1b0c12",
+                    "resourceinstanceid": "40cc8154-a328-4965-b9a0-d22e6d1b0c12"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Robert Anderson"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "40cc8154-a328-4965-b9a0-d22e6d1b0c12",
+                        "sortorder": 0,
+                        "tileid": "fb87c99e-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "40cc8154-a328-4965-b9a0-d22e6d1b0c12",
+                        "sortorder": 0,
+                        "tileid": "fb884838-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "2245685f-0da3-43d2-891a-93f39adeaa5c",
+                    "resourceinstanceid": "2245685f-0da3-43d2-891a-93f39adeaa5c"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Launt Thompson"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "2245685f-0da3-43d2-891a-93f39adeaa5c",
+                        "sortorder": 0,
+                        "tileid": "fb88cd3a-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "0dcf7a1c-227e-463e-a4e6-4e95df6cd850"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "2245685f-0da3-43d2-891a-93f39adeaa5c",
+                        "sortorder": 0,
+                        "tileid": "fb894990-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "9eb425d6-975d-4b12-b1e8-071888213006",
+                    "resourceinstanceid": "9eb425d6-975d-4b12-b1e8-071888213006"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Welsbach"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "9eb425d6-975d-4b12-b1e8-071888213006",
+                        "sortorder": 0,
+                        "tileid": "fb89c3ca-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "9eb425d6-975d-4b12-b1e8-071888213006",
+                        "sortorder": 0,
+                        "tileid": "fb8a2edc-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "a33cb921-2137-460b-abf1-f770e2dd5923",
+                    "resourceinstanceid": "a33cb921-2137-460b-abf1-f770e2dd5923"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "W.W. Winfree"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "a33cb921-2137-460b-abf1-f770e2dd5923",
+                        "sortorder": 0,
+                        "tileid": "fb8a99e4-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "fa8ae680-9661-4640-9add-d8d60d6dea31"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "a33cb921-2137-460b-abf1-f770e2dd5923",
+                        "sortorder": 0,
+                        "tileid": "fb8b0604-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "7fb08c6c-2361-4302-823a-be69eecdfa08",
+                    "resourceinstanceid": "7fb08c6c-2361-4302-823a-be69eecdfa08"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Wood, Donn & Deming"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7fb08c6c-2361-4302-823a-be69eecdfa08",
+                        "sortorder": 0,
+                        "tileid": "fb8b6cca-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7fb08c6c-2361-4302-823a-be69eecdfa08",
+                        "sortorder": 0,
+                        "tileid": "fb8bcecc-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "6c1b912f-0a6f-43f4-8857-151f043d0adf",
+                    "resourceinstanceid": "6c1b912f-0a6f-43f4-8857-151f043d0adf"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Wright & McDermot"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "6c1b912f-0a6f-43f4-8857-151f043d0adf",
+                        "sortorder": 0,
+                        "tileid": "fb8c386c-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "015f9d3e-0996-40a0-ba1c-99453a561591"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "6c1b912f-0a6f-43f4-8857-151f043d0adf",
+                        "sortorder": 0,
+                        "tileid": "fb8c9b9a-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "50b876cf-4314-4617-ab60-968f507836b1",
+                    "resourceinstanceid": "50b876cf-4314-4617-ab60-968f507836b1"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Chester A. Arthur"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "50b876cf-4314-4617-ab60-968f507836b1",
+                        "sortorder": 0,
+                        "tileid": "fb8d04ae-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "50b876cf-4314-4617-ab60-968f507836b1",
+                        "sortorder": 0,
+                        "tileid": "fb8d7254-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "7138b028-b0a0-4fec-938f-2c9177a61078",
+                    "resourceinstanceid": "7138b028-b0a0-4fec-938f-2c9177a61078"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Baldwin & Pennington"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7138b028-b0a0-4fec-938f-2c9177a61078",
+                        "sortorder": 0,
+                        "tileid": "fb8ddc30-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "3d21052a-d375-4828-b4fb-efbebf816e11"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "7138b028-b0a0-4fec-938f-2c9177a61078",
+                        "sortorder": 0,
+                        "tileid": "fb8e3f36-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "bfb33afb-ff28-4bdf-8df3-7a8cb13a59aa",
+                    "resourceinstanceid": "bfb33afb-ff28-4bdf-8df3-7a8cb13a59aa"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "James Buchanan"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "bfb33afb-ff28-4bdf-8df3-7a8cb13a59aa",
+                        "sortorder": 0,
+                        "tileid": "fb8ea6ec-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "f0c36ad2-a254-464d-90a8-bcfc49053e75"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "bfb33afb-ff28-4bdf-8df3-7a8cb13a59aa",
+                        "sortorder": 0,
+                        "tileid": "fb8f09ac-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "8f3f4bdd-b61d-4e90-b6a7-9afac012972b",
+                    "resourceinstanceid": "8f3f4bdd-b61d-4e90-b6a7-9afac012972b"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "C. A. Schneider & Sons"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "8f3f4bdd-b61d-4e90-b6a7-9afac012972b",
+                        "sortorder": 0,
+                        "tileid": "fb8f6f96-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "63334a07-4895-4741-bc96-c36f347ebdc7"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "8f3f4bdd-b61d-4e90-b6a7-9afac012972b",
+                        "sortorder": 0,
+                        "tileid": "fb8fda30-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "46e3a5ed-b6b0-4315-a562-ac958db2b336",
+                    "resourceinstanceid": "46e3a5ed-b6b0-4315-a562-ac958db2b336"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "Gilbert Cameron"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "46e3a5ed-b6b0-4315-a562-ac958db2b336",
+                        "sortorder": 0,
+                        "tileid": "fb903fb6-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "fa8ae680-9661-4640-9add-d8d60d6dea31"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "46e3a5ed-b6b0-4315-a562-ac958db2b336",
+                        "sortorder": 0,
+                        "tileid": "fb90a0d2-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            },
+            {
+                "resourceinstance": {
+                    "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                    "legacyid": "441d7657-44bc-4f94-b25a-785483fe2750",
+                    "resourceinstanceid": "441d7657-44bc-4f94-b25a-785483fe2750"
+                },
+                "tiles": [
+                    {
+                        "data": {
+                            "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b": [
+                                "79bc9b53-6499-432c-bca1-3c3d48db9a56"
+                            ],
+                            "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b": "W.E. Spier"
+                        },
+                        "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "441d7657-44bc-4f94-b25a-785483fe2750",
+                        "sortorder": 0,
+                        "tileid": "fb9105c2-4c4f-11ea-b535-acde48001122"
+                    },
+                    {
+                        "data": {
+                            "bb41be8e-4c41-11ea-b22d-acde48001122": "fa8ae680-9661-4640-9add-d8d60d6dea31"
+                        },
+                        "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
+                        "parenttile_id": null,
+                        "provisionaledits": null,
+                        "resourceinstance_id": "441d7657-44bc-4f94-b25a-785483fe2750",
+                        "sortorder": 0,
+                        "tileid": "fb9166ac-4c4f-11ea-b535-acde48001122"
+                    }
+                ]
+            }
+        ]
+    }
+}
