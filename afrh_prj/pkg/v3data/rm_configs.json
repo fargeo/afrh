@@ -1,0 +1,47 @@
+{
+    "AFRH Management Activity": {
+        "v3_entitytypeid": "ACTIVITY_A.E7",
+        "v3_nodes_csv": "ACTIVITY_A.E7_nodes.csv",
+        "v3_v4_node_lookup": "ACTIVITY_A.E7_v4_lookup.csv"
+    },
+    "AFRH Organization": {
+        "v3_entitytypeid": "ACTOR.E39",
+        "v3_nodes_csv": "ACTOR.E39_nodes.csv",
+        "v3_v4_node_lookup": "ACTOR.E39_v4_lookup.csv"
+    },
+    "Archaeological Zone": {
+        "v3_entitytypeid": "ARCHAEOLOGICAL_ZONE.E53",
+        "v3_nodes_csv": "ARCHAEOLOGICAL_ZONE.E53_nodes.csv",
+        "v3_v4_node_lookup": "ARCHAEOLOGICAL_ZONE.E53_v4_lookup.csv"
+    },
+    "Character Area": {
+        "v3_entitytypeid": "CHARACTER_AREA.E53",
+        "v3_nodes_csv": "CHARACTER_AREA.E53_nodes.csv",
+        "v3_v4_node_lookup": "CHARACTER_AREA.E53_v4_lookup.csv"
+    },
+    "Historic Area": {
+        "v3_entitytypeid": "HISTORIC_AREA.E53",
+        "v3_nodes_csv": "HISTORIC_AREA.E53_nodes.csv",
+        "v3_v4_node_lookup": "HISTORIC_AREA.E53_v4_lookup.csv"
+    },
+    "Information Resource": {
+        "v3_entitytypeid": "INFORMATION_RESOURCE.E73",
+        "v3_nodes_csv": "INFORMATION_RESOURCE.E73_nodes.csv",
+        "v3_v4_node_lookup": "INFORMATION_RESOURCE.E73_v4_lookup.csv"
+    },
+    "Inventory Resource": {
+        "v3_entitytypeid": "INVENTORY_RESOURCE.E18",
+        "v3_nodes_csv": "INVENTORY_RESOURCE.E18_nodes.csv",
+        "v3_v4_node_lookup": "INVENTORY_RESOURCE.E18_v4_lookup.csv"
+    },
+    "Master Plan Zone": {
+        "v3_entitytypeid": "MASTER_PLAN_ZONE.E53",
+        "v3_nodes_csv": "MASTER_PLAN_ZONE.E53_nodes.csv",
+        "v3_v4_node_lookup": "MASTER_PLAN_ZONE.E53_v4_lookup.csv"
+    },
+    "Person": {
+        "v3_entitytypeid": "ACTOR.E39",
+        "v3_nodes_csv": "ACTOR.E39_nodes.csv",
+        "v3_v4_node_lookup": "ACTOR.E39_v4_lookup.csv"
+    }
+}
