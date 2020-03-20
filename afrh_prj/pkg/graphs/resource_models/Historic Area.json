@@ -1443,7 +1443,28 @@
                     "rangenode_id": "52dcfa1a-1add-11ea-8211-acde48001122"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "d18a7d25-3bd5-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Historic Area Name>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "d18a7d25-3bd5-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Historic Area Name>"
+                        },
+                        "name": {
+                            "nodegroup_id": "d18a7d25-3bd5-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Historic Area Name>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
+                    "id": "7a54dafe-6ae2-11ea-b50d-acde48001122"
+                }
+            ],
             "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
             "iconclass": "fa fa-map-marker",
             "is_editable": true,
