@@ -23,7 +23,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Guidelines",
                     "nodegroup_id": "865d8c62-3bb0-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 6,
@@ -56,7 +56,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "c1033fbf-46d3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -82,7 +82,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "dfdc45bc-6969-11ea-a913-acde48001122",
                     "sortorder": null,
@@ -101,7 +101,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name",
                     "nodegroup_id": "97261bbd-3a08-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -127,7 +127,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Description",
                     "nodegroup_id": "1bf3140b-3bb0-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -153,7 +153,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Planned Use",
                     "nodegroup_id": "aaa413a6-3a08-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -179,7 +179,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Guideline Image",
                     "nodegroup_id": "3b2cc7b6-3bb1-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -213,7 +213,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Zone Type",
                     "nodegroup_id": "9b93b83a-3a08-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -239,7 +239,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Activity",
                     "nodegroup_id": "8645bf51-3a08-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -265,7 +265,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Information Resources",
                     "nodegroup_id": "b48bfaa6-6969-11ea-a913-acde48001122",
                     "sortorder": null,
@@ -1118,10 +1118,31 @@
                     "rangenode_id": "dfdc45bc-6969-11ea-a913-acde48001122"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "97261bbd-3a08-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Master Plan Name>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "97261bbd-3a08-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Master Plan Name>"
+                        },
+                        "name": {
+                            "nodegroup_id": "97261bbd-3a08-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Master Plan Name>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "12581535-3a08-11ea-b9b7-027f24e6fd6b",
+                    "id": "6d5329a3-6adb-11ea-b9b7-027f24e6fd6b"
+                }
+            ],
             "graphid": "12581535-3a08-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-clipboard",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1864,9 +1885,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
+        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
+        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
+        "os": "Linux",
+        "os version": "4.15.0-1051-aws"
     }
 }

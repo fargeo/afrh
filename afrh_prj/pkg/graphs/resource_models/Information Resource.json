@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name",
                     "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -54,7 +54,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Digital Files",
                     "nodegroup_id": "238d4d43-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 5,
@@ -80,7 +80,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Summary",
                     "nodegroup_id": "5c1de11c-1ba9-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -106,7 +106,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "03d22f73-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -139,7 +139,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -165,7 +165,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Creation",
                     "nodegroup_id": "47160368-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -191,7 +191,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Master Plan Zones",
                     "nodegroup_id": "867aa0b6-6ac4-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -217,7 +217,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Archaeological Zones",
                     "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
                     "sortorder": null,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Publication",
                     "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Information Object Resources",
                     "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -295,7 +295,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "f891ab50-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -1729,10 +1729,31 @@
                     "rangenode_id": "484892df-1b98-11ea-b9b7-027f24e6fd6b"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Title>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Title>"
+                        },
+                        "name": {
+                            "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Title>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "id": "d498292f-6ada-11ea-b9b7-027f24e6fd6b"
+                }
+            ],
             "graphid": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-file-text-o",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -3072,9 +3093,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
+        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
+        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
+        "os": "Linux",
+        "os version": "4.15.0-1051-aws"
     }
 }

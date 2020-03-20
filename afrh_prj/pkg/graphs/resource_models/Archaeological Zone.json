@@ -29,7 +29,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Identifications",
                     "nodegroup_id": "1d2ea55d-3a05-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -55,7 +55,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -88,7 +88,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "b25075f1-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -121,7 +121,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Area of Probability",
                     "nodegroup_id": "32252d89-39ff-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -543,10 +543,31 @@
                     "rangenode_id": "1d2ea561-3a05-11ea-b9b7-027f24e6fd6b"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "1d2ea55d-3a05-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Identification>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "1d2ea55d-3a05-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Identification>"
+                        },
+                        "name": {
+                            "nodegroup_id": "1d2ea55d-3a05-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Identification>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
+                    "id": "602954dd-6ada-11ea-b9b7-027f24e6fd6b"
+                }
+            ],
             "graphid": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-institution",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -932,9 +953,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
+        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
+        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
+        "os": "Linux",
+        "os version": "4.15.0-1051-aws"
     }
 }

@@ -23,7 +23,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Character Area Significance",
                     "nodegroup_id": "95c7f67a-4154-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -56,7 +56,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "c7121251-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -82,7 +82,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "4562d358-1acb-11ea-8211-acde48001122",
                     "sortorder": 2,
@@ -108,7 +108,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Identification",
                     "nodegroup_id": "4ce7b7f0-1ad6-11ea-8211-acde48001122",
                     "sortorder": 0,
@@ -160,7 +160,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "8174e318-689b-11ea-9c7f-acde48001122",
                     "sortorder": null,
@@ -719,10 +719,31 @@
                     "rangenode_id": "8174e318-689b-11ea-9c7f-acde48001122"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "4ce7b7f0-1ad6-11ea-8211-acde48001122",
+                            "string_template": "<Identification>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "4ce7b7f0-1ad6-11ea-8211-acde48001122",
+                            "string_template": "<Identification>"
+                        },
+                        "name": {
+                            "nodegroup_id": "4ce7b7f0-1ad6-11ea-8211-acde48001122",
+                            "string_template": "<Identification>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "f3ab0a3a-1aca-11ea-8211-acde48001122",
+                    "id": "9e90672f-6ada-11ea-b9b7-027f24e6fd6b"
+                }
+            ],
             "graphid": "f3ab0a3a-1aca-11ea-8211-acde48001122",
             "iconclass": "fa fa-globe",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1247,9 +1268,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
+        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
+        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
+        "os": "Linux",
+        "os version": "4.15.0-1051-aws"
     }
 }
