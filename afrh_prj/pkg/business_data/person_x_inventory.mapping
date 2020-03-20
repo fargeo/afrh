@@ -1,0 +1,270 @@
+{
+    "resource_model_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+    "resource_model_name": "Person",
+    "nodes": [
+        {
+            "arches_nodeid": "5b2c8acc-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Actor/Organization Name",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac9-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Address",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8aca-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Address Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac5-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Cultural Period(s)",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ab8-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Description",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ab9-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Description Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "581c12d6-415b-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "External Cross Reference Identifier",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "581c12d8-415b-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "External Cross Reference Notes",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "581c12d7-415b-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "External Cross Reference Source",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "581c12d9-415b-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "External Cross Reference Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac3-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "File",
+            "file_field_name": "",
+            "data_type": "file-list",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac2-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "File Description",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac4-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "File Name",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "711aff46-398b-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Keywords",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac8-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Location Description",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8acb-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Name Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "cead8354-6a4b-11ea-a42b-acde48001122",
+            "arches_node_name": "Related Information Resource From Date",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "cead8502-6a4b-11ea-a42b-acde48001122",
+            "arches_node_name": "Related Information Resource Notes",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "cead823c-6a4b-11ea-a42b-acde48001122",
+            "arches_node_name": "Related Information Resource Relation Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "cead8430-6a4b-11ea-a42b-acde48001122",
+            "arches_node_name": "Related Information Resource To Date",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "cead7e4a-6a4b-11ea-a42b-acde48001122",
+            "arches_node_name": "Related Information Resources",
+            "file_field_name": "",
+            "data_type": "resource-instance",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2c8e2166-689b-11ea-9c7f-acde48001122",
+            "arches_node_name": "Related Inventory Resource From Date",
+            "file_field_name": "start_date",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2c8e2314-689b-11ea-9c7f-acde48001122",
+            "arches_node_name": "Related Inventory Resource Notes",
+            "file_field_name": "notes",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2c8e2058-689b-11ea-9c7f-acde48001122",
+            "arches_node_name": "Related Inventory Resource Relation Type",
+            "file_field_name": "relation_type",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2c8e2242-689b-11ea-9c7f-acde48001122",
+            "arches_node_name": "Related Inventory Resource To Date",
+            "file_field_name": "end_date",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2c8e1cc0-689b-11ea-9c7f-acde48001122",
+            "arches_node_name": "Related Inventory Resources",
+            "file_field_name": "inventory",
+            "data_type": "resource-instance",
+            "export": false
+        },
+        {
+            "arches_nodeid": "bb41be8e-4c41-11ea-b22d-acde48001122",
+            "arches_node_name": "Role",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8abe-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Role Time Span Begin",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8aba-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Role Time Span Cultural Period",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8abb-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Role Time Span End",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8abd-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Role Time Span Note",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8abc-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Role Time Span Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ace-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Time Span Begin",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac6-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Time Span End",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8acd-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Time Span Note",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5b2c8ac7-398a-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Time Span Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        }
+    ]
+}

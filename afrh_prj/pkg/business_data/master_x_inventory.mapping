@@ -1,0 +1,204 @@
+{
+    "resource_model_id": "12581535-3a08-11ea-b9b7-027f24e6fd6b",
+    "resource_model_name": "Master Plan Zone",
+    "nodes": [
+        {
+            "arches_nodeid": "8645bf54-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Activity Cultural Period(s)",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "8645bf58-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Activity Time Span Begin",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "8645bf55-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Activity Time Span End",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "8645bf57-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Activity Time Span Note",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "8645bf56-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Activity Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "1bf3140e-3bb0-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Description",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "1bf3140f-3bb0-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Description Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "3b2cc7b6-3bb1-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Guideline Image",
+            "file_field_name": "",
+            "data_type": "file-list",
+            "export": false
+        },
+        {
+            "arches_nodeid": "5f66d9b4-3bb1-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Guideline Image Note",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "a0b4fbb8-3bb0-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Guideline Note",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "2aadc462-3bb1-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Guideline Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "97261bc1-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Master Plan Name",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "97261bc0-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Name Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "aaa413a6-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Planned Use",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "b48c0104-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Information From Date",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "b48c038e-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Information Notes",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "b48bffd8-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Information Relation Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "b48bfaa6-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Information Resources",
+            "file_field_name": "",
+            "data_type": "resource-instance",
+            "export": false
+        },
+        {
+            "arches_nodeid": "b48c02a8-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Information To Date",
+            "file_field_name": "",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "dfdc4b7a-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Inventory From Date",
+            "file_field_name": "start_date",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "dfdc4d46-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Inventory Notes",
+            "file_field_name": "notes",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "dfdc4a4e-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Inventory Relation Type",
+            "file_field_name": "relation_type",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": false
+        },
+        {
+            "arches_nodeid": "dfdc45bc-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Inventory Resources",
+            "file_field_name": "inventory",
+            "data_type": "resource-instance",
+            "export": false
+        },
+        {
+            "arches_nodeid": "dfdc4c60-6969-11ea-a913-acde48001122",
+            "arches_node_name": "Related Inventory To Date",
+            "file_field_name": "end_date",
+            "data_type": "date",
+            "export": false
+        },
+        {
+            "arches_nodeid": "c1033fc2-46d3-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Spatial Coordinates",
+            "file_field_name": "",
+            "data_type": "geojson-feature-collection",
+            "export": false
+        },
+        {
+            "arches_nodeid": "c1033fc3-46d3-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Spatial Location Notes",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "9b93b83a-3a08-11ea-b9b7-027f24e6fd6b",
+            "arches_node_name": "Zone Type",
+            "file_field_name": "",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": false
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+v3_node,v4_node
+ACTOR_APPELLATION.E82,Actor/Organization Name
+ACTOR_NAME_TYPE.E55,Name Type
+ACTOR_TYPE.E55,Role
+ADDRESS_TYPE.E55,Address Type
+BEGINNING_OF_EXISTENCE_TYPE.E55,Time Span Type
+CULTURAL_PERIOD.E55,Role Time Span Cultural Period
+DESCRIPTION.E62,Description
+DESCRIPTION_OF_LOCATION.E62,Location Description
+DESCRIPTION_TYPE.E55,Description Type
+END_DATE_OF_EXISTENCE.E49,Time Span End
+END_OF_EXISTENCE_TYPE.E55,Time Span Type
+EXTERNAL_XREF.E42,External Cross Reference Identifier
+EXTERNAL_XREF_TYPE.E55,External Cross Reference Type
+FROM_DATE.E49,Role Time Span Begin
+KEYWORD.E55,Keywords
+PLACE_ADDRESS.E45,Address
+START_DATE_OF_EXISTENCE.E49,Time Span Begin
+TO_DATE.E49,Role Time Span End

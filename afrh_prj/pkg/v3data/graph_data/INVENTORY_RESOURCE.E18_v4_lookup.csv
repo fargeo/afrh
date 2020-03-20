@@ -4,6 +4,7 @@ AFRH_W_HISTORIC_DISTRICT_STATUS.E55,Evaluation AFRH-W Designation Status
 AFRH_W_HISTORIC_DISTRICT_STATUS_DATE.E50,Evaluation AFRH-W Designation Date
 AREA_OF_SIGNIFICANCE.E55,Evaluation Area of Significance
 BEGINNING_OF_EXISTENCE_NOTE.E62,Summary Time Span Note
+BEGINNING_OF_EXISTENCE_QUALIFIER.E55,Summary Time Span Note
 BEGINNING_OF_EXISTENCE_TYPE.E55,Summary Time Span Type
 BUILDING_NUMBER.E42,Building Number
 BUILDING_NUMBER_TYPE.E55,Building Number Type
@@ -12,15 +13,17 @@ COMPONENT_DESCRIPTION.E62,Component Description
 COMPONENT_SIGNIFICANCE.E55,Component Significance
 COMPONENT_TIME-SPAN_DATE.E50,Component Production Date
 COMPONENT_TYPE.E55,Component Type
-COMPOSITE_SCORE.E60,Quantitive Evaluation Total Score
+COMPOSITE_SCORE.E60,Quantitative Evaluation Criteria Score
 CONDITION_ASSESSMENT_TYPE.E55,Condition Assessment Type
+CONDITION_DESCRIPTION.E62,Condition Assessment Notes
+CONDITION_IMAGE_FILE_PATH.E62,Condition Assessment Files
 CONDITION_TYPE.E55,Condition State
+CONSTRUCTION_TECHNIQUE.E55,Component Production Technique
 CRITERION_A_SCORE.E60,Quantitative Evaluation Criteria Score
 CRITERION_B_SCORE.E60,Quantitative Evaluation Criteria Score
 CRITERION_C_SCORE.E60,Quantitative Evaluation Criteria Score
 CRITERION_D_SCORE.E60,Quantitative Evaluation Criteria Score
 CURRENT_OPERATIONAL_STATUS.E55,Current Operational State
-CURRENT_OPERATIONAL_STATUS_NOTES.E62,Heritage Asset Information Notes
 CURRENT_USER.E39,Current User
 DATE_CONDITION_ASSESSED.E49,Condition Assessment Date
 DESCRIPTION.E62,Description
@@ -29,6 +32,7 @@ DESCRIPTION_TYPE.E55,Description Type
 DISTURBANCE_TYPE.E55,Condition Assessment Disturbances
 END_DATE_OF_EXISTENCE.E49,Summary Time Span End
 END_OF_EXISTENCE_NOTE.E62,Summary Time Span Note
+END_OF_EXISTENCE_QUALIFIER.E55,Summary Time Span Type
 END_OF_EXISTENCE_TYPE.E55,Summary Time Span Type
 EXTERNAL_XREF.E42,External Cross Reference Number
 EXTERNAL_XREF_TYPE.E55,External Cross Reference Type
@@ -37,11 +41,10 @@ FROM_DATE.E49,Phase Type Time Span Begin
 FUNCTION.E62,Phase Type Function
 FUNCTION_PERIOD.E55,Phase Type Cultural Period(s)
 HERITAGE_ASSET_CLASSIFICATION.E55,Heritage Asset Classification
-HERITAGE_ASSET_CONDITION.E3,Condition Assessment Type
+HERITAGE_ASSET_CONDITION.E3,Condition Assessment Condition
 HERITAGE_ASSET_PURPOSE.E55,Purpose
 HERITAGE_ASSET_REPORT_DATE.E49,Heritage Asset Report Date
 HPMP_STATUS.E55,HPMP Evaluation Type
-MANAGEMENT_RECOMMENDATION.E89,Condition Assessment Recommendations
 MATERIAL.E57,Component Material
 MEASUREMENT_TYPE.E55,Measurement Type
 MODIFICATION_DESCRIPTION.E62,Modification Description
@@ -61,8 +64,9 @@ OTHER_DESIGNATION_NOTES.E62,Evaluation Other Designation Notes
 OTHER_DESIGNATION_REFERENCE_NUMBER.E42,Evaluation Other Designation Database ID
 OTHER_DESIGNATION_STATUS.E55,Evaluation Other Designation Status
 OTHER_DESIGNATION_TYPE.E55,Evaluation Other Designation Type
-PERIOD_OF_SIGNIFICANCE.E55,Summary Cultural Period(s)
+PERIOD_OF_SIGNIFICANCE.E55,Evaluation Period of Significance
 PLACE_ADDRESS.E45,Address
+RECOMMENDATION_TYPE.E55,Condition Assessment Recommendations
 RELATIVE_LEVEL_OF_SIGNIFICANCE.E55,Evaluation Relative Level of Significance Type
 RELATIVE_LEVEL_OF_SIGNIFICANCE_DATE.E50,Evaluation Relative Level of Significance Date
 SPATIAL_COORDINATES_GEOMETRY.E47,Spatial Coordinates

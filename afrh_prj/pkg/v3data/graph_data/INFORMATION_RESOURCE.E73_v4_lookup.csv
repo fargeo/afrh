@@ -1,0 +1,21 @@
+v3_node,v4_node
+CREATOR.E39,Creator
+CREATOR_NOTE.E62,Creator Notes
+CREATOR_TYPE.E55,Creator Role Type
+DATE_OF_CREATION.E50,Creation Time Span Begin
+DATE_OF_PUBLICATION.E50,Publication Time Span Begin
+DESCRIPTION.E62,Description
+DESCRIPTION_OF_LOCATION.E62,Spatial Location Notes
+DESCRIPTION_TYPE.E55,Description Type
+EXTERNAL_XREF.E42,External Cross Reference Number
+EXTERNAL_XREF_TYPE.E55,External Cross Reference Type
+FILE_PATH.E62,File
+INFORMATION_RESOURCE_TYPE.E55,Information Resource Type
+KEYWORD.E55,Keywords
+LANGUAGE.E55,Language
+PROTECTION_LEVEL.E55,Protection Level
+PUBLISHER_APPELLATION.E82,Publisher Name
+RIGHT_TYPE.E55,Right Type
+SPATIAL_COORDINATES_GEOMETRY.E47,Spatial Coordinates
+TITLE.E41,Title
+TITLE_TYPE.E55,Title Type
