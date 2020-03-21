@@ -1,5 +1,5 @@
 {
-    "AFRH Management Activity": {
+    "Management Activity": {
         "v3_entitytypeid": "ACTIVITY_A.E7",
         "v3_nodes_csv": "ACTIVITY_A.E7_nodes.csv",
         "v3_v4_node_lookup": "ACTIVITY_A.E7_v4_lookup.csv"
