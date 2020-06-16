@@ -41,25 +41,26 @@
                 <div class="card-grid-item">
                     <div class="panel mar-no">
                       <a data-bind="attr: { href: $parent.resourceEditorURL + $data['resourceinstanceid'] }">
-                        <div class="active-cons-header"
-                            data-bind="css: {'status-ok': ($parent.getTargetDays($data['Target Date']) > 7),
+                        <div class="active-cons-header status-ok">
+                            <!-- data-bind="css: {'status-ok': ($parent.getTargetDays($data['Target Date']) > 7),
                                             'status-warning': ($parent.getTargetDays($data['Target Date']) <=7 &&
                                                 $parent.getTargetDays($data['Target Date']) >= 1),
-                                            'status-late': ($parent.getTargetDays($data['Target Date']) < 1)}">
-                            <div class="active-cons-header-title" data-bind="text: $data['Name'] || 'Unnamed Consultation'"></div>
+                                            'status-late': ($parent.getTargetDays($data['Target Date']) < 1)}"
+                                            > -->
+                            <div class="active-cons-header-title" data-bind="text: $data['Management Activity Name'] || 'Unnamed Consultation'"></div>
                         </div>
                       </a>
                       <a data-bind="attr: { href: $parent.resourceEditorURL + $data['resourceinstanceid'] }">
                         <div class="active-cons-map-container">
 
                             <div class="active-cons-map">
-                                <!-- ko if: !$data["Geospatial Location"] -->
+                                <!-- ko if: !$data["Spatial Coordinates"] -->
                                 <span style="z-index:2; font-size: 14px; position: absolute; top: 100px; right: 20px;" >{% trans "No Geometry Defined in Consultation" %}</span>
                                 <!-- /ko -->
-                                <!-- ko if: $data["Geospatial Location"] && $data.mapImageUrl() == false -->
+                                <!-- ko if: $data["Spatial Coordinates"] && $data.mapImageUrl() == false -->
                                 <span style="z-index:2; font-size: 14px; position: absolute; top: 100px; left: 90px;" ><i class="fa fa-spin fa-spinner"></i>{% trans " Loading Map" %}</span>
                                 <!-- /ko -->
-                                <img data-bind="attr: {src: $data.mapImageUrl()}, css: {'active-cons-map-disabled': !$data['Geospatial Location']}"></img>
+                                <img data-bind="attr: {src: $data.mapImageUrl()}, css: {'active-cons-map-disabled': !$data['Spatial Coordinates']}"></img>
                                 <div class="map-credit">
                                     <span>
                                         <a class="mapboxgl-ctrl-logo" target="_blank" href="https://www.mapbox.com/" aria-label="Mapbox logo" rel="noopener"></a>
@@ -106,13 +107,13 @@
                         </div>
 
                         <div class="active-cons-stub-summary" style="">
-                            <p class="active-cons-stub-summary-text" data-bind="html: $data['Proposal'] || 'Proposal not entered'"></p>
+                            <p class="active-cons-stub-summary-text" data-bind="html: $data['Scope of Work'] || 'No Scope of Work recorded'"></p>
                         </div>
 
                         <div class="panel-footer" style="padding: 0px">
                             <div class="ep-toolbar cons">
                                 <div class="cons-owner-title-panel">
-                                    <div class="cons-owner-title" data-bind="text: $data['Casework Officer'] || 'No Casework Officer'"></div>
+                                    <div class="cons-owner-title" data-bind="text: $data['Action Agent'] || 'No Action Agent assigned'"></div>
                                 </div>
                             </div>
                         </div>

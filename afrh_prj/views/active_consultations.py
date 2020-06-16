@@ -32,9 +32,10 @@ class ActiveConsultationsView(View):
     def __init__(self):
         self.cons_details_nodegroupid = '8d41e4c0-a250-11e9-a7e3-00224800b26d'
         self.management_activity_graphid = '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b'
-        self.cons_status_bool_nodeid = "6a773228-db20-11e9-b6dd-784f435179ea"
+        # self.cons_status_bool_nodeid = "6a773228-db20-11e9-b6dd-784f435179ea"
+        self.cons_status_concept_nodeid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
         self.active_cons_node_list = { # if this is not up-to-date sorting will break
-            "Geospatial Location":"4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
+            "Spatial Coordinates":"4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
             "Name":"6da8cd51-3c8a-11ea-b9b7-027f24e6fd6b",
             # "Consultation Type":"8d41e4dd-a250-11e9-9032-00224800b26d",
             "Scope of Work":"5a8422b0-3cac-11ea-b9b7-027f24e6fd6b",
@@ -42,6 +43,14 @@ class ActiveConsultationsView(View):
             "Action Agent":"b0007bfc-415e-11ea-b9b7-027f24e6fd6b",
             "Consultation Date":"6da8cd4c-3c8a-11ea-b9b7-027f24e6fd6b"
         }
+        self.active_cons_status_include_concept_values = [
+            "Reviews Complete - Work Not Started",
+            "Reviews Complete - Work in Progress",
+            "Work Complete",
+            "On Hold",
+            # "Canceled",
+            "Other"
+        ]
     
     def get(self, request):
         page_num = 1 if request.GET.get('page') == '' else int(request.GET.get('page'))
@@ -52,7 +61,7 @@ class ActiveConsultationsView(View):
         # self.active_cons_node_list = active_cons_config['nodes']
         # order_config = active_cons_config['sort config']
         datatype_factory = DataTypeFactory()
-        cons_details_tiles = Tile.objects.filter(nodegroup_id=self.cons_status_bool_nodeid)
+        cons_details_tiles = Tile.objects.filter(nodegroup_id=self.cons_status_concept_nodeid)
         include_list = self.build_include_list(cons_details_tiles, datatype_factory)
         filtered_consultations = Resource.objects.filter(graph_id=self.management_activity_graphid, resourceinstanceid__in=include_list)
 
@@ -73,6 +82,7 @@ class ActiveConsultationsView(View):
         page_ct = page_ct_tile.data[search_results_setting_nodeid]
 
         if filtered_consultations is not None:
+            # import pdb; pdb.set_trace()
             if page_num == -1:
                 grouped_tile_list = build_resource_dict(filtered_consultations, self.active_cons_node_list, datatype_factory, layout='table')
                 return JSONResponse({'results': grouped_tile_list})
@@ -92,12 +102,13 @@ class ActiveConsultationsView(View):
 
 
     def build_include_list(self, tiles, datatype_factory):
+        # collects resourceinstances that would qualify for inclusion due to matching some specific value
         include_list = []
-        cons_status_node = models.Node.objects.get(nodeid=self.cons_status_bool_nodeid)
+        cons_status_node = models.Node.objects.get(nodeid=self.cons_status_concept_nodeid)
         datatype = datatype_factory.get_instance(cons_status_node.datatype)
         for tile in tiles:
             tile_status = datatype.get_display_value(tile, cons_status_node)
-            if tile_status is not False:
+            if tile_status in self.active_cons_status_include_concept_values:
                 include_list.append(str(tile.resourceinstance.resourceinstanceid))
 
         return include_list
@@ -176,7 +187,7 @@ def build_resource_dict(consultations, active_cons_node_list, datatype_factory, 
                     try:
                         datatype = datatype_factory.get_instance(node.datatype)
                         val = datatype.get_display_value(tile, node)
-                        if layout == 'grid' and nodeid == active_cons_node_list["Geospatial Location"]:
+                        if layout == 'grid' and nodeid == active_cons_node_list["Spatial Coordinates"]:
                             val = json.loads(val)
                     except Exception as e:
                         # print('Error:',e)

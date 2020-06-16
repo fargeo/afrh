@@ -12,7 +12,7 @@ define([
     return ko.components.register('active-consultations',  {
         viewModel: function(params) {
             var self = this;
-            this.resourceEditorURL = '/arches-her' + arches.urls.resource_editor;
+            this.resourceEditorURL = arches.urls.resource_editor;
             this.moment = moment;
             this.layout = ko.observable('grid');
             this.setLayout = function(layout){ self.layout(layout); };
@@ -47,14 +47,14 @@ define([
                     "Consultation Log Date":"8d41e4cf-a250-11e9-a86d-00224800b26d"
                 },
                 "sort config":{
-                    "Log Date: Newest to Oldest":["Consultation Log Date",false],
-                    "Log Date: Oldest to Newest":["Consultation Log Date",true],
-                    "Casework Officer: A to Z":["Casework Officer",false],
-                    "Casework Officer: Z to A":["Casework Officer",true],
-                    "Consultation Type: A to Z":["Consultation Type",false],
-                    "Consultation Type: Z to A":["Consultation Type",true],
-                    "Consultation Name: A to Z":["Name",false],
-                    "Consultation Name: Z to A":["Name",true]
+                    "Consultation Date: Newest to Oldest":["Consultation Date",false],
+                    "Consultation Date: Oldest to Newest":["Consultation Date",true],
+                    "Action Agent: A to Z":("Action Agent",false),
+                    "Action Agent: Z to A":("Action Agent",true),
+                    // "Consultation Type: A to Z":["Consultation Type",false],
+                    // "Consultation Type: Z to A":["Consultation Type",true],
+                    // "Consultation Name: A to Z":["Name",false],
+                    // "Consultation Name: Z to A":["Name",true]
                 }
             };
             this.sortOptions = ko.observableArray([]);
@@ -80,7 +80,6 @@ define([
             this.getTargetDays = function(targetdate){
                 return moment(targetdate).diff(moment().startOf('day'), 'days');
             };
-
             var color = "#f0c200";
             this.layers = arches.mapLayers.find(function(layer){
                 return layer.addtomap && !layer.isoverlay;
@@ -161,7 +160,6 @@ define([
             });
             this.sprite = arches.mapboxSprites;
             this.glyphs = arches.mapboxGlyphs;
-
             this.setupMap = function(map, data) {
                 map.on('load', function() {
                     data["mapImageUrl"](map.getCanvas().toDataURL("image/jpeg"));
@@ -169,7 +167,6 @@ define([
             };
 
             this.newPage = function(page){ if(page){ this.page(page); }};
-
             this.page.subscribe(function(timestamp) {
                 this.getConsultations();
             }, this);
@@ -192,25 +189,26 @@ define([
                             self.paginator[keyPair[0]](keyPair[1]);
                         });
                         response.responseJSON['page_results'].forEach( function(consultation) {
+                            console.log(consultation);
                             consultation["mapImageUrl"] = ko.observable(false);
                             consultation["zoom"] = 0, consultation["center"] = [0,0]; //defaults
 
                             consultation.sources = Object.assign({
                                 'app-area-geom': {
                                     "type": "geojson",
-                                    "data": consultation["Geospatial Location"] ?
-                                        consultation["Geospatial Location"] :
+                                    "data": consultation["Spatial Coordinates"] ?
+                                        consultation["Spatial Coordinates"] :
                                         {
                                             "features": [],
                                             "type":"FeatureCollection"
                                         }
                                 }
                             }, arches.mapSources);
-                            if (consultation["Geospatial Location"]) {
-                                if (consultation["Geospatial Location"]["features"].length > 0) {
+                            if (consultation["Spatial Coordinates"]) {
+                                if (consultation["Spatial Coordinates"]["features"].length > 0) {
                                     consultation.bounds = geojsonExtent({
                                         type: 'FeatureCollection',
-                                        features: consultation["Geospatial Location"]["features"]
+                                        features: consultation["Spatial Coordinates"]["features"]
                                     });
                                     consultation.fitBoundsOptions = {
                                         padding: 40,
@@ -225,6 +223,7 @@ define([
                         self.loading(false);
                     },
                     error: function(response, status, error) {
+                        console.log(response);
                         if(response.statusText !== 'abort'){
                             this.viewModel.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
                         }
