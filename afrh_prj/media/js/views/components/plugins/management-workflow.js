@@ -112,6 +112,21 @@ define([
                     icon: 'fa-users'
                 },
                 {
+                    title: 'Consultation Status',
+                    name: 'setstatus',
+                    description: 'Consultation Status',
+                    component: 'views/components/workflows/new-tile-step',
+                    componentname: 'new-tile-step',
+                    graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
+                    nodegroupid: '83f05a05-3c8c-11ea-b9b7-027f24e6fd6b',
+                    resourceid: null,
+                    tileid: null,
+                    parenttileid: null,
+                    required: true,
+                    class: '',
+                    icon: 'fa-calendar-o'
+                },
+                {
                     title: 'Add Consulation Complete',
                     description: 'Choose an option below',
                     component: 'views/components/workflows/final-step',
