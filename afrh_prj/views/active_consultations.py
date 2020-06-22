@@ -46,10 +46,11 @@ class ActiveConsultationsView(View):
         self.active_cons_status_include_concept_values = [
             "Reviews Complete - Work Not Started",
             "Reviews Complete - Work in Progress",
-            "Work Complete",
+            # "Work Complete",
             "On Hold",
             # "Canceled",
-            "Other"
+            "Other",
+            "Activity Initiated"
         ]
     
     def get(self, request):
