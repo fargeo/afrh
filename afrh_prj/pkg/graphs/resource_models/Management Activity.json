@@ -5,6 +5,32 @@
             "cards": [
                 {
                     "active": true,
+                    "cardid": "430d0344-77a0-11ea-8977-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "430d0344-77a0-11ea-8977-acde48001122",
+                            "constraintid": "b5566854-265b-41f4-85d2-c4929d5176be",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Consultant",
+                    "nodegroup_id": "354df526-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "20b217f4-72c2-11ea-a7fa-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -35,7 +61,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "AFRH Project Contact",
                     "nodegroup_id": "6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -61,7 +87,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Attendee",
                     "nodegroup_id": "6da8cd41-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -99,7 +125,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Consultants",
                     "nodegroup_id": "354df1de-72c1-11ea-a7fa-acde48001122",
                     "sortorder": null,
@@ -137,7 +163,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Architects",
                     "nodegroup_id": "27f126f2-72bf-11ea-a7fa-acde48001122",
                     "sortorder": null,
@@ -182,7 +208,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Section 106 Submission",
                     "nodegroup_id": "0a68e5d4-3d6d-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -208,7 +234,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Section 106 Notification",
                     "nodegroup_id": "4809fc74-3d6e-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -227,7 +253,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Milestone",
                     "nodegroup_id": "6da8cd10-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -253,7 +279,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Current Status",
                     "nodegroup_id": "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 5,
@@ -279,7 +305,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Building Structure Recommendations",
                     "nodegroup_id": "91be6428-415f-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -324,7 +350,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Section 106 Response",
                     "nodegroup_id": "8aa0adc2-3d6d-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -343,7 +369,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Regulatory Citation Type",
                     "nodegroup_id": "6da8cd34-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -362,7 +388,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Consultations",
                     "nodegroup_id": "6da8cd16-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 9,
@@ -400,7 +426,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name",
                     "nodegroup_id": "6da8cd37-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -426,7 +452,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "NCPC/CFA Review",
                     "nodegroup_id": "c2a2b4ae-3cd7-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 18,
@@ -452,7 +478,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Procedure",
                     "nodegroup_id": "feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -471,48 +497,9 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "NCPC/CFA Project Name",
                     "nodegroup_id": "a6561970-3cd8-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "centerX": 3,
-                        "centerY": 8.5,
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": 0
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "143f715b-f5aa-43c5-b8b0-8dd76432ada7",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "c87ccf5e-279a-4960-aa7b-4c7927679c51",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Spatial Location",
-                    "nodegroup_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
                     "visible": true
                 },
@@ -562,7 +549,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Section 106 Review",
                     "nodegroup_id": "2cbbe1ec-3d6b-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 19,
@@ -588,7 +575,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Approval Condition",
                     "nodegroup_id": "de011b35-3cad-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 6,
@@ -614,36 +601,10 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Review",
                     "nodegroup_id": "4152d7e5-3c8c-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 8,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "430d0344-77a0-11ea-8977-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "430d0344-77a0-11ea-8977-acde48001122",
-                            "constraintid": "b5566854-265b-41f4-85d2-c4929d5176be",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Consultant",
-                    "nodegroup_id": "354df526-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
                     "visible": true
                 },
                 {
@@ -659,7 +620,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Archaeologists",
                     "nodegroup_id": "9560301e-72c1-11ea-a7fa-acde48001122",
                     "sortorder": null,
@@ -730,7 +691,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Action Agent",
                     "nodegroup_id": "6da8cd28-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -756,7 +717,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Entities",
                     "nodegroup_id": "6da8cd25-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 11,
@@ -775,7 +736,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Submission Type",
                     "nodegroup_id": "7add2ada-3cd9-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -794,7 +755,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "NEPA Documentation",
                     "nodegroup_id": "6da8cd1c-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -813,7 +774,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "NEPA Review",
                     "nodegroup_id": "6da8cd01-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 16,
@@ -839,7 +800,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "URR Number",
                     "nodegroup_id": "937529ba-3d6c-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -922,10 +883,49 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Scope of Work",
                     "nodegroup_id": "5a8422ad-3cac-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 7,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "centerX": "-77.016389",
+                        "centerY": "38.935",
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": "14"
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "143f715b-f5aa-43c5-b8b0-8dd76432ada7",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "c87ccf5e-279a-4960-aa7b-4c7927679c51",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Map Location",
+                    "nodegroup_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true
                 }
             ],
@@ -1069,22 +1069,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Spatial Location Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "9ae5e3ff-6b27-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Location Notes",
-                    "node_id": "5a8b3886-6b27-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "354df404-72c1-11ea-a7fa-acde48001122",
@@ -1504,51 +1488,6 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": null,
-                        "centerX": 3,
-                        "centerY": null,
-                        "defaultValue": null,
-                        "defaultValueType": null,
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Spatial Coordinates",
-                        "maxZoom": 20,
-                        "minZoom": null,
-                        "overlayConfigs": [],
-                        "overlayOpacity": null,
-                        "pitch": null,
-                        "rerender": true,
-                        "zoom": null
-                    },
-                    "id": "9ae5e401-6b27-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Coordinates",
-                    "node_id": "4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
                 },
                 {
                     "card_id": "ab4e3c2d-3c8b-11ea-b9b7-027f24e6fd6b",
@@ -2219,6 +2158,67 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Spatial Location Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "9ae5e3ff-6b27-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Location Notes",
+                    "node_id": "5a8b3886-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": 3,
+                        "centerY": null,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Spatial Coordinates",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "9ae5e401-6b27-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Coordinates",
+                    "node_id": "4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
                 }
             ],
             "color": null,
@@ -3081,15 +3081,6 @@
                 },
                 {
                     "description": null,
-                    "domainnode_id": "6da8cd40-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "edgeid": "429130d5-6b27-11ea-b9b7-027f24e6fd6b",
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "name": null,
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at",
-                    "rangenode_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b",
                     "edgeid": "feb5cafb-3c8b-11ea-b9b7-027f24e6fd6b",
                     "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
@@ -3366,6 +3357,15 @@
                     "name": null,
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
                     "rangenode_id": "3da74a80-3cdb-11ea-b9b7-027f24e6fd6b"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "6da8cd40-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "edgeid": "429130d5-6b27-11ea-b9b7-027f24e6fd6b",
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "name": null,
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at",
+                    "rangenode_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b"
                 }
             ],
             "functions_x_graphs": [
@@ -3387,12 +3387,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "id": "b1485a04-72bc-11ea-8d3a-acde48001122"
+                    "id": "d1f0adae-b1b1-11ea-9630-82c28f26b400"
                 }
             ],
             "graphid": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-pencil",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -3938,7 +3938,7 @@
                     "nodeid": "eec46bfc-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 7
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -4419,7 +4419,7 @@
                     "nodeid": "e254631e-72c0-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -4459,6 +4459,24 @@
                     "nodeid": "3da74a80-3cdb-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "date",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related ARPA Review Resource To Date",
+                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "nodeid": "f90002e2-72bd-11ea-a7fa-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
                     "sortorder": 0
                 },
                 {
@@ -4589,7 +4607,7 @@
                     "nodeid": "250defd0-72c2-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 9
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -4769,7 +4787,7 @@
                     "nodeid": "1679109e-72c2-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 8
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -4926,7 +4944,8 @@
                     "config": {
                         "graphid": [
                             "29f3613d-72b9-11ea-b9b7-027f24e6fd6b"
-                        ]
+                        ],
+                        "graphs": []
                     },
                     "datatype": "resource-instance",
                     "description": null,
@@ -5114,7 +5133,7 @@
                     "nodeid": "354df620-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5217,24 +5236,6 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Related ARPA Review Resource To Date",
-                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "nodeid": "f90002e2-72bd-11ea-a7fa-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "date",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
                     "name": "Related ARPA Review Resource From Date",
                     "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
                     "nodeid": "f9000206-72bd-11ea-a7fa-acde48001122",
@@ -5258,7 +5259,7 @@
                     "nodeid": "27f126f2-72bf-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
                     "parentproperty": "http://www.w3.org/2004/02/skos/core#exactMatch",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5276,7 +5277,7 @@
                     "nodeid": "354df1de-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
                     "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 5
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5348,7 +5349,7 @@
                     "nodeid": "3982e53e-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -5460,7 +5461,7 @@
                     "nodeid": "3982e124-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
                     "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 3
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -5590,7 +5591,7 @@
                     "nodeid": "3abb0fbc-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5608,7 +5609,7 @@
                     "nodeid": "3abb0b8e-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
                     "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 2
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5626,7 +5627,7 @@
                     "nodeid": "9560301e-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 4
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -5700,7 +5701,7 @@
                     "nodeid": "5b18ac00-72bd-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5754,7 +5755,7 @@
                     "nodeid": "d2cf4002-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 6
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5772,7 +5773,7 @@
                     "nodeid": "5b18adb8-72bd-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.w3.org/2001/XMLSchema#string",
                     "parentproperty": "http://www.w3.org/2000/01/rdf-schema#label",
-                    "sortorder": 2
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -5832,7 +5833,7 @@
                     "nodeid": "5b18ace6-72bd-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 3
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -5850,7 +5851,7 @@
                     "nodeid": "5b18aae8-72bd-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
-                    "sortorder": 4
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -6031,8 +6032,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "b2fae37ac 2020-03-25 13:02:05 -0700",
+        "git hash": "b673efd5c 2020-06-18 10:38:01 -0700",
         "os": "Darwin",
-        "os version": "19.4.0"
+        "os version": "19.5.0"
     }
 }
