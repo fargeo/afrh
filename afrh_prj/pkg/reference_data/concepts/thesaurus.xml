@@ -7890,6 +7890,14 @@
         <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
       </skos:Concept>
     </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/9731g161-609d-52f5-0961-9d659d7e7e2c">
+        <skos:prefLabel xml:lang="en-us">{"id": "3f462246-9d5b-586b-cdeb-bbf4e328278f", "value": "Activity Initiated"}</skos:prefLabel>
+        <arches:sortorder xml:lang="en-us">{"id": "7a7ceb55-3e50-431d-a0c0-df53ac8fcc05", "value": "4"}</arches:sortorder>
+        <dcterms:identifier xml:lang="en-us">{"id": "81a3e29a-94f7-428e-b08f-a11427ea01c6", "value": "http://localhost:8000/9731g161-609d-52f5-0961-9d659d7e7e2c"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+      </skos:Concept>
+    </skos:narrower>
     <skos:narrower rdf:resource="http://localhost:8000/99c48d4e-1b7f-4a84-83d5-5b9834f4794f"/>
     <skos:narrower rdf:resource="http://localhost:8000/eb710b5b-e442-411a-b503-7a19a6826d40"/>
     <skos:narrower rdf:resource="http://localhost:8000/cfaa43db-a012-40db-8b96-3a8d64329f90"/>
