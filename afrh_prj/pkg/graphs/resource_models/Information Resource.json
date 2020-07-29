@@ -23,7 +23,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "f891ab50-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -49,7 +49,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Historic Resources",
                     "nodegroup_id": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -68,7 +68,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name",
                     "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -106,7 +106,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Digital Files",
                     "nodegroup_id": "238d4d43-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 5,
@@ -132,7 +132,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Summary",
                     "nodegroup_id": "5c1de11c-1ba9-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -158,7 +158,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "03d22f73-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -191,7 +191,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -217,7 +217,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Creation",
                     "nodegroup_id": "47160368-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Master Plan Zones",
                     "nodegroup_id": "867aa0b6-6ac4-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Archaeological Zones",
                     "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
                     "sortorder": null,
@@ -295,7 +295,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Publication",
                     "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -321,7 +321,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Information Object Resources",
                     "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -1899,12 +1899,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "id": "d498292f-6ada-11ea-b9b7-027f24e6fd6b"
+                    "id": "9a0d65bc-d100-11ea-898e-acde48001122"
                 }
             ],
             "graphid": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-file-text-o",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1917,9 +1917,9 @@
                     "parentnodegroup_id": null
                 },
                 {
-                    "cardinality": "1",
+                    "cardinality": "n",
                     "legacygroupid": null,
-                    "nodegroupid": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
+                    "nodegroupid": "867aa0b6-6ac4-11ea-b559-acde48001122",
                     "parentnodegroup_id": null
                 },
                 {
@@ -1977,9 +1977,9 @@
                     "parentnodegroup_id": "5c1de11c-1ba9-11ea-b9b7-027f24e6fd6b"
                 },
                 {
-                    "cardinality": "n",
+                    "cardinality": "1",
                     "legacygroupid": null,
-                    "nodegroupid": "867aa0b6-6ac4-11ea-b559-acde48001122",
+                    "nodegroupid": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
                     "parentnodegroup_id": null
                 },
                 {
@@ -1990,6 +1990,24 @@
                 }
             ],
             "nodes": [
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Publishers",
+                    "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "484892e3-1b98-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
+                    "sortorder": 0
+                },
                 {
                     "config": null,
                     "datatype": "date",
@@ -2138,28 +2156,6 @@
                 },
                 {
                     "config": {
-                        "graphid": [
-                            "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b"
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Inventory Resources",
-                    "nodegroup_id": "f891ab50-6ac3-11ea-b559-acde48001122",
-                    "nodeid": "f891ab50-6ac3-11ea-b559-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "rdmCollection": "00000000-0000-0000-0000-000000000005"
                     },
                     "datatype": "concept",
@@ -2233,25 +2229,21 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "graphid": [
-                            "12581535-3a08-11ea-b9b7-027f24e6fd6b"
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
                     "exportable": false,
                     "fieldname": null,
                     "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
+                    "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Master Plan Zones",
-                    "nodegroup_id": "867aa0b6-6ac4-11ea-b559-acde48001122",
-                    "nodeid": "867aa0b6-6ac4-11ea-b559-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "istopnode": true,
+                    "name": "Information Resource",
+                    "nodegroup_id": null,
+                    "nodeid": "d1d84496-1b91-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+                    "parentproperty": "",
                     "sortorder": 0
                 },
                 {
@@ -2708,29 +2700,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "graphid": [
-                            "876ad358-1ac2-11ea-8211-acde48001122",
-                            "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b"
-                        ]
-                    },
-                    "datatype": "resource-instance-list",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Creator",
-                    "nodegroup_id": "47160368-1b98-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "b46cb0cc-415c-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
-                    "sortorder": 0
-                },
-                {
                     "config": null,
                     "datatype": "string",
                     "description": null,
@@ -2977,42 +2946,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
-                    "datatype": "semantic",
-                    "description": "",
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": true,
-                    "name": "Information Resource",
-                    "nodegroup_id": null,
-                    "nodeid": "d1d84496-1b91-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
-                    "parentproperty": "",
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "semantic",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Publishers",
-                    "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "484892e3-1b98-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
-                    "sortorder": 0
-                },
-                {
                     "config": {
                         "rdmCollection": "00000000-0000-0000-0000-000000000005"
                     },
@@ -3106,28 +3039,6 @@
                 },
                 {
                     "config": {
-                        "graphid": [
-                            "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b"
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Archaeological Zones",
-                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
-                    "nodeid": "d33eaebe-6a11-11ea-a89d-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "rdmCollection": "00000000-0000-0000-0000-000000000005"
                     },
                     "datatype": "concept",
@@ -3202,28 +3113,6 @@
                 },
                 {
                     "config": {
-                        "graphid": [
-                            "d1d84497-1b91-11ea-b9b7-027f24e6fd6b"
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Information Object Resources",
-                    "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
-                    "nodeid": "d36672f2-6ac3-11ea-b559-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "rdmCollection": "00000000-0000-0000-0000-000000000005"
                     },
                     "datatype": "concept",
@@ -3239,28 +3128,6 @@
                     "nodegroup_id": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
                     "nodeid": "2bffeca0-6ae0-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "https://linked.art/ns/terms/Relationship",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "graphid": [
-                            "e82df82c-1adc-11ea-8211-acde48001122"
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Historic Resources",
-                    "nodegroup_id": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
                     "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
                     "sortorder": 0
                 },
@@ -3317,6 +3184,167 @@
                     "ontologyclass": "http://www.w3.org/2001/XMLSchema#string",
                     "parentproperty": "http://www.w3.org/2000/01/rdf-schema#label",
                     "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Inventory Resources",
+                    "nodegroup_id": "f891ab50-6ac3-11ea-b559-acde48001122",
+                    "nodeid": "f891ab50-6ac3-11ea-b559-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "12581535-3a08-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Master Plan Zones",
+                    "nodegroup_id": "867aa0b6-6ac4-11ea-b559-acde48001122",
+                    "nodeid": "867aa0b6-6ac4-11ea-b559-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "876ad358-1ac2-11ea-8211-acde48001122",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            },
+                            {
+                                "graphid": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance-list",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Creator",
+                    "nodegroup_id": "47160368-1b98-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "b46cb0cc-415c-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Archaeological Zones",
+                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
+                    "nodeid": "d33eaebe-6a11-11ea-a89d-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Information Object Resources",
+                    "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
+                    "nodeid": "d36672f2-6ac3-11ea-b559-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Historic Resources",
+                    "nodegroup_id": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
@@ -3344,11 +3372,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
-        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
-        "os": "Linux",
-        "os version": "4.15.0-1051-aws"
-    }
+    ]
 }

@@ -75,7 +75,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "9d990efe-1add-11ea-8211-acde48001122",
                     "sortorder": 3,
@@ -120,7 +120,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Non-Contributing Resources",
                     "nodegroup_id": "c1a491fe-1adf-11ea-8211-acde48001122",
                     "sortorder": 5,
@@ -146,7 +146,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Administrative TimeSpan",
                     "nodegroup_id": "effd39fe-1add-11ea-8211-acde48001122",
                     "sortorder": 6,
@@ -172,7 +172,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Designations",
                     "nodegroup_id": "4662ea92-1add-11ea-8211-acde48001122",
                     "sortorder": 1,
@@ -224,7 +224,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Period of Significance TimeSpan",
                     "nodegroup_id": "b7304a3e-1ade-11ea-8211-acde48001122",
                     "sortorder": 9,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Names",
                     "nodegroup_id": "d18a7d25-3bd5-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Area of Significance",
                     "nodegroup_id": "7db3cabe-1adf-11ea-8211-acde48001122",
                     "sortorder": 11,
@@ -295,7 +295,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Status",
                     "nodegroup_id": "858a5b5a-1ade-11ea-8211-acde48001122",
                     "sortorder": 8,
@@ -321,7 +321,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "faa3703d-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -359,7 +359,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Contributing Resources, Status, and Significance",
                     "nodegroup_id": "b3c22cae-1adf-11ea-8211-acde48001122",
                     "sortorder": 4,
@@ -1462,12 +1462,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
-                    "id": "7a54dafe-6ae2-11ea-b50d-acde48001122"
+                    "id": "95352cdc-d100-11ea-898e-acde48001122"
                 }
             ],
             "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
             "iconclass": "fa fa-map-marker",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1730,28 +1730,6 @@
                     "nodeid": "52dcfa1a-1add-11ea-8211-acde48001122",
                     "ontologyclass": "http://www.w3.org/2001/XMLSchema#string",
                     "parentproperty": "http://www.w3.org/2000/01/rdf-schema#label",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "graphid": null,
-                        "nodeid": null,
-                        "property": null
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Resource",
-                    "nodegroup_id": "52dcf56a-1add-11ea-8211-acde48001122",
-                    "nodeid": "52dcfaf6-1add-11ea-8211-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
                     "sortorder": 0
                 },
                 {
@@ -2482,6 +2460,26 @@
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
                     "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": []
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Resource",
+                    "nodegroup_id": "52dcf56a-1add-11ea-8211-acde48001122",
+                    "nodeid": "52dcfaf6-1add-11ea-8211-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
@@ -2509,11 +2507,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
-    }
+    ]
 }

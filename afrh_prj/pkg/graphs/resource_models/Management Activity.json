@@ -5,6 +5,32 @@
             "cards": [
                 {
                     "active": true,
+                    "cardid": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "752bdc21-b625-43c6-83e0-78d6c06f0499",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Work Order",
+                    "nodegroup_id": "b5c7a463-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 10,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "430d0344-77a0-11ea-8977-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -628,32 +654,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "752bdc21-b625-43c6-83e0-78d6c06f0499",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Work Order",
-                    "nodegroup_id": "b5c7a463-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 10,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "9964d270-72c4-11ea-a7fa-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -922,7 +922,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Map Location",
                     "nodegroup_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -930,6 +930,37 @@
                 }
             ],
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Action Agent Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd86-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Action Agent Type",
+                    "node_id": "6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Action Agent",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6da8cd85-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Action Agent",
+                    "node_id": "6da8cd28-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
                 {
                     "card_id": "430d0344-77a0-11ea-8977-acde48001122",
                     "config": {
@@ -2096,37 +2127,6 @@
                     "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
-                },
-                {
-                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Action Agent Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd86-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Action Agent Type",
-                    "node_id": "6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Action Agent",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6da8cd85-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Action Agent",
-                    "node_id": "6da8cd28-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "6da8cd27-3c8a-11ea-b9b7-027f24e6fd6b",
@@ -3387,7 +3387,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "id": "d1f0adae-b1b1-11ea-9630-82c28f26b400"
+                    "id": "97251a34-d100-11ea-898e-acde48001122"
                 }
             ],
             "graphid": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
@@ -3485,14 +3485,14 @@
                 {
                     "cardinality": "n",
                     "legacygroupid": null,
-                    "nodegroupid": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "parentnodegroup_id": null
+                    "nodegroupid": "6da8cd1c-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "parentnodegroup_id": "6da8cd01-3c8a-11ea-b9b7-027f24e6fd6b"
                 },
                 {
                     "cardinality": "n",
                     "legacygroupid": null,
-                    "nodegroupid": "6da8cd1c-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "parentnodegroup_id": "6da8cd01-3c8a-11ea-b9b7-027f24e6fd6b"
+                    "nodegroupid": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "parentnodegroup_id": null
                 },
                 {
                     "cardinality": "n",
@@ -4942,29 +4942,6 @@
                 },
                 {
                     "config": {
-                        "graphid": [
-                            "29f3613d-72b9-11ea-b9b7-027f24e6fd6b"
-                        ],
-                        "graphs": []
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related ARPA Review Resources",
-                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "nodeid": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P117i_includes",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "rdmCollection": "00000000-0000-0000-0000-000000000005"
                     },
                     "datatype": "concept",
@@ -6002,6 +5979,32 @@
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P137i_is_exemplified_by",
                     "sortorder": 0
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "29f3613d-72b9-11ea-b9b7-027f24e6fd6b",
+                                "inverseOntologyProperty": "",
+                                "ontologyProperty": ""
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related ARPA Review Resources",
+                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "nodeid": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P117i_includes",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
@@ -6029,11 +6032,5 @@
             "template_id": "50000000-0000-0000-0000-000000000002",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "b673efd5c 2020-06-18 10:38:01 -0700",
-        "os": "Darwin",
-        "os version": "19.5.0"
-    }
+    ]
 }
