@@ -1,0 +1,10 @@
+{
+    "pluginid": "d4990030-d9df-6792-d49c-ge574e989g2g",
+    "name": "Communication",
+    "icon": "fa fa-address-book",
+    "component": "views/components/plugins/communication-workflow",
+    "componentname": "communication-workflow",
+    "config": {"show":true},
+    "slug": "communication-workflow",
+    "sortorder": 0
+}
