@@ -506,11 +506,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "67e2c38bd 2020-07-29 17:18:19 -0700",
-        "os": "Darwin",
-        "os version": "18.7.0"
-    }
+    ]
 }
