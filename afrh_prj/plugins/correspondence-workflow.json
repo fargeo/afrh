@@ -1,0 +1,10 @@
+{
+    "pluginid": "e5001141-e0eg-7803-e50d-af685f090a3a",
+    "name": "Correspondence",
+    "icon": "fa fa-file",
+    "component": "views/components/plugins/correspondence-workflow",
+    "componentname": "correspondence-workflow",
+    "config": {"show":true},
+    "slug": "correspondence-workflow",
+    "sortorder": 0
+}
