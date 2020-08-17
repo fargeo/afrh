@@ -169,6 +169,22 @@
             ],
             "cards_x_nodes_x_widgets": [
                 {
+                    "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Spatial Location Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "c7121256-46c3-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Location Notes",
+                    "node_id": "c7121255-46c3-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
                     "card_id": "2b84d13e-1acb-11ea-8211-acde48001122",
                     "config": {
                         "defaultValue": "",
@@ -308,22 +324,6 @@
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Spatial Location Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "c7121256-46c3-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Location Notes",
-                    "node_id": "c7121255-46c3-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
                     "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
@@ -738,7 +738,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "f3ab0a3a-1aca-11ea-8211-acde48001122",
-                    "id": "9e90672f-6ada-11ea-b9b7-027f24e6fd6b"
+                    "id": "c240e940-d8f4-11ea-9c16-784f435179ea"
                 }
             ],
             "graphid": "f3ab0a3a-1aca-11ea-8211-acde48001122",
@@ -906,7 +906,8 @@
                     "config": {
                         "graphid": [
                             "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b"
-                        ]
+                        ],
+                        "graphs": []
                     },
                     "datatype": "resource-instance",
                     "description": null,
@@ -1266,11 +1267,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
-        "git hash": "018ff0093 2020-03-20 10:59:36 -0700",
-        "os": "Linux",
-        "os version": "4.15.0-1051-aws"
-    }
+    ]
 }

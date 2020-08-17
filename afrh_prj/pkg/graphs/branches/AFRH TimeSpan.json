@@ -123,6 +123,15 @@
                 {
                     "description": null,
                     "domainnode_id": "7f5f2aae-1aba-11ea-a266-acde48001122",
+                    "edgeid": "7f5fe8ea-1aba-11ea-a266-acde48001122",
+                    "graph_id": "7f5f232e-1aba-11ea-a266-acde48001122",
+                    "name": null,
+                    "ontologyproperty": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "rangenode_id": "7f5f3d64-1aba-11ea-a266-acde48001122"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "7f5f2aae-1aba-11ea-a266-acde48001122",
                     "edgeid": "7f5feb2e-1aba-11ea-a266-acde48001122",
                     "graph_id": "7f5f232e-1aba-11ea-a266-acde48001122",
                     "name": null,
@@ -146,15 +155,6 @@
                     "name": null,
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end",
                     "rangenode_id": "7f5f383c-1aba-11ea-a266-acde48001122"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "7f5f2aae-1aba-11ea-a266-acde48001122",
-                    "edgeid": "7f5fe8ea-1aba-11ea-a266-acde48001122",
-                    "graph_id": "7f5f232e-1aba-11ea-a266-acde48001122",
-                    "name": null,
-                    "ontologyproperty": "http://www.w3.org/2000/01/rdf-schema#label",
-                    "rangenode_id": "7f5f3d64-1aba-11ea-a266-acde48001122"
                 },
                 {
                     "description": null,
@@ -321,11 +321,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 (Ubuntu 12.1-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit",
-        "git hash": "4746648d1 2019-12-09 13:12:38 -0800",
-        "os": "Linux",
-        "os version": "4.15.0-1051-aws"
-    }
+    ]
 }

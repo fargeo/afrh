@@ -180,6 +180,22 @@
                 {
                     "card_id": "158e5055-72ba-11ea-b9b7-027f24e6fd6b",
                     "config": {
+                        "defaultValue": "",
+                        "label": "ARPA Discovery Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "158e505e-72ba-11ea-b9b7-027f24e6fd6b",
+                    "label": "ARPA Discovery Notes",
+                    "node_id": "158e5059-72ba-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "158e5055-72ba-11ea-b9b7-027f24e6fd6b",
+                    "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
                         "label": "ARPA Discovery Documentation Date",
@@ -461,22 +477,6 @@
                     "sortorder": 3,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "158e5055-72ba-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "ARPA Discovery Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "158e505e-72ba-11ea-b9b7-027f24e6fd6b",
-                    "label": "ARPA Discovery Notes",
-                    "node_id": "158e5059-72ba-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
                     "card_id": "158e5055-72ba-11ea-b9b7-027f24e6fd6b",
@@ -1435,11 +1435,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "b2fae37ac 2020-03-25 13:02:05 -0700",
-        "os": "Darwin",
-        "os version": "19.4.0"
-    }
+    ]
 }

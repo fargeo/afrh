@@ -75,7 +75,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "9d990efe-1add-11ea-8211-acde48001122",
                     "sortorder": 3,
@@ -120,7 +120,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Non-Contributing Resources",
                     "nodegroup_id": "c1a491fe-1adf-11ea-8211-acde48001122",
                     "sortorder": 5,
@@ -146,7 +146,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Administrative TimeSpan",
                     "nodegroup_id": "effd39fe-1add-11ea-8211-acde48001122",
                     "sortorder": 6,
@@ -172,7 +172,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Designations",
                     "nodegroup_id": "4662ea92-1add-11ea-8211-acde48001122",
                     "sortorder": 1,
@@ -224,7 +224,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Period of Significance TimeSpan",
                     "nodegroup_id": "b7304a3e-1ade-11ea-8211-acde48001122",
                     "sortorder": 9,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Names",
                     "nodegroup_id": "d18a7d25-3bd5-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Area of Significance",
                     "nodegroup_id": "7db3cabe-1adf-11ea-8211-acde48001122",
                     "sortorder": 11,
@@ -295,7 +295,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Status",
                     "nodegroup_id": "858a5b5a-1ade-11ea-8211-acde48001122",
                     "sortorder": 8,
@@ -321,7 +321,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spatial Location",
                     "nodegroup_id": "faa3703d-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -359,7 +359,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Contributing Resources, Status, and Significance",
                     "nodegroup_id": "b3c22cae-1adf-11ea-8211-acde48001122",
                     "sortorder": 4,
@@ -1462,12 +1462,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
-                    "id": "7a54dafe-6ae2-11ea-b50d-acde48001122"
+                    "id": "b34987d0-d8f4-11ea-9c16-784f435179ea"
                 }
             ],
             "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
             "iconclass": "fa fa-map-marker",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1735,6 +1735,7 @@
                 {
                     "config": {
                         "graphid": null,
+                        "graphs": [],
                         "nodeid": null,
                         "property": null
                     },
@@ -2509,11 +2510,5 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ],
-    "metadata": {
-        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "e035cc824 2020-03-18 17:32:24 -0700",
-        "os": "Darwin",
-        "os version": "19.3.0"
-    }
+    ]
 }
