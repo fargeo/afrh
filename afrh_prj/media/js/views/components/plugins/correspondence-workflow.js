@@ -16,7 +16,7 @@ define([
                     component: 'views/components/workflows/select-resource-step',
                     componentname: 'select-resource-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '',
+                    nodegroupid: "086248f4-e0c7-11ea-8120-784f435179ea",
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -31,7 +31,7 @@ define([
                     component: 'views/components/workflows/correspondence-final-step',
                     componentname: 'correspondence-final-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: 'cde3e818-d68f-11ea-af3b-784f435179ea',
+                    nodegroupid: "2541f898-e0c7-11ea-8120-784f435179ea",
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -42,7 +42,7 @@ define([
             ];
 
             Workflow.apply(this, [params]);
-            this.quitUrl = arches.urls.plugin('init-workflow');
+            // this.quitUrl = arches.urls.plugin('init-workflow');
             self.getJSON('correspondence-workflow');
 
             self.activeStep.subscribe(this.updateState);
