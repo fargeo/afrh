@@ -1,4 +1,10 @@
-<rdf:RDF>
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:arches="http://localhost:8000/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  >
   <skos:Collection rdf:about="http://localhost:8000/7f1d3720-3a7a-4ea3-bd3b-6bb667b28846">
   <skos:member>
   <skos:Concept rdf:about="http://localhost:8000/f4a0378c-20a8-41c0-b034-8a6d8132d071"/>
