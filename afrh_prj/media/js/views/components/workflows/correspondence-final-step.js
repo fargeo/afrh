@@ -119,6 +119,7 @@ define([
 
         var createDocxTileOnLoad = self.tile.subscribe(function(val) {
             if(val) {
+                params.resourceid(val.resourceinstance_id);
                 self.retrieveFile(val);
                 createDocxTileOnLoad.dispose();
             }
