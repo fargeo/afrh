@@ -27,35 +27,27 @@ define([
         this.namelabel = params.namelabel;
         this.resValue.subscribe(function(val){
             if (ko.unwrap(self.tile)) {
-                self.tile().resourceinstance_id = ko.unwrap(val);
+                self.tile().resourceinstance_id = ko.unwrap(val[0].resourceId);
             }
-            params.resourceid(ko.unwrap(val));
+            params.resourceid(ko.unwrap(val[0].resourceId));
         }, this);
 
-        this.card.subscribe(function(val){ console.log(val); if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
-        this.tile.subscribe(function(val){ console.log(val); if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
+        this.card.subscribe(function(val){ if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
+        this.tile.subscribe(function(val){ if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
         params.tile = self.tile;
 
-        // this.setStateProperties = function(){
-        //     params.workflow.state.steps[params._index] = params.getStateProperties();
-        //     this.disableResourceSelection(true);
-        // };
+        self.onSaveSuccess = function(tiles) {
+            var tile;
+            if (tiles.length > 0 || typeof tiles == 'object') {
+                tile = tiles[0] || tiles;
+            }
+            self.setStateProperties();
+            if (params.workflow) {
+                params.workflow.updateUrl();
+            }
+            if (self.completeOnSave === true) { self.complete(true); }
+        };
 
-        // params.getStateProperties = function(){
-        //     var wastebin = !!(ko.unwrap(params.wastebin)) ? koMapping.toJS(params.wastebin) : undefined;
-        //     var tileid = !!(ko.unwrap(params.tile)) ? ko.unwrap(params.tile().tileid): undefined;
-        //     var tile = !!(ko.unwrap(params.tile)) ? koMapping.toJS(params.tile().data) : undefined;
-        //     var completeTile = !!(ko.unwrap(params.tile)) ? ko.unwrap(params.tile).getData() : undefined;
-        //     if (wastebin && ko.unwrap(wastebin.hasOwnProperty('tile'))) {
-        //         wastebin.tile = completeTile;
-        //     }
-        //     return {
-        //         resourceid: ko.unwrap(params.resourceid),
-        //         tile: tile,
-        //         tileid: tileid,
-        //         wastebin: wastebin
-        //     };
-        // };
     }
 
     ko.components.register('select-resource-step', {
