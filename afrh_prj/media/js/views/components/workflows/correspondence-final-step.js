@@ -14,6 +14,9 @@ define([
         var self = this;
         self.loading(true);
         params.tile = self.tile;
+        this.letterFileNodeId = "2541f898-e0c7-11ea-8120-784f435179ea";
+        this.letterTypeNodegroupId = "086248f4-e0c7-11ea-8120-784f435179ea";
+        this.letterTypeNodeId = "3cde0f6e-e0c7-11ea-8120-784f435179ea";
         this.urls = arches.urls;
         this.resourceid = params.resourceid();
         this.report = ko.observable();
@@ -27,18 +30,17 @@ define([
         this.getJSON = function() {
             $.ajax({
                 type: "GET",
-                url: arches.urls.plugin('init-workflow'),
+                // url: arches.urls.plugin('init-workflow'),
                 data: {
                     "json":true
                 },
                 context: self,
                 success: function(data){
-                    // console.log(data);
                     self.workflowJSON(data);
                 },
                 error: function(response) {
                     if(response.statusText !== 'abort'){
-                        this.viewModel.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
+                        self.viewModel.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
                     }
                 }
             });
@@ -46,35 +48,25 @@ define([
         };
         this.getJSON();
 
-        this.workflowJSON.subscribe(function(val){
-            if(val) {
-                self.workflows(val['config']['workflows'].map(function(wf){
-                    wf.url = arches.urls.plugin(wf.slug);
-                    return wf;
-                }, this));
-            }
-        });
+        // this.workflowJSON.subscribe(function(val){
+        //     if(val) {
+        //         self.workflows(val['config']['workflows'].map(function(wf){
+        //             wf.url = arches.urls.plugin(wf.slug);
+        //             return wf;
+        //         }, this));
+        //     }
+        // });
         
         self.requirements = params.requirements;
         params.tile = self.tile;
-        this.letterFileNodeId = "cde3ec46-d68f-11ea-af3b-784f435179ea";
-        this.letterTypeNodegroupId = "cde3e818-d68f-11ea-af3b-784f435179ea";
-        this.letterTypeNodeId = "cde3edb8-d68f-11ea-af3b-784f435179ea";
         this.dataURL = ko.observable(false);
-
-        params.stateProperties = function(){
-            return {
-                resourceid: ko.unwrap(params.resourceid),
-                tile: !!(params.tile) ? koMapping.toJS(params.tile().data) : undefined,
-                tileid: !!(params.tile) ? ko.unwrap(params.tile().tileid): undefined
-            };
-        };
 
         this.retrieveFile = function(tile) {
             var letterTypeTiles = self.getTiles(self.letterTypeNodegroupId);
             //note that the statement below assumes the last index of this array is the tile associated with the 
             //preceding step in the workflow
-            var templateId = letterTypeTiles[letterTypeTiles.length - 1].data[self.letterTypeNodeId]();
+            // var templateId = letterTypeTiles[letterTypeTiles.length - 1].data[self.letterTypeNodeId]();
+            var templateId = '';
             $.ajax({
                 type: "POST",
                 url: arches.urls.root + 'filetemplate',
@@ -125,16 +117,16 @@ define([
             }
         });
 
-        self.onSaveSuccess = function(tiles) {
-            var tile;
-            if (tiles.length > 0 || typeof tiles == 'object') {
-                tile = tiles[0] || tiles;
-                params.resourceid(tile.resourceinstance_id);
-                params.tileid(tile.tileid);
-                self.resourceId(tile.resourceinstance_id);
-            }
+        // self.onSaveSuccess = function(tiles) {
+        //     var tile;
+        //     if (tiles.length > 0 || typeof tiles == 'object') {
+        //         tile = tiles[0] || tiles;
+        //         // params.resourceid(tile.resourceinstance_id);
+        //         params.tileid(tile.tileid);
+        //         // self.resourceId(tile.resourceinstance_id);
+        //     }
             // if (self.completeOnSave === true) { self.complete(true); }
-        };
+        // };
     }
 
     return ko.components.register('correspondence-final-step', {
