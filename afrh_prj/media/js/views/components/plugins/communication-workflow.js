@@ -17,7 +17,7 @@ define([
                     component: 'views/components/workflows/select-resource-step',
                     componentname: 'select-resource-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '00c9ed68-d8fc-11ea-8dac-784f435179ea',
+                    nodegroupid: 'b8c57f42-e115-11ea-b3e5-784f435179ea',
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -28,12 +28,25 @@ define([
                     wastebin: {tile: null, description: 'a communication instance'}
                 },
                 {
+                    title: 'Dates',
+                    description: 'Date of Communication',
+                    component: 'views/components/workflows/new-tile-step',
+                    componentname: 'new-tile-step',
+                    graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
+                    nodegroupid: '9ecb3658-e116-11ea-b3e5-784f435179ea',
+                    resourceid: null,
+                    tileid: null,
+                    parenttileid: null,
+                    required: false,
+                    icon: 'fa-calendar'
+                },
+                {
                     title: 'Notes',
                     description: ' Meeting notes',
                     component: 'views/components/workflows/new-tile-step',
                     componentname: 'new-tile-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '00ca01a4-d8fc-11ea-8dac-784f435179ea',
+                    nodegroupid: '0dc5a6d4-e116-11ea-b3e5-784f435179ea',
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -46,7 +59,7 @@ define([
                     component: 'views/components/workflows/new-tile-step',
                     componentname: 'new-tile-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '00c9f0e2-d8fc-11ea-8dac-784f435179ea',
+                    nodegroupid: 'd218a19e-e116-11ea-b3e5-784f435179ea',
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -59,7 +72,7 @@ define([
                     component: 'views/components/workflows/new-tile-step',
                     componentname: 'new-tile-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '00c9fa1a-d8fc-11ea-8dac-784f435179ea',
+                    nodegroupid: 'b5a46b9c-e116-11ea-b3e5-784f435179ea',
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -72,7 +85,7 @@ define([
                     component: 'views/components/workflows/new-tile-step',
                     componentname: 'new-tile-step',
                     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                    nodegroupid: '00c9f4ca-d8fc-11ea-8dac-784f435179ea',
+                    nodegroupid: '11a691ea-e117-11ea-b3e5-784f435179ea',
                     resourceid: null,
                     tileid: null,
                     parenttileid: null,
@@ -93,7 +106,7 @@ define([
             ];
 
             Workflow.apply(this, [params]);
-            this.quitUrl = arches.urls.plugin('init-workflow');
+            // this.quitUrl = arches.urls.plugin('init-workflow');
             self.getJSON('communication-workflow');
 
             self.activeStep.subscribe(this.updateState);
