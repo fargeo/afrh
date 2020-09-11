@@ -32,14 +32,17 @@ BEGIN;
 --         "type": "geojson"
 --     }');
 
+
+-- archaeology-and-historic-and-inventory
 INSERT INTO map_sources(name, source)
-    VALUES ('archaeology-and-historic-and-inventory', '{
+    VALUES ('direct-impacts', '{
         "data": "/geojson?nodeids=b25075f4-46c3-11ea-b9b7-027f24e6fd6b,faa37040-46c3-11ea-b9b7-027f24e6fd6b,87fad7bc-46c4-11ea-b9b7-027f24e6fd6b&include_geojson_link=true",
         "type": "geojson"
     }');
 
+--character-areas-and-master-plans
 INSERT INTO map_sources(name, source)
-VALUES ('character-areas-and-master-plans', '{
+VALUES ('indirect-impacts', '{
     "data": "/geojson?nodeids=c7121254-46c3-11ea-b9b7-027f24e6fd6b,c1033fc2-46d3-11ea-b9b7-027f24e6fd6b&include_geojson_link=true",
     "type": "geojson"
 }');
