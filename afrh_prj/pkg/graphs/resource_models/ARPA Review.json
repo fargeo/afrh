@@ -848,7 +848,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -924,7 +926,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1114,7 +1118,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1132,7 +1138,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1150,7 +1158,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1282,7 +1292,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1300,7 +1312,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1318,7 +1332,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1374,7 +1390,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1435,5 +1453,11 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "os": "Darwin",
+        "os version": "19.5.0"
+    }
 }

@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Information Resources",
                     "nodegroup_id": "76f329c0-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -35,7 +35,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation Quantitative Evaluation",
                     "nodegroup_id": "db6bbf76-3d77-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -61,7 +61,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "AFRH Phase Type",
                     "nodegroup_id": "9058b28b-3bc1-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 5,
@@ -113,7 +113,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation AFRH-W Designation",
                     "nodegroup_id": "20b57492-3d77-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -139,7 +139,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Quantitative Evaluation",
                     "nodegroup_id": "4d452e84-3d78-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -165,7 +165,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Name",
                     "nodegroup_id": "13b82d1b-3bc5-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -191,7 +191,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation Status",
                     "nodegroup_id": "aba02f76-3d76-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -217,7 +217,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Condition Assessments",
                     "nodegroup_id": "802f79cd-3bc4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 12,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation Other Designation",
                     "nodegroup_id": "6695b7d8-3d77-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Styles",
                     "nodegroup_id": "397dcf4e-3bb3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -302,7 +302,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Spatial Location",
                     "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -334,7 +334,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Building Number",
                     "nodegroup_id": "df42a922-5283-11ea-8789-acde48001122",
                     "sortorder": null,
@@ -360,7 +360,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Summary",
                     "nodegroup_id": "66f46360-3bc3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -386,7 +386,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Heritage Asset Information",
                     "nodegroup_id": "e3cb1085-3bc1-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 6,
@@ -438,7 +438,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Actor Resources",
                     "nodegroup_id": "9c72c618-689a-11ea-9c7f-acde48001122",
                     "sortorder": null,
@@ -464,7 +464,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Descriptions",
                     "nodegroup_id": "2c5079df-3bb3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -502,7 +502,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Summary TimeSpan",
                     "nodegroup_id": "ed94aeed-3bc4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -547,7 +547,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation",
                     "nodegroup_id": "62c71694-3d75-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 14,
@@ -573,7 +573,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Evaluation Relative Level of Significance",
                     "nodegroup_id": "e22938bc-3d76-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -1574,6 +1574,22 @@
                     "widget_id": "10000000-0000-0000-0000-000000000004"
                 },
                 {
+                    "card_id": "43497845-3bbe-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "External Cross Reference Source",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "4349784c-3bbe-11ea-b9b7-027f24e6fd6b",
+                    "label": "External Cross Reference Source",
+                    "node_id": "43497847-3bbe-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
                     "card_id": "66f46362-3bc3-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": null,
@@ -2474,22 +2490,6 @@
                     "label": "External Cross Reference Number",
                     "node_id": "43497846-3bbe-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "43497845-3bbe-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "External Cross Reference Source",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "4349784c-3bbe-11ea-b9b7-027f24e6fd6b",
-                    "label": "External Cross Reference Source",
-                    "node_id": "43497847-3bbe-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -3868,12 +3868,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                    "id": "b4e29fb4-d8f4-11ea-9c16-784f435179ea"
+                    "id": "fbc00d56-0813-11eb-bfdd-acde48001122"
                 }
             ],
             "graphid": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-book",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -4070,7 +4070,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -4144,7 +4146,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -4410,7 +4414,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -4487,7 +4493,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -4623,7 +4631,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -4775,7 +4785,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5046,7 +5058,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5064,7 +5078,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5158,7 +5174,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5429,7 +5447,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5465,7 +5485,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5559,7 +5581,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5577,7 +5601,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5675,47 +5701,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "addToMap": true,
-                        "advancedStyle": "",
-                        "advancedStyling": false,
-                        "clusterDistance": 20,
-                        "clusterMaxZoom": 5,
-                        "clusterMinPoints": 3,
-                        "fillColor": "rgba(251,15,40,0)",
-                        "haloRadius": 4,
-                        "haloWeight": 4,
-                        "layerActivated": true,
-                        "layerIcon": "",
-                        "layerLegend": "",
-                        "layerName": "",
-                        "lineColor": "rgba(251,15,40,0.7)",
-                        "lineHaloColor": "rgba(251,15,40,0.7)",
-                        "outlineColor": "rgba(251,15,40,0.93)",
-                        "outlineWeight": 2,
-                        "pointColor": "rgba(251,15,40,0.7)",
-                        "pointHaloColor": "rgba(251,15,40,0.7)",
-                        "radius": 2,
-                        "simplification": 0.3,
-                        "weight": 2
-                    },
-                    "datatype": "geojson-feature-collection",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Spatial Coordinates",
-                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "87fad7bc-46c4-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 0
-                },
-                {
                     "config": null,
                     "datatype": "semantic",
                     "description": null,
@@ -5795,7 +5780,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -5813,7 +5800,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -6002,7 +5991,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -6116,6 +6107,47 @@
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by",
                     "sortorder": 0
+                },
+                {
+                    "config": {
+                        "addToMap": false,
+                        "advancedStyle": "",
+                        "advancedStyling": false,
+                        "clusterDistance": 20,
+                        "clusterMaxZoom": 5,
+                        "clusterMinPoints": 3,
+                        "fillColor": "rgba(251,15,40,0)",
+                        "haloRadius": 4,
+                        "haloWeight": 4,
+                        "layerActivated": true,
+                        "layerIcon": "",
+                        "layerLegend": "",
+                        "layerName": "",
+                        "lineColor": "rgba(251,15,40,0.7)",
+                        "lineHaloColor": "rgba(251,15,40,0.7)",
+                        "outlineColor": "rgba(251,15,40,0.93)",
+                        "outlineWeight": 2,
+                        "pointColor": "rgba(251,15,40,0.7)",
+                        "pointHaloColor": "rgba(251,15,40,0.7)",
+                        "radius": 2,
+                        "simplification": 0.3,
+                        "weight": 2
+                    },
+                    "datatype": "geojson-feature-collection",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Spatial Coordinates",
+                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "87fad7bc-46c4-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
@@ -6143,5 +6175,11 @@
             "template_id": "50000000-0000-0000-0000-000000000002",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "os": "Darwin",
+        "os version": "19.5.0"
+    }
 }

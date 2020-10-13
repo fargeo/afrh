@@ -5,30 +5,6 @@
             "cards": [
                 {
                     "active": true,
-                    "cardid": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
-                    "config": {
-                        "selectRelatedSource": "indirect-impacts",
-                        "selectRelatedSourceLayer": "",
-                        "selectSource": "",
-                        "selectSourceLayer": ""
-                    },
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Indirect Impacts",
-                    "nodegroup_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -557,30 +533,6 @@
                     "is_editable": true,
                     "name": "Follow-on_Actions",
                     "nodegroup_id": "d218a19e-e116-11ea-b3e5-784f435179ea",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
-                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
-                    "config": {
-                        "selectRelatedSource": "direct-impacts",
-                        "selectRelatedSourceLayer": "",
-                        "selectSource": "",
-                        "selectSourceLayer": ""
-                    },
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Direct Impacts",
-                    "nodegroup_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
                     "sortorder": null,
                     "visible": true
                 },
@@ -1160,9 +1112,118 @@
                     "nodegroup_id": "6da8cd34-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
                     "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
+                    "config": {
+                        "colorpalette": [
+                            "#A4DB6E",
+                            "#F0C200",
+                            "#fdb462",
+                            "#22ff33",
+                            "#D29EFF"
+                        ],
+                        "defaultcolor": "#F0C200",
+                        "fillopacity": 0.2,
+                        "hovercolor": "#ff0000",
+                        "linewidth": 2,
+                        "minzoom": 15,
+                        "overviewzoom": 11,
+                        "pointradius": 4,
+                        "selectRelatedSource": "indirect-impacts",
+                        "selectRelatedSourceLayer": "",
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectioncolor": "#427AFF",
+                        "strokecolor": "#fff",
+                        "strokelinewidth": 4,
+                        "strokepointopacity": 1,
+                        "strokepointradius": 6
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                            "constraintid": "bba9278d-b978-42cc-9a4a-469cbd6bc058",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Indirect Impacts",
+                    "nodegroup_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
+                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
+                    "config": {
+                        "colorpalette": [
+                            "#A4DB6E",
+                            "#F0C200",
+                            "#fdb462",
+                            "#22ff33",
+                            "#D29EFF"
+                        ],
+                        "defaultcolor": "#F0C200",
+                        "fillopacity": 0.2,
+                        "hovercolor": "#ff0000",
+                        "linewidth": 2,
+                        "minzoom": 15,
+                        "overviewzoom": 11,
+                        "pointradius": 4,
+                        "selectRelatedSource": "direct-impacts",
+                        "selectRelatedSourceLayer": "",
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectioncolor": "#427AFF",
+                        "strokecolor": "#fff",
+                        "strokelinewidth": 4,
+                        "strokepointopacity": 1,
+                        "strokepointradius": 6
+                    },
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Direct Impacts",
+                    "nodegroup_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true
                 }
             ],
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Project Number",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "365e528f-3d70-11ea-b9b7-027f24e6fd6b",
+                    "label": "Project Number",
+                    "node_id": "0ad041aa-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
                 {
                     "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
                     "config": {
@@ -1222,51 +1283,6 @@
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
                 },
                 {
-                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": 0,
-                        "centerX": 0,
-                        "centerY": 0,
-                        "defaultValue": "",
-                        "defaultValueType": "",
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Indirect Impact Location",
-                        "maxZoom": 20,
-                        "minZoom": 0,
-                        "overlayConfigs": [],
-                        "overlayOpacity": 0,
-                        "pitch": 0,
-                        "rerender": true,
-                        "zoom": 0
-                    },
-                    "id": "79b569e6-f47c-11ea-a92a-a683e74f6c3a",
-                    "label": "Indirect Impact Location",
-                    "node_id": "88b36b84-f47a-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
                     "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
@@ -1309,22 +1325,6 @@
                     "id": "365e5291-3d70-11ea-b9b7-027f24e6fd6b",
                     "label": "Map File Number",
                     "node_id": "44865646-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Project Number",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "365e528f-3d70-11ea-b9b7-027f24e6fd6b",
-                    "label": "Project Number",
-                    "node_id": "0ad041aa-3cd9-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
@@ -1475,19 +1475,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "label": "Indirect Impacts",
-                        "placeholder": ""
-                    },
-                    "id": "31683ada-f47a-11ea-a92a-a683e74f6c3a",
-                    "label": "Indirect Impacts",
-                    "node_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
                 },
                 {
                     "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
@@ -2630,6 +2617,64 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": -77.01255423806342,
+                        "centerY": 38.937774865817794,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Indirect Impact Location",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "79b569e6-f47c-11ea-a92a-a683e74f6c3a",
+                    "label": "Indirect Impact Location",
+                    "node_id": "88b36b84-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "label": "Indirect Impacts",
+                        "placeholder": ""
+                    },
+                    "id": "31683ada-f47a-11ea-a92a-a683e74f6c3a",
+                    "label": "Indirect Impacts",
+                    "node_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
                 }
             ],
             "color": null,
@@ -3147,15 +3192,6 @@
                     "name": null,
                     "ontologyproperty": "http://www.w3.org/2000/01/rdf-schema#label",
                     "rangenode_id": "6aa1dda8-3d6c-11ea-b9b7-027f24e6fd6b"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "6da8cd40-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "edgeid": "f36bb81a-f479-11ea-a92a-a683e74f6c3a",
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "name": null,
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during",
-                    "rangenode_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a"
                 },
                 {
                     "description": null,
@@ -3912,6 +3948,15 @@
                     "name": null,
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
                     "rangenode_id": "44865646-3cd9-11ea-b9b7-027f24e6fd6b"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "6da8cd40-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "edgeid": "f36bb81a-f479-11ea-a92a-a683e74f6c3a",
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "name": null,
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during",
+                    "rangenode_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a"
                 }
             ],
             "functions_x_graphs": [
@@ -3933,7 +3978,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "id": "ffabd2e8-f476-11ea-ab4d-a683e74f6c3a"
+                    "id": "fdc4720e-0813-11eb-bfdd-acde48001122"
                 }
             ],
             "graphid": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
@@ -7047,7 +7092,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "2c314e6e0 2020-09-11 11:39:02 -0700",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
         "os": "Darwin",
         "os version": "19.5.0"
     }

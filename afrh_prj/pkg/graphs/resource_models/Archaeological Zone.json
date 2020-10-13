@@ -29,7 +29,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Identifications",
                     "nodegroup_id": "1d2ea55d-3a05-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -55,7 +55,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Descriptions",
                     "nodegroup_id": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -88,7 +88,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Spatial Location",
                     "nodegroup_id": "b25075f1-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -121,7 +121,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Area of Probability",
                     "nodegroup_id": "32252d89-39ff-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -562,12 +562,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
-                    "id": "bf0ab4d6-d8f4-11ea-9c16-784f435179ea"
+                    "id": "015c2042-0814-11eb-bfdd-acde48001122"
                 }
             ],
             "graphid": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-institution",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -601,24 +601,6 @@
             "nodes": [
                 {
                     "config": null,
-                    "datatype": "semantic",
-                    "description": "",
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Descriptions",
-                    "nodegroup_id": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
                     "datatype": "string",
                     "description": null,
                     "exportable": false,
@@ -633,6 +615,24 @@
                     "nodeid": "15cfdbcc-3a05-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "http://www.w3.org/2001/XMLSchema#string",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Descriptions",
+                    "nodegroup_id": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "15cfdbc9-3a05-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
                     "sortorder": 0
                 },
                 {
@@ -951,5 +951,11 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "os": "Darwin",
+        "os version": "19.5.0"
+    }
 }
