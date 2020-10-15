@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Descriptions",
                     "nodegroup_id": "5b2c8a9c-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -42,7 +42,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "TimeSpan",
                     "nodegroup_id": "5b2c8aae-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -68,7 +68,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Roles",
                     "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -106,7 +106,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Names",
                     "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -208,7 +208,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Information Resources",
                     "nodegroup_id": "cead7e4a-6a4b-11ea-a42b-acde48001122",
                     "sortorder": null,
@@ -234,7 +234,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "2c8e1cc0-689b-11ea-9c7f-acde48001122",
                     "sortorder": null,
@@ -1179,12 +1179,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
-                    "id": "bd56d19c-d8f4-11ea-9c16-784f435179ea"
+                    "id": "006c3794-0814-11eb-bfdd-acde48001122"
                 }
             ],
             "graphid": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-user",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1315,7 +1315,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1371,7 +1373,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1577,7 +1581,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1729,7 +1735,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1747,7 +1755,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -1821,7 +1831,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2048,7 +2060,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2066,7 +2080,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2150,5 +2166,11 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "os": "Darwin",
+        "os version": "19.5.0"
+    }
 }

@@ -23,7 +23,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "f891ab50-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -49,7 +49,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Historic Resources",
                     "nodegroup_id": "2bffec9d-6ae0-11ea-b9b7-027f24e6fd6b",
                     "sortorder": null,
@@ -68,7 +68,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Name",
                     "nodegroup_id": "5925e077-1baa-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -106,7 +106,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Digital Files",
                     "nodegroup_id": "238d4d43-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 5,
@@ -132,7 +132,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Summary",
                     "nodegroup_id": "5c1de11c-1ba9-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -158,7 +158,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Descriptions",
                     "nodegroup_id": "03d22f73-1b95-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -191,7 +191,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Spatial Location",
                     "nodegroup_id": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -217,7 +217,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Creation",
                     "nodegroup_id": "47160368-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -243,7 +243,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Master Plan Zones",
                     "nodegroup_id": "867aa0b6-6ac4-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -269,7 +269,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Archaeological Zones",
                     "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
                     "sortorder": null,
@@ -295,7 +295,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Publication",
                     "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 2,
@@ -321,7 +321,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Information Object Resources",
                     "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
@@ -329,6 +329,50 @@
                 }
             ],
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "f891ad80-6ac3-11ea-b559-acde48001122",
+                    "config": {
+                        "label": "Related Inventory Resources",
+                        "placeholder": null
+                    },
+                    "id": "f891b1a4-6ac3-11ea-b559-acde48001122",
+                    "label": "Related Inventory Resources",
+                    "node_id": "f891ab50-6ac3-11ea-b559-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "f891ad80-6ac3-11ea-b559-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource Relation Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "3f501054-6ac4-11ea-b559-acde48001122",
+                    "label": "Related Inventory Resource Relation Type",
+                    "node_id": "f891aeb6-6ac3-11ea-b559-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "5925e079-1baa-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Text of Name",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "5925e07d-1baa-11ea-b9b7-027f24e6fd6b",
+                    "label": "Text of Name",
+                    "node_id": "5925e07b-1baa-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
                 {
                     "card_id": "5925e079-1baa-11ea-b9b7-027f24e6fd6b",
                     "config": {
@@ -709,50 +753,6 @@
                     "label": "Related Information Object Notes",
                     "node_id": "d366795a-6ac3-11ea-b559-acde48001122",
                     "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "f891ad80-6ac3-11ea-b559-acde48001122",
-                    "config": {
-                        "label": "Related Inventory Resources",
-                        "placeholder": null
-                    },
-                    "id": "f891b1a4-6ac3-11ea-b559-acde48001122",
-                    "label": "Related Inventory Resources",
-                    "node_id": "f891ab50-6ac3-11ea-b559-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
-                {
-                    "card_id": "f891ad80-6ac3-11ea-b559-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource Relation Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "3f501054-6ac4-11ea-b559-acde48001122",
-                    "label": "Related Inventory Resource Relation Type",
-                    "node_id": "f891aeb6-6ac3-11ea-b559-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "5925e079-1baa-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Text of Name",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "5925e07d-1baa-11ea-b9b7-027f24e6fd6b",
-                    "label": "Text of Name",
-                    "node_id": "5925e07b-1baa-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -1899,12 +1899,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "id": "bf926c1e-d8f4-11ea-9c16-784f435179ea"
+                    "id": "01b022c8-0814-11eb-bfdd-acde48001122"
                 }
             ],
             "graphid": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-file-text-o",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1991,7 +1991,9 @@
             ],
             "nodes": [
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2027,7 +2029,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2083,7 +2087,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2101,7 +2107,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2180,7 +2188,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2198,7 +2208,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2452,7 +2464,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -2922,7 +2936,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3036,7 +3052,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3054,7 +3072,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3151,7 +3171,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3169,7 +3191,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3271,7 +3295,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3289,7 +3315,9 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
                     "datatype": "date",
                     "description": null,
                     "exportable": false,
@@ -3350,5 +3378,11 @@
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
+        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "os": "Darwin",
+        "os version": "19.5.0"
+    }
 }
