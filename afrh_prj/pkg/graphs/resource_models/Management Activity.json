@@ -5,51 +5,6 @@
             "cards": [
                 {
                     "active": true,
-                    "cardid": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "e26bd573-a78f-47be-ab5f-fb233f053d95",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Procedure",
-                    "nodegroup_id": "feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "NCPC/CFA Project Name",
-                    "nodegroup_id": "a6561970-3cd8-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "41879b20-e117-11ea-b3e5-784f435179ea",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -64,6 +19,779 @@
                     "is_editable": true,
                     "name": "Notes",
                     "nodegroup_id": "0dc5a6d4-e116-11ea-b3e5-784f435179ea",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
+                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
+                    "config": {
+                        "basemap": "streets",
+                        "colorpalette": [
+                            "#A4DB6E",
+                            "#F0C200",
+                            "#fdb462",
+                            "#22ff33",
+                            "#D29EFF"
+                        ],
+                        "defaultcolor": "#F0C200",
+                        "fillopacity": 0.2,
+                        "hovercolor": "#ff0000",
+                        "linewidth": 2,
+                        "minzoom": 15,
+                        "overlayConfigs": [],
+                        "overviewzoom": 11,
+                        "pointradius": 4,
+                        "selectRelatedSource": "direct-impacts",
+                        "selectRelatedSourceLayer": "",
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectioncolor": "#427AFF",
+                        "strokecolor": "#fff",
+                        "strokelinewidth": 4,
+                        "strokepointopacity": 1,
+                        "strokepointradius": 6
+                    },
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Direct Impacts",
+                    "nodegroup_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "032c2ea2-1547-4686-bb23-ade9ee81bc9f",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Section 106 Review",
+                    "nodegroup_id": "2cbbe1ec-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 19,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "a7f23f1a-f455-4b15-81a0-e90d11487379",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Approval Condition",
+                    "nodegroup_id": "de011b35-3cad-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 6,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "c53d63b1-cac3-4c71-8917-5db0d5565b5b",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Section 106 Agreement",
+                    "nodegroup_id": "c28e9252-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 4,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "00ed1e74-0271-45cf-8c07-c56539503644",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Review",
+                    "nodegroup_id": "4152d7e5-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 8,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b339aef8-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Archaeologists",
+                    "nodegroup_id": "9560301e-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "430d0344-77a0-11ea-8977-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "430d0344-77a0-11ea-8977-acde48001122",
+                            "constraintid": "b5566854-265b-41f4-85d2-c4929d5176be",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Consultant",
+                    "nodegroup_id": "354df526-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "ab4e3c2d-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "AFRH TimeSpan",
+                    "nodegroup_id": "ab4e3c2b-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": false
+                },
+                {
+                    "active": true,
+                    "cardid": "5b18a99e-72bd-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Unanticipated Discoveries",
+                    "nodegroup_id": "5b18a71e-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "bbdcddf5-d7b0-46fb-812c-151d9f6bfd0b",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Scope of Work",
+                    "nodegroup_id": "5a8422ad-3cac-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 7,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "ed0c054a-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Consulting Party",
+                    "nodegroup_id": "d2cf4002-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Name",
+                    "nodegroup_id": "6da8cd37-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
+                    "config": {
+                        "basemap": "streets",
+                        "colorpalette": [
+                            "#A4DB6E",
+                            "#F0C200",
+                            "#fdb462",
+                            "#22ff33",
+                            "#D29EFF"
+                        ],
+                        "defaultcolor": "#F0C200",
+                        "fillopacity": 0.2,
+                        "hovercolor": "#ff0000",
+                        "linewidth": 2,
+                        "minzoom": 15,
+                        "overlayConfigs": [],
+                        "overviewzoom": 11,
+                        "pointradius": 4,
+                        "selectRelatedSource": "indirect-impacts",
+                        "selectRelatedSourceLayer": "",
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectioncolor": "#427AFF",
+                        "strokecolor": "#fff",
+                        "strokelinewidth": 4,
+                        "strokepointopacity": 1,
+                        "strokepointradius": 6
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                            "constraintid": "bba9278d-b978-42cc-9a4a-469cbd6bc058",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Indirect Impacts",
+                    "nodegroup_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "basemap": "streets",
+                        "centerX": "-77.016389",
+                        "centerY": "38.935",
+                        "overlayConfigs": [],
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": "14"
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "143f715b-f5aa-43c5-b8b0-8dd76432ada7",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "c87ccf5e-279a-4960-aa7b-4c7927679c51",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Map Location",
+                    "nodegroup_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "31c72f0c-72c2-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "DCSHPO",
+                    "nodegroup_id": "250defd0-72c2-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "20b217f4-72c2-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "CFA Contact",
+                    "nodegroup_id": "1679109e-72c2-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b8c10c40-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "AFRH Project Contact",
+                    "nodegroup_id": "6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "NEPA Review",
+                    "nodegroup_id": "6da8cd01-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 16,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "a1f96416-3d6d-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "a1f96416-3d6d-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "658dc029-eb46-45f1-8d8f-fe2885bc343f",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Section 106 Response",
+                    "nodegroup_id": "8aa0adc2-3d6d-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "752bdc21-b625-43c6-83e0-78d6c06f0499",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Work Order",
+                    "nodegroup_id": "b5c7a463-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 10,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "9964d270-72c4-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Unanticipated Discovery Related ARPA Reviews",
+                    "nodegroup_id": "63cf4fa0-72c4-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "61cb7e46-779b-11ea-8977-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "61cb7e46-779b-11ea-8977-acde48001122",
+                            "constraintid": "47cc16d5-2b92-48f1-ab16-58f436fc287c",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Attendee",
+                    "nodegroup_id": "6da8cd41-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Related ARPA Review Resources",
+                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "6da8cd36-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Regulatory Citation Type",
+                    "nodegroup_id": "6da8cd34-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "5a8672d4-99c4-4844-87d6-efc2627eb289",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Current Status",
+                    "nodegroup_id": "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 5,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "ab6f129c-fb91-4d01-9c42-baa681df7cd3",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Building Structure Recommendations",
+                    "nodegroup_id": "91be6428-415f-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "3abb0daa-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Contractors",
+                    "nodegroup_id": "3abb0b8e-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "e6baff3e-e116-11ea-b3e5-784f435179ea",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "e6baff3e-e116-11ea-b3e5-784f435179ea",
+                            "constraintid": "ddee5f6f-832e-4846-9ece-1dbc71ab957b",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Follow-on_Actions",
+                    "nodegroup_id": "d218a19e-e116-11ea-b3e5-784f435179ea",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "354df404-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Consultants",
+                    "nodegroup_id": "354df1de-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "3982e2fa-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Engineers",
+                    "nodegroup_id": "3982e124-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "220386f6-e117-11ea-b3e5-784f435179ea",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Attendees",
+                    "nodegroup_id": "11a691ea-e117-11ea-b3e5-784f435179ea",
+                    "sortorder": null,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "be923928-72c1-11ea-a7fa-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Architects",
+                    "nodegroup_id": "27f126f2-72bf-11ea-a7fa-acde48001122",
                     "sortorder": null,
                     "visible": true
                 },
@@ -116,6 +844,51 @@
                     "name": "Consultations",
                     "nodegroup_id": "6da8cd16-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 9,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "e26bd573-a78f-47be-ab5f-fb233f053d95",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Procedure",
+                    "nodegroup_id": "feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 4,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "NCPC/CFA Project Name",
+                    "nodegroup_id": "a6561970-3cd8-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true
                 },
                 {
@@ -438,866 +1211,9 @@
                     "nodegroup_id": "6da8cd10-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
                     "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "5a8672d4-99c4-4844-87d6-efc2627eb289",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Current Status",
-                    "nodegroup_id": "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 5,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "ab6f129c-fb91-4d01-9c42-baa681df7cd3",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Building Structure Recommendations",
-                    "nodegroup_id": "91be6428-415f-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "3abb0daa-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Contractors",
-                    "nodegroup_id": "3abb0b8e-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "e6baff3e-e116-11ea-b3e5-784f435179ea",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "e6baff3e-e116-11ea-b3e5-784f435179ea",
-                            "constraintid": "ddee5f6f-832e-4846-9ece-1dbc71ab957b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Follow-on_Actions",
-                    "nodegroup_id": "d218a19e-e116-11ea-b3e5-784f435179ea",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "354df404-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Consultants",
-                    "nodegroup_id": "354df1de-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "3982e2fa-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Engineers",
-                    "nodegroup_id": "3982e124-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "220386f6-e117-11ea-b3e5-784f435179ea",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Attendees",
-                    "nodegroup_id": "11a691ea-e117-11ea-b3e5-784f435179ea",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "be923928-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Architects",
-                    "nodegroup_id": "27f126f2-72bf-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "31c72f0c-72c2-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "DCSHPO",
-                    "nodegroup_id": "250defd0-72c2-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "ab4e3c2d-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "AFRH TimeSpan",
-                    "nodegroup_id": "ab4e3c2b-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": false
-                },
-                {
-                    "active": true,
-                    "cardid": "5b18a99e-72bd-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Unanticipated Discoveries",
-                    "nodegroup_id": "5b18a71e-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "bbdcddf5-d7b0-46fb-812c-151d9f6bfd0b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Scope of Work",
-                    "nodegroup_id": "5a8422ad-3cac-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 7,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "ed0c054a-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Consulting Party",
-                    "nodegroup_id": "d2cf4002-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Name",
-                    "nodegroup_id": "6da8cd37-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "032c2ea2-1547-4686-bb23-ade9ee81bc9f",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Section 106 Review",
-                    "nodegroup_id": "2cbbe1ec-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 19,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "a7f23f1a-f455-4b15-81a0-e90d11487379",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Approval Condition",
-                    "nodegroup_id": "de011b35-3cad-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 6,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "c53d63b1-cac3-4c71-8917-5db0d5565b5b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Section 106 Agreement",
-                    "nodegroup_id": "c28e9252-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "00ed1e74-0271-45cf-8c07-c56539503644",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Review",
-                    "nodegroup_id": "4152d7e5-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 8,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "b339aef8-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Archaeologists",
-                    "nodegroup_id": "9560301e-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "430d0344-77a0-11ea-8977-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "430d0344-77a0-11ea-8977-acde48001122",
-                            "constraintid": "b5566854-265b-41f4-85d2-c4929d5176be",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Consultant",
-                    "nodegroup_id": "354df526-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "20b217f4-72c2-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "CFA Contact",
-                    "nodegroup_id": "1679109e-72c2-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "b8c10c40-72c1-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "AFRH Project Contact",
-                    "nodegroup_id": "6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "NEPA Review",
-                    "nodegroup_id": "6da8cd01-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 16,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "a1f96416-3d6d-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "a1f96416-3d6d-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "658dc029-eb46-45f1-8d8f-fe2885bc343f",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Section 106 Response",
-                    "nodegroup_id": "8aa0adc2-3d6d-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "b5c7a465-3c8a-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "752bdc21-b625-43c6-83e0-78d6c06f0499",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Work Order",
-                    "nodegroup_id": "b5c7a463-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 10,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "9964d270-72c4-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Unanticipated Discovery Related ARPA Reviews",
-                    "nodegroup_id": "63cf4fa0-72c4-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "61cb7e46-779b-11ea-8977-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "61cb7e46-779b-11ea-8977-acde48001122",
-                            "constraintid": "47cc16d5-2b92-48f1-ab16-58f436fc287c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Attendee",
-                    "nodegroup_id": "6da8cd41-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "centerX": "-77.016389",
-                        "centerY": "38.935",
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": "14"
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "143f715b-f5aa-43c5-b8b0-8dd76432ada7",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "c87ccf5e-279a-4960-aa7b-4c7927679c51",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Map Location",
-                    "nodegroup_id": "429130d2-6b27-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Related ARPA Review Resources",
-                    "nodegroup_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "6da8cd36-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Regulatory Citation Type",
-                    "nodegroup_id": "6da8cd34-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
-                    "config": {
-                        "colorpalette": [
-                            "#A4DB6E",
-                            "#F0C200",
-                            "#fdb462",
-                            "#22ff33",
-                            "#D29EFF"
-                        ],
-                        "defaultcolor": "#F0C200",
-                        "fillopacity": 0.2,
-                        "hovercolor": "#ff0000",
-                        "linewidth": 2,
-                        "minzoom": 15,
-                        "overviewzoom": 11,
-                        "pointradius": 4,
-                        "selectRelatedSource": "indirect-impacts",
-                        "selectRelatedSourceLayer": "",
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectioncolor": "#427AFF",
-                        "strokecolor": "#fff",
-                        "strokelinewidth": 4,
-                        "strokepointopacity": 1,
-                        "strokepointradius": 6
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                            "constraintid": "bba9278d-b978-42cc-9a4a-469cbd6bc058",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Indirect Impacts",
-                    "nodegroup_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
-                    "component_id": "2d2e0ca3-089c-4f4c-96a5-fb7eb53963bd",
-                    "config": {
-                        "colorpalette": [
-                            "#A4DB6E",
-                            "#F0C200",
-                            "#fdb462",
-                            "#22ff33",
-                            "#D29EFF"
-                        ],
-                        "defaultcolor": "#F0C200",
-                        "fillopacity": 0.2,
-                        "hovercolor": "#ff0000",
-                        "linewidth": 2,
-                        "minzoom": 15,
-                        "overviewzoom": 11,
-                        "pointradius": 4,
-                        "selectRelatedSource": "direct-impacts",
-                        "selectRelatedSourceLayer": "",
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectioncolor": "#427AFF",
-                        "strokecolor": "#fff",
-                        "strokelinewidth": 4,
-                        "strokepointopacity": 1,
-                        "strokepointradius": 6
-                    },
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Direct Impacts",
-                    "nodegroup_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true
                 }
             ],
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Project Number",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "365e528f-3d70-11ea-b9b7-027f24e6fd6b",
-                    "label": "Project Number",
-                    "node_id": "0ad041aa-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": null,
-                        "centerX": -77.01255423806342,
-                        "centerY": 38.937774865817794,
-                        "defaultValue": null,
-                        "defaultValueType": null,
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Direct Impact Location",
-                        "maxZoom": 20,
-                        "minZoom": null,
-                        "overlayConfigs": [],
-                        "overlayOpacity": null,
-                        "pitch": null,
-                        "rerender": true,
-                        "zoom": null
-                    },
-                    "id": "6b91d9e4-f47c-11ea-a92a-a683e74f6c3a",
-                    "label": "Direct Impact Location",
-                    "node_id": "5a824e92-f47a-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "label": "Related Inventory Resources",
-                        "placeholder": null
-                    },
-                    "id": "f9000422-72bd-11ea-a7fa-acde48001122",
-                    "label": "Related Inventory Resources",
-                    "node_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
-                {
-                    "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Procedure Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "feb5cafa-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "label": "Procedure Description",
-                    "node_id": "feb5caf8-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
                 {
                     "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
                     "config": {
@@ -1309,453 +1225,6 @@
                     "id": "feb5caf9-3c8b-11ea-b9b7-027f24e6fd6b",
                     "label": "Procedure Type",
                     "node_id": "feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Map File Number",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "365e5291-3d70-11ea-b9b7-027f24e6fd6b",
-                    "label": "Map File Number",
-                    "node_id": "44865646-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "0865382a-e0c7-11ea-8120-784f435179ea",
-                    "config": {
-                        "defaultValue": "6f307699-c529-4172-bcaa-1b7146269746",
-                        "label": "Letter_Type",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "55acb5ae-e0c7-11ea-8120-784f435179ea",
-                    "label": "Letter_Type",
-                    "node_id": "3cde0f6e-e0c7-11ea-8120-784f435179ea",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Consultation Method",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd89-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Consultation Method",
-                    "node_id": "6da8cd46-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Consultation Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "6da8cd8a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Consultation Date",
-                    "node_id": "6da8cd4c-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Consultation Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6da8cd8b-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Consultation Notes",
-                    "node_id": "6da8cd4d-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "c2a2b4b0-3cd7-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "NCPC or CFA Review",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "c65be866-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "label": "NCPC or CFA Review",
-                    "node_id": "c2a2b4ae-3cd7-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "6da8cd1e-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Documentation Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "6da8cd81-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Documentation Date",
-                    "node_id": "6da8cd49-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "6da8cd1e-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Documentation",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd80-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Documentation",
-                    "node_id": "6da8cd1c-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "0eb4e71a-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "URR Number",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "width": "100%"
-                    },
-                    "id": "13151e10-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "label": "URR Number",
-                    "node_id": "937529ba-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                },
-                {
-                    "card_id": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Documentation Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd8d-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Documentation Type",
-                    "node_id": "6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "label": "Direct Impacts",
-                        "placeholder": ""
-                    },
-                    "id": "58181bc8-f47a-11ea-a92a-a683e74f6c3a",
-                    "label": "Direct Impacts",
-                    "node_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
-                },
-                {
-                    "card_id": "61cb7e46-779b-11ea-8977-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Attendee",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "9b6f116c-779b-11ea-8977-acde48001122",
-                    "label": "Attendee",
-                    "node_id": "6da8cd41-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "ARPA Discovery Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "5b18afb6-72bd-11ea-a7fa-acde48001122",
-                    "label": "ARPA Discovery Date",
-                    "node_id": "5b18ae8a-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "ARPA Discovery Notification Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "5b18af48-72bd-11ea-a7fa-acde48001122",
-                    "label": "ARPA Discovery Notification Date",
-                    "node_id": "5b18ac00-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Scope of Work Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "5a8422b1-3cac-11ea-b9b7-027f24e6fd6b",
-                    "label": "Scope of Work Type",
-                    "node_id": "5a8422ad-3cac-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Scope of Work Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "5a8422b2-3cac-11ea-b9b7-027f24e6fd6b",
-                    "label": "Scope of Work Description",
-                    "node_id": "5a8422b0-3cac-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Type of Name",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd7d-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Type of Name",
-                    "node_id": "6da8cd50-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
-                },
-                {
-                    "card_id": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Text of Name",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6da8cd7c-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Text of Name",
-                    "node_id": "6da8cd51-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Dispute Resolution",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "b92b2850-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "label": "Dispute Resolution",
-                    "node_id": "aa625ace-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Section 106 Determination",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "bba3fe72-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Determination",
-                    "node_id": "7414718a-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "430d0344-77a0-11ea-8977-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Consultant",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "47e29884-77a0-11ea-8977-acde48001122",
-                    "label": "Consultant",
-                    "node_id": "354df526-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Documentation Type Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6da8cd8c-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Documentation Type Notes",
-                    "node_id": "6da8cd47-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "b8c696b6-e115-11ea-b3e5-784f435179ea",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Subject",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "8fc4f9c8-e116-11ea-b3e5-784f435179ea",
-                    "label": "Subject",
-                    "node_id": "ff91a4dc-e115-11ea-b3e5-784f435179ea",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "b8c696b6-e115-11ea-b3e5-784f435179ea",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "8fc5e162-e116-11ea-b3e5-784f435179ea",
-                    "label": "Notes",
-                    "node_id": "0dc5a6d4-e116-11ea-b3e5-784f435179ea",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Action Agent",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6da8cd85-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Action Agent",
-                    "node_id": "6da8cd28-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Action Agent Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd86-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Action Agent Type",
-                    "node_id": "6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Agent",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "4ba8511c-779a-11ea-8977-acde48001122",
-                    "label": "Agent",
-                    "node_id": "b0007bfc-415e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "6da8cd27-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Entity",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd98-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Entity",
-                    "node_id": "6da8cd25-3c8a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
@@ -1777,210 +1246,52 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "6da8cd27-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "card_id": "6da8cd12-3c8a-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
-                        "label": "Entities Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "54d0fd52-72c2-11ea-a7fa-acde48001122",
-                    "label": "Entities Notes",
-                    "node_id": "3d8e2e80-72c2-11ea-a7fa-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "730e76dc-3d6d-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Section 106 Determination of Affect ",
+                        "label": "Milestone Type",
                         "options": [],
                         "placeholder": "Select an option"
                     },
-                    "id": "775f144a-3d6d-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Determination of Affect ",
-                    "node_id": "4cecba48-3d6d-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
+                    "id": "6da8cd82-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Milestone Type",
+                    "node_id": "6da8cd10-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
-                    "card_id": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
+                    "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
-                        "label": "Recommendations",
+                        "label": "Approval Condition Type",
                         "options": [],
                         "placeholder": "Select an option"
                     },
-                    "id": "b0377978-415f-11ea-b9b7-027f24e6fd6b",
-                    "label": "Recommendations",
-                    "node_id": "91be6428-415f-11ea-b9b7-027f24e6fd6b",
+                    "id": "de011b39-3cad-11ea-b9b7-027f24e6fd6b",
+                    "label": "Approval Condition Type",
+                    "node_id": "de011b35-3cad-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
-                    "card_id": "e6baff3e-e116-11ea-b3e5-784f435179ea",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Follow-on_Actions",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "ec002690-e116-11ea-b3e5-784f435179ea",
-                    "label": "Follow-on_Actions",
-                    "node_id": "d218a19e-e116-11ea-b3e5-784f435179ea",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Spatial Location Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "9ae5e3ff-6b27-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Location Notes",
-                    "node_id": "5a8b3886-6b27-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": null,
-                        "centerX": 3,
-                        "centerY": null,
-                        "defaultValue": null,
-                        "defaultValueType": null,
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Spatial Coordinates",
-                        "maxZoom": 20,
-                        "minZoom": null,
-                        "overlayConfigs": [],
-                        "overlayOpacity": null,
-                        "pitch": null,
-                        "rerender": true,
-                        "zoom": null
-                    },
-                    "id": "9ae5e401-6b27-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Coordinates",
-                    "node_id": "4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "Related Inventory Resource From Date",
+                        "label": "Section 106 Agreement Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
                         "viewMode": "days"
                     },
-                    "id": "f90004a4-72bd-11ea-a7fa-acde48001122",
-                    "label": "Related Inventory Resource From Date",
-                    "node_id": "f9000206-72bd-11ea-a7fa-acde48001122",
+                    "id": "f7fd6944-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Agreement Date",
+                    "node_id": "d3cc9bea-3d6e-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource To Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "f90004d6-72bd-11ea-a7fa-acde48001122",
-                    "label": "Related Inventory Resource To Date",
-                    "node_id": "f90002e2-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource Relation Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "f9000468-72bd-11ea-a7fa-acde48001122",
-                    "label": "Related Inventory Resource Relation Type",
-                    "node_id": "f90000f8-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "f9000512-72bd-11ea-a7fa-acde48001122",
-                    "label": "Related Inventory Resource Notes",
-                    "node_id": "f90003b4-72bd-11ea-a7fa-acde48001122",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "354df404-72c1-11ea-a7fa-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Consultant Type",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "6942fbd6-77a0-11ea-8977-acde48001122",
-                    "label": "Consultant Type",
-                    "node_id": "354df620-72c1-11ea-a7fa-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "ab4e3c2d-3c8b-11ea-b9b7-027f24e6fd6b",
@@ -2054,6 +1365,42 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
+                        "label": "ARPA Discovery Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "5b18afb6-72bd-11ea-a7fa-acde48001122",
+                    "label": "ARPA Discovery Date",
+                    "node_id": "5b18ae8a-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "ARPA Discovery Notification Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "5b18af48-72bd-11ea-a7fa-acde48001122",
+                    "label": "ARPA Discovery Notification Date",
+                    "node_id": "5b18ac00-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
                         "label": "ARPA Discovery Documentation Date",
                         "maxDate": false,
                         "minDate": false,
@@ -2066,37 +1413,6 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Current Status Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "83f05a0a-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Current Status Description",
-                    "node_id": "83f05a08-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Current Status Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "83f05a09-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Current Status Type",
-                    "node_id": "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
                     "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
@@ -2115,6 +1431,165 @@
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
+                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Dispute Resolution",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "b92b2850-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "label": "Dispute Resolution",
+                    "node_id": "aa625ace-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Section 106 Determination",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "bba3fe72-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Determination",
+                    "node_id": "7414718a-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Section 106 Justification",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "bba3fe76-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Justification",
+                    "node_id": "6aa1dda8-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "FPO/CRM Confirmation Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "bba3fe74-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "label": "FPO/CRM Confirmation Date",
+                    "node_id": "36787cf8-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Approval Condition Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "de011b3a-3cad-11ea-b9b7-027f24e6fd6b",
+                    "label": "Approval Condition Description",
+                    "node_id": "de011b38-3cad-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Section 106 Agreement Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "f7fd6942-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Agreement Type",
+                    "node_id": "c28e9252-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Section 106 Agreement Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "f7fd6946-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Agreement Notes",
+                    "node_id": "e6da9c50-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Review Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "4152d7ea-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Review Description",
+                    "node_id": "4152d7e8-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Review Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4152d7e9-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Review Type",
+                    "node_id": "4152d7e5-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "430d0344-77a0-11ea-8977-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Consultant",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "47e29884-77a0-11ea-8977-acde48001122",
+                    "label": "Consultant",
+                    "node_id": "354df526-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
                     "card_id": "5b18a99e-72bd-11ea-a7fa-acde48001122",
                     "config": {
                         "defaultValue": "",
@@ -2128,6 +1603,99 @@
                     "sortorder": 3,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Scope of Work Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "5a8422b1-3cac-11ea-b9b7-027f24e6fd6b",
+                    "label": "Scope of Work Type",
+                    "node_id": "5a8422ad-3cac-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "5a8422af-3cac-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Scope of Work Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "5a8422b2-3cac-11ea-b9b7-027f24e6fd6b",
+                    "label": "Scope of Work Description",
+                    "node_id": "5a8422b0-3cac-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Type of Name",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd7d-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Type of Name",
+                    "node_id": "6da8cd50-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                },
+                {
+                    "card_id": "6da8cd39-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Text of Name",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6da8cd7c-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Text of Name",
+                    "node_id": "6da8cd51-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Documentation Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd8d-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Documentation Type",
+                    "node_id": "6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "6da8cd03-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Documentation Type Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6da8cd8c-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Documentation Type Notes",
+                    "node_id": "6da8cd47-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
                     "card_id": "a1f96416-3d6d-11ea-b9b7-027f24e6fd6b",
@@ -2266,6 +1834,163 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
+                    "card_id": "61cb7e46-779b-11ea-8977-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Attendee",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "9b6f116c-779b-11ea-8977-acde48001122",
+                    "label": "Attendee",
+                    "node_id": "6da8cd41-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Spatial Location Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "9ae5e3ff-6b27-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Location Notes",
+                    "node_id": "5a8b3886-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "429130d4-6b27-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": 3,
+                        "centerY": null,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Spatial Coordinates",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "9ae5e401-6b27-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Coordinates",
+                    "node_id": "4d12497f-6b27-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "label": "Related Inventory Resources",
+                        "placeholder": null
+                    },
+                    "id": "f9000422-72bd-11ea-a7fa-acde48001122",
+                    "label": "Related Inventory Resources",
+                    "node_id": "f8fffd38-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource From Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "f90004a4-72bd-11ea-a7fa-acde48001122",
+                    "label": "Related Inventory Resource From Date",
+                    "node_id": "f9000206-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource To Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "f90004d6-72bd-11ea-a7fa-acde48001122",
+                    "label": "Related Inventory Resource To Date",
+                    "node_id": "f90002e2-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource Relation Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "f9000468-72bd-11ea-a7fa-acde48001122",
+                    "label": "Related Inventory Resource Relation Type",
+                    "node_id": "f90000f8-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "f8ffffa4-72bd-11ea-a7fa-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "f9000512-72bd-11ea-a7fa-acde48001122",
+                    "label": "Related Inventory Resource Notes",
+                    "node_id": "f90003b4-72bd-11ea-a7fa-acde48001122",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
                     "card_id": "6da8cd36-3c8a-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
@@ -2295,6 +2020,505 @@
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Current Status Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "83f05a0a-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Current Status Description",
+                    "node_id": "83f05a08-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "83f05a07-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Current Status Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "83f05a09-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "label": "Current Status Type",
+                    "node_id": "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "91be642a-415f-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Recommendations",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "b0377978-415f-11ea-b9b7-027f24e6fd6b",
+                    "label": "Recommendations",
+                    "node_id": "91be6428-415f-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                },
+                {
+                    "card_id": "e6baff3e-e116-11ea-b3e5-784f435179ea",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Follow-on_Actions",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "ec002690-e116-11ea-b3e5-784f435179ea",
+                    "label": "Follow-on_Actions",
+                    "node_id": "d218a19e-e116-11ea-b3e5-784f435179ea",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "354df404-72c1-11ea-a7fa-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Consultant Type",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6942fbd6-77a0-11ea-8977-acde48001122",
+                    "label": "Consultant Type",
+                    "node_id": "354df620-72c1-11ea-a7fa-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": -77.01255423806342,
+                        "centerY": 38.937774865817794,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Indirect Impact Location",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "79b569e6-f47c-11ea-a92a-a683e74f6c3a",
+                    "label": "Indirect Impact Location",
+                    "node_id": "88b36b84-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "label": "Indirect Impacts",
+                        "placeholder": ""
+                    },
+                    "id": "31683ada-f47a-11ea-a92a-a683e74f6c3a",
+                    "label": "Indirect Impacts",
+                    "node_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
+                },
+                {
+                    "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": -77.01255423806342,
+                        "centerY": 38.937774865817794,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Direct Impact Location",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "6b91d9e4-f47c-11ea-a92a-a683e74f6c3a",
+                    "label": "Direct Impact Location",
+                    "node_id": "5a824e92-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "344a823a-f47a-11ea-a92a-a683e74f6c3a",
+                    "config": {
+                        "label": "Direct Impacts",
+                        "placeholder": ""
+                    },
+                    "id": "58181bc8-f47a-11ea-a92a-a683e74f6c3a",
+                    "label": "Direct Impacts",
+                    "node_id": "344a48d8-f47a-11ea-a92a-a683e74f6c3a",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
+                },
+                {
+                    "card_id": "0865382a-e0c7-11ea-8120-784f435179ea",
+                    "config": {
+                        "defaultValue": "6f307699-c529-4172-bcaa-1b7146269746",
+                        "label": "Letter_Type",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "55acb5ae-e0c7-11ea-8120-784f435179ea",
+                    "label": "Letter_Type",
+                    "node_id": "3cde0f6e-e0c7-11ea-8120-784f435179ea",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Consultation Method",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd89-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Consultation Method",
+                    "node_id": "6da8cd46-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Consultation Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "6da8cd8a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Consultation Date",
+                    "node_id": "6da8cd4c-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "6da8cd18-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Consultation Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6da8cd8b-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Consultation Notes",
+                    "node_id": "6da8cd4d-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "feb5caf7-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Procedure Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "feb5cafa-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "label": "Procedure Description",
+                    "node_id": "feb5caf8-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Project Number",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "365e528f-3d70-11ea-b9b7-027f24e6fd6b",
+                    "label": "Project Number",
+                    "node_id": "0ad041aa-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "07a5f580-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Map File Number",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "365e5291-3d70-11ea-b9b7-027f24e6fd6b",
+                    "label": "Map File Number",
+                    "node_id": "44865646-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "c2a2b4b0-3cd7-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "NCPC or CFA Review",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "c65be866-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "label": "NCPC or CFA Review",
+                    "node_id": "c2a2b4ae-3cd7-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "6da8cd1e-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Documentation Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "6da8cd81-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Documentation Date",
+                    "node_id": "6da8cd49-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "6da8cd1e-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Documentation",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd80-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Documentation",
+                    "node_id": "6da8cd1c-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "0eb4e71a-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "URR Number",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "width": "100%"
+                    },
+                    "id": "13151e10-3d6e-11ea-b9b7-027f24e6fd6b",
+                    "label": "URR Number",
+                    "node_id": "937529ba-3d6c-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "b8c696b6-e115-11ea-b3e5-784f435179ea",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Subject",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "8fc4f9c8-e116-11ea-b3e5-784f435179ea",
+                    "label": "Subject",
+                    "node_id": "ff91a4dc-e115-11ea-b3e5-784f435179ea",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b8c696b6-e115-11ea-b3e5-784f435179ea",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "8fc5e162-e116-11ea-b3e5-784f435179ea",
+                    "label": "Notes",
+                    "node_id": "0dc5a6d4-e116-11ea-b3e5-784f435179ea",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Agent",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "4ba8511c-779a-11ea-8977-acde48001122",
+                    "label": "Agent",
+                    "node_id": "b0007bfc-415e-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Action Agent",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "6da8cd85-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Action Agent",
+                    "node_id": "6da8cd28-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "6da8cd2a-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Action Agent Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd86-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Action Agent Type",
+                    "node_id": "6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "6da8cd27-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Entity",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "6da8cd98-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "label": "Entity",
+                    "node_id": "6da8cd25-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "6da8cd27-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Entities Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "54d0fd52-72c2-11ea-a7fa-acde48001122",
+                    "label": "Entities Notes",
+                    "node_id": "3d8e2e80-72c2-11ea-a7fa-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "730e76dc-3d6d-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Section 106 Determination of Affect ",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "775f144a-3d6d-11ea-b9b7-027f24e6fd6b",
+                    "label": "Section 106 Determination of Affect ",
+                    "node_id": "4cecba48-3d6d-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
                     "card_id": "730e76dc-3d6d-11ea-b9b7-027f24e6fd6b",
@@ -2428,21 +2652,6 @@
                     "card_id": "6da8cd12-3c8a-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
-                        "label": "Milestone Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "6da8cd82-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "label": "Milestone Type",
-                    "node_id": "6da8cd10-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "6da8cd12-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
                         "label": "Milestone Notes",
                         "maxLength": null,
                         "placeholder": "Enter text",
@@ -2472,209 +2681,6 @@
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Section 106 Justification",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "bba3fe76-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Justification",
-                    "node_id": "6aa1dda8-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2cbbe1ee-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "FPO/CRM Confirmation Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "bba3fe74-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "label": "FPO/CRM Confirmation Date",
-                    "node_id": "36787cf8-3d6c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Approval Condition Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "de011b3a-3cad-11ea-b9b7-027f24e6fd6b",
-                    "label": "Approval Condition Description",
-                    "node_id": "de011b38-3cad-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "de011b37-3cad-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Approval Condition Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "de011b39-3cad-11ea-b9b7-027f24e6fd6b",
-                    "label": "Approval Condition Type",
-                    "node_id": "de011b35-3cad-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Section 106 Agreement Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "f7fd6944-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Agreement Date",
-                    "node_id": "d3cc9bea-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Section 106 Agreement Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "f7fd6942-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Agreement Type",
-                    "node_id": "c28e9252-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "e358d800-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Section 106 Agreement Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "f7fd6946-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "label": "Section 106 Agreement Notes",
-                    "node_id": "e6da9c50-3d6e-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Review Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "4152d7ea-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Review Description",
-                    "node_id": "4152d7e8-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "4152d7e7-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Review Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4152d7e9-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "label": "Review Type",
-                    "node_id": "4152d7e5-3c8c-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": null,
-                        "centerX": -77.01255423806342,
-                        "centerY": 38.937774865817794,
-                        "defaultValue": null,
-                        "defaultValueType": null,
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Indirect Impact Location",
-                        "maxZoom": 20,
-                        "minZoom": null,
-                        "overlayConfigs": [],
-                        "overlayOpacity": null,
-                        "pitch": null,
-                        "rerender": true,
-                        "zoom": null
-                    },
-                    "id": "79b569e6-f47c-11ea-a92a-a683e74f6c3a",
-                    "label": "Indirect Impact Location",
-                    "node_id": "88b36b84-f47a-11ea-a92a-a683e74f6c3a",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "f36b87a0-f479-11ea-a92a-a683e74f6c3a",
-                    "config": {
-                        "label": "Indirect Impacts",
-                        "placeholder": ""
-                    },
-                    "id": "31683ada-f47a-11ea-a92a-a683e74f6c3a",
-                    "label": "Indirect Impacts",
-                    "node_id": "f36b5244-f479-11ea-a92a-a683e74f6c3a",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
                 }
             ],
             "color": null,
@@ -3978,7 +3984,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "id": "fdc4720e-0813-11eb-bfdd-acde48001122"
+                    "id": "53ca2468-0fdb-11eb-ae9e-acde48001122"
                 }
             ],
             "graphid": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
@@ -4297,6 +4303,66 @@
                 }
             ],
             "nodes": [
+                {
+                    "config": {
+                        "rdmCollection": "eee341d1-f3e7-4bd9-a9c3-13545ae51a07"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Section 106 Determination",
+                    "nodegroup_id": "2cbbe1ec-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "7414718a-3d6b-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "rdmCollection": "a3adb012-31b7-4138-8ba8-e48740fad0ed"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "NCPC/CFA Submission Decision",
+                    "nodegroup_id": "7add2ada-3cd9-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "8c7db446-3cdc-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "rdmCollection": null
+                    },
+                    "datatype": "concept-list",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Agent Request Time Span Type",
+                    "nodegroup_id": "ab4e3c2b-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "ab4e3c30-3c8b-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+                    "sortorder": 0
+                },
                 {
                     "config": null,
                     "datatype": "string",
@@ -4932,66 +4998,6 @@
                     "nodeid": "d2cf4002-72c1-11ea-a7fa-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "rdmCollection": "eee341d1-f3e7-4bd9-a9c3-13545ae51a07"
-                    },
-                    "datatype": "concept",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Section 106 Determination",
-                    "nodegroup_id": "2cbbe1ec-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "7414718a-3d6b-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "rdmCollection": "a3adb012-31b7-4138-8ba8-e48740fad0ed"
-                    },
-                    "datatype": "concept",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "NCPC/CFA Submission Decision",
-                    "nodegroup_id": "7add2ada-3cd9-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "8c7db446-3cdc-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "rdmCollection": null
-                    },
-                    "datatype": "concept-list",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Agent Request Time Span Type",
-                    "nodegroup_id": "ab4e3c2b-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "ab4e3c30-3c8b-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
                     "sortorder": 0
                 },
                 {
@@ -6508,7 +6514,7 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Section 106 Submission Notes",
+                    "name": "Section 106 Submission Notes 1",
                     "nodegroup_id": "0a68e5d4-3d6d-11ea-b9b7-027f24e6fd6b",
                     "nodeid": "9e69372e-779d-11ea-8977-acde48001122",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object",
@@ -7035,15 +7041,18 @@
                         "graphs": [
                             {
                                 "graphid": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                                "name": "Inventory Resource"
+                                "name": "Inventory Resource",
+                                "ontologyProperty": null
                             },
                             {
                                 "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
-                                "name": "Historic Area"
+                                "name": "Historic Area",
+                                "ontologyProperty": null
                             },
                             {
                                 "graphid": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
-                                "name": "Archaeological Zone"
+                                "name": "Archaeological Zone",
+                                "ontologyProperty": null
                             }
                         ]
                     },
@@ -7092,8 +7101,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
         "os": "Darwin",
-        "os version": "19.5.0"
+        "os version": "19.6.0"
     }
 }

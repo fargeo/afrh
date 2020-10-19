@@ -166,39 +166,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "63eb2169-46c4-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "centerX": 3,
-                        "centerY": 8.5,
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": 0
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "63eb2169-46c4-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "83b55fc5-5804-4e70-a2a3-662659f63c85",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Spatial Location",
-                    "nodegroup_id": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "4716036a-1b98-11ea-b9b7-027f24e6fd6b",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -326,9 +293,62 @@
                     "nodegroup_id": "d36672f2-6ac3-11ea-b559-acde48001122",
                     "sortorder": null,
                     "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "63eb2169-46c4-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "basemap": "streets",
+                        "centerX": 3,
+                        "centerY": 8.5,
+                        "overlayConfigs": [],
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": 0
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "63eb2169-46c4-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "83b55fc5-5804-4e70-a2a3-662659f63c85",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Spatial Location",
+                    "nodegroup_id": "63eb2167-46c4-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 4,
+                    "visible": true
                 }
             ],
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "d3667554-6ac3-11ea-b559-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Related Information Object From Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "f35b1c7a-6ac3-11ea-b559-acde48001122",
+                    "label": "Related Information Object From Date",
+                    "node_id": "d36677b6-6ac3-11ea-b559-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
                 {
                     "card_id": "f891ad80-6ac3-11ea-b559-acde48001122",
                     "config": {
@@ -703,24 +723,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "d3667554-6ac3-11ea-b559-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Related Information Object From Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "f35b1c7a-6ac3-11ea-b559-acde48001122",
-                    "label": "Related Information Object From Date",
-                    "node_id": "d36677b6-6ac3-11ea-b559-acde48001122",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
                 },
                 {
                     "card_id": "d3667554-6ac3-11ea-b559-acde48001122",
@@ -1899,7 +1901,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "id": "01b022c8-0814-11eb-bfdd-acde48001122"
+                    "id": "56c785e8-0fdb-11eb-ae9e-acde48001122"
                 }
             ],
             "graphid": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
@@ -1990,6 +1992,24 @@
                 }
             ],
             "nodes": [
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Publishers",
+                    "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "484892e3-1b98-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
+                    "sortorder": 0
+                },
                 {
                     "config": {
                         "dateFormat": "YYYY-MM-DD"
@@ -2284,6 +2304,66 @@
                     "nodeid": "d1d84496-1b91-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
                     "parentproperty": "",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "rdmCollection": "00000000-0000-0000-0000-000000000005"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Archaeological Zone Relation Type",
+                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
+                    "nodeid": "d33eb31e-6a11-11ea-a89d-acde48001122",
+                    "ontologyclass": "https://linked.art/ns/terms/Relationship",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
+                    "datatype": "date",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Archaeological Zone From Date",
+                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
+                    "nodeid": "d33eb44a-6a11-11ea-a89d-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
+                    "datatype": "date",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Related Archaeological Zone To Date",
+                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
+                    "nodeid": "d33eb53a-6a11-11ea-a89d-acde48001122",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
+                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
                     "sortorder": 0
                 },
                 {
@@ -3015,84 +3095,6 @@
                 },
                 {
                     "config": null,
-                    "datatype": "semantic",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Publishers",
-                    "nodegroup_id": "484892dc-1b98-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "484892e3-1b98-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "rdmCollection": "00000000-0000-0000-0000-000000000005"
-                    },
-                    "datatype": "concept",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Archaeological Zone Relation Type",
-                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
-                    "nodeid": "d33eb31e-6a11-11ea-a89d-acde48001122",
-                    "ontologyclass": "https://linked.art/ns/terms/Relationship",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD"
-                    },
-                    "datatype": "date",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Archaeological Zone From Date",
-                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
-                    "nodeid": "d33eb44a-6a11-11ea-a89d-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD"
-                    },
-                    "datatype": "date",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d1d84497-1b91-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Related Archaeological Zone To Date",
-                    "nodegroup_id": "d33eaebe-6a11-11ea-a89d-acde48001122",
-                    "nodeid": "d33eb53a-6a11-11ea-a89d-acde48001122",
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
-                    "parentproperty": "http://www.w3.org/2004/02/skos/core#closeMatch",
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
                     "datatype": "string",
                     "description": null,
                     "exportable": false,
@@ -3381,8 +3383,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
         "os": "Darwin",
-        "os version": "19.5.0"
+        "os version": "19.6.0"
     }
 }

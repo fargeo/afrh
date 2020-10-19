@@ -303,32 +303,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "faa3703f-46c3-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "centerX": 0,
-                        "centerY": 0,
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": 0
-                    },
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Spatial Location",
-                    "nodegroup_id": "faa3703d-46c3-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "b3c29c48-1adf-11ea-8211-acde48001122",
                     "component_id": "2f9054d8-de57-45cd-8a9c-58bbb1619030",
                     "config": {
@@ -362,6 +336,34 @@
                     "is_editable": true,
                     "name": "Contributing Resources, Status, and Significance",
                     "nodegroup_id": "b3c22cae-1adf-11ea-8211-acde48001122",
+                    "sortorder": 4,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "faa3703f-46c3-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "basemap": "streets",
+                        "centerX": 0,
+                        "centerY": 0,
+                        "overlayConfigs": [],
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": 0
+                    },
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Spatial Location",
+                    "nodegroup_id": "faa3703d-46c3-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
                     "visible": true
                 }
@@ -1462,7 +1464,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "e82df82c-1adc-11ea-8211-acde48001122",
-                    "id": "fae83b60-0813-11eb-bfdd-acde48001122"
+                    "id": "51ae3098-0fdb-11eb-ae9e-acde48001122"
                 }
             ],
             "graphid": "e82df82c-1adc-11ea-8211-acde48001122",
@@ -2529,8 +2531,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1d0ea45cc 2020-10-13 11:43:42 -0700",
+        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
         "os": "Darwin",
-        "os version": "19.5.0"
+        "os version": "19.6.0"
     }
 }
