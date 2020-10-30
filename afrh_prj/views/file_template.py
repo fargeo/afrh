@@ -93,8 +93,8 @@ class FileTemplateView(View):
         self.edit_letter_default(self.resource, datatype_factory)
 
         date = datetime.today()
-        date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
-        new_file_name = date+'_'+template_name
+        self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
+        new_file_name = self.date+'_'+template_name
         new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', new_file_name)
 
         new_req = HttpRequest()
@@ -183,7 +183,8 @@ class FileTemplateView(View):
             'Project Area Notes': '9e69372e-779d-11ea-8977-acde48001122', # aka Submission Notes
             # 'Character Areas List': '',
             # 'Master Plan Zones List': '',
-            # 'direct ape': '',
+            'Direct Impacts': '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
+            'Indirect Impacts': 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
             # 'APE Map': 'screenshot of this map',
             'AFRH Determination of Effect': '4cecba48-3d6d-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
             'Notes (Management Activity A, Section 106 Review)': '9e69372e-779d-11ea-8977-acde48001122',
@@ -192,7 +193,8 @@ class FileTemplateView(View):
             'AFRH PROJECT CONTACT (Management Activity A, Entities)': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b',
             'Procedure Type (Management Activity A, Summary)': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b',
             'Documentation Type (Management Activity A, NEPA Review)': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b',
-            # 'AUTOMATIC DATE': ''
+            # "\u2610": '' # open box (found in docx template)
+            # "\u2327": '' # box with x through it (to indicate "selected")
         }
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
 
@@ -209,6 +211,7 @@ class FileTemplateView(View):
 
 
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
+        self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
         for tile in tiles:
             for key, value in list(template_dict.items()):
                 html = False
@@ -216,7 +219,7 @@ class FileTemplateView(View):
                     my_node = models.Node.objects.get(nodeid=value)
                     datatype = datatype_factory.get_instance(my_node.datatype)
                     lookup_val = datatype.get_display_value(tile, my_node)
-                    if '<' in lookup_val: # not ideal
+                    if '<' in lookup_val: # not ideal for finding html/rtf
                         html = True
                     self.replace_string(self.doc, key, lookup_val, html)
 
