@@ -47,6 +47,7 @@ class FileTemplateView(View):
     def __init__(self):
         self.doc = None
         self.resource = None
+        self.date = None
 
 
     def get(self, request):
@@ -86,14 +87,15 @@ class FileTemplateView(View):
 
         self.doc = Document(template_path)
 
+        date = datetime.today()
+        self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
+
         # if template_name == 'GLAAS Planning Letter A - No Progression - template.docx':
         #     self.edit_letter_A(self.resource, datatype_factory)
         # elif template_name == 'GLAAS Planning Letter B2 - Predetermination - template.docx':
         #     self.edit_letter_B2(self.resource, datatype_factory)
         self.edit_letter_default(self.resource, datatype_factory)
 
-        date = datetime.today()
-        self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
         new_file_name = self.date+'_'+template_name
         new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', new_file_name)
 
@@ -230,7 +232,7 @@ class FileTemplateView(View):
         # advantage of the former is that replacing run.text preserves styling, replacing p.text does not
         
         def parse_html_to_docx(p, k, v):
-            style = p.style
+            # style = p.style
             if k in p.text:
                 p.clear()
                 document_html_parser = DocumentHTMLParser(p, document)
@@ -243,7 +245,7 @@ class FileTemplateView(View):
                     parse_html_to_docx(paragraph, k, v)
                 for i, run in enumerate(paragraph.runs):
                     if k in run.text: # now check if html
-                        run_style = run.style
+                        # run_style = run.style
                         run.text = run.text.replace(k, v)
                     elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
                         paragraph.text = paragraph.text.replace(k, v)
@@ -262,7 +264,7 @@ class FileTemplateView(View):
             # head_style = styles['Header']
             # t_style = None
             # p_style = None
-            run_style = None
+            # run_style = None
 
             if len(doc.paragraphs) > 0:
                 replace_in_runs(doc.paragraphs, k, v)
