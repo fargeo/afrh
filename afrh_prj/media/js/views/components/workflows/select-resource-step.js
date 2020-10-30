@@ -22,7 +22,7 @@ define([
         //     this.disableResourceSelection(true);
         // }
         this.loading(true);
-        this.graphid = params.graphid();
+        this.graphids = [params.graphid()];
         this.nameheading = params.nameheading;
         this.namelabel = params.namelabel;
         this.resValue.subscribe(function(val){
