@@ -26,21 +26,6 @@ define([
                     icon: 'fa-code-fork',
                     wastebin: {resourceid: null, description: 'a consulation instance'}
                 },
-                // {
-                //     title: 'Related Application Area',
-                //     name: 'setrelatedapplicationarea',
-                //     description: 'Identify the Development Area for this Consultation',
-                //     component: 'views/components/workflows/new-tile-step',
-                //     componentname: 'new-tile-step',
-                //     graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
-                //     nodegroupid: '8d41e4ba-a250-11e9-9b20-00224800b26d',
-                //     resourceid: null,
-                //     tileid: null,
-                //     parenttileid: null,
-                //     required: true,
-                //     icon: 'fa-code-fork',
-                //     wastebin: {resourceid: null, description: 'a consulation instance'}
-                // },
                 {
                     title: 'Consultation Statement',
                     name: 'consultationstatement',
