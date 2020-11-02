@@ -23,7 +23,7 @@ define([
                     tileid: null,
                     parenttileid: null,
                     required: true,
-                    icon: 'fa-code-fork',
+                    icon: 'fa-pencil',
                     wastebin: {resourceid: null, description: 'a consulation instance'}
                 },
                 {
@@ -38,7 +38,7 @@ define([
                     tileid: null,
                     parenttileid: null,
                     required: false,
-                    icon: 'fa-map-marker'
+                    icon: 'fa-pencil-square-o'
                 },
                 {
                     title: 'Consultation GeoJSON',
