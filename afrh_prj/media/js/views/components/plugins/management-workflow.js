@@ -55,6 +55,36 @@ define([
                     icon: 'fa-map-marker'
                 },
                 {
+                    title: 'Direct Impacts',
+                    name: 'directimpacts',
+                    description: 'Directly Impacted stuff',
+                    component: 'views/components/workflows/new-tile-step',
+                    componentname: 'new-tile-step',
+                    graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
+                    nodegroupid: '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
+                    resourceid: null,
+                    tileid: null,
+                    parenttileid: null,
+                    required: true,
+                    icon: 'fa-arrow-circle-down',
+                    wastebin: {resourceid: null, description: 'a physical thing instance'}
+                }, 
+                {
+                    title: 'Indirect Impacts',
+                    name: 'indirectimpacts',
+                    description: 'Indirectly Impacted stuff',
+                    component: 'views/components/workflows/new-tile-step',
+                    componentname: 'new-tile-step',
+                    graphid: '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b',
+                    nodegroupid: 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
+                    resourceid: null,
+                    tileid: null,
+                    parenttileid: null,
+                    required: true,
+                    icon: 'fa-arrow-circle-o-down',
+                    wastebin: {resourceid: null, description: 'a physical thing instance'}
+                }, 
+                {
                     title: 'Consultation Details',
                     name: 'setdetails',
                     description: 'Consultation Details',
