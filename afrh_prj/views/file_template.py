@@ -188,17 +188,52 @@ class FileTemplateView(View):
             'Direct Impacts': '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
             'Indirect Impacts': 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
             # 'APE Map': 'screenshot of this map',
-            'AFRH Determination of Effect': '4cecba48-3d6d-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
-            'Notes (Management Activity A, Section 106 Review)': '9e69372e-779d-11ea-8977-acde48001122',
+            'AFRH Determination of Effect': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
+            'Submission Notes': '9e69372e-779d-11ea-8977-acde48001122',
             'AGENT': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b',
             'AGENT TYPE': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b',
             'AFRH PROJECT CONTACT (Management Activity A, Entities)': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b',
             'Procedure Type (Management Activity A, Summary)': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b',
             'Documentation Type (Management Activity A, NEPA Review)': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b',
-            # "\u2610": '' # open box (found in docx template)
-            # "\u2327": '' # box with x through it (to indicate "selected")
         }
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
+
+        direct_impact_nodegroupid = '344a48d8-f47a-11ea-a92a-a683e74f6c3a'
+        archeology_zone_graphid = 'ddb9385d-39fe-11ea-b9b7-027f24e6fd6b'
+        related_arch_zone_resourceids = []
+        related_arch_zone_names = 'None'
+        within = False
+        direct_impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid), consultation.tiles))
+
+        # if one of the direct impacts is archaeology, grab the names of those resources from Direct Impacts, also set the checklist in doc
+        for t in direct_impact_tiles:
+            for related_res in t.data[direct_impact_nodegroupid]:
+                res = Resource.objects.get(pk=related_res["resourceId"])
+                if str(res.graph_id) == archeology_zone_graphid:
+                    within = True
+                    related_arch_zone_resourceids.append(related_res["resourceId"])
+
+        if within:
+            impact_dict = {
+                'Within': '\u2612', # x box
+                'Not within': '\u2610' # open box
+            }
+        else:
+            impact_dict = {
+                'Not within': '\u2612', # x box
+                'Within': '\u2610' # open box
+            }
+
+        for r in Resource.objects.filter(pk__in=related_arch_zone_resourceids):
+            if related_arch_zone_names == 'None':
+                related_arch_zone_names = r.displayname
+            else:
+                related_arch_zone_names += (', ' + r.displayname)
+
+
+        self.replace_string(self.doc, 'Related Archaeological Zones', related_arch_zone_names)
+        self.replace_string(self.doc, 'Within', impact_dict['Within'])
+        self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
 
 
     # def edit_letter_A(self, consultation, datatype_factory):
