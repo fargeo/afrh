@@ -28,7 +28,7 @@ class ActivityStatusFunction(BaseFunction):
 
             status_tile = Tile.objects.get(nodegroupid=activity_status_nodegroupid, resourceinstance=tile.resourceinstance)
             # active = status_tile.data[activity_status_nodegroupid] == default_status_concept_value
-            active = status_tile.data[activity_status_boolean_nodeid]: # placeholder
+            active = status_tile.data[activity_status_boolean_nodeid] # placeholder
             if active and not status_tile.data[activity_status_boolean_nodeid]:
                 status_tile.data[activity_status_boolean_nodeid] = True
                 status_tile.save()
