@@ -256,7 +256,7 @@ class FileTemplateView(View):
                     my_node = models.Node.objects.get(nodeid=value)
                     datatype = datatype_factory.get_instance(my_node.datatype)
                     lookup_val = datatype.get_display_value(tile, my_node)
-                    if '<' in lookup_val: # not ideal for finding html/rtf
+                    if lookup_val and '<' in lookup_val: # not ideal for finding html/rtf
                         html = True
                     self.replace_string(self.doc, key, lookup_val, html)
 
