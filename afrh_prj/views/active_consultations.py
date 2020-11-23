@@ -32,6 +32,8 @@ class ActiveConsultationsView(View):
     def __init__(self):
         self.cons_details_nodegroupid = '8d41e4c0-a250-11e9-a7e3-00224800b26d'
         self.management_activity_graphid = '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b'
+        self.management_activity_status_nodegroupid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
+        self.management_activity_status_boolean_nodeid = "a7c33e22-2b8f-11eb-97a0-784f435179ea"
         # self.cons_status_bool_nodeid = "6a773228-db20-11e9-b6dd-784f435179ea"
         self.cons_status_concept_nodeid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
         self.active_cons_node_list = { # if this is not up-to-date sorting will break
@@ -62,57 +64,58 @@ class ActiveConsultationsView(View):
         # self.active_cons_node_list = active_cons_config['nodes']
         # order_config = active_cons_config['sort config']
         datatype_factory = DataTypeFactory()
-        cons_details_tiles = Tile.objects.filter(nodegroup_id=self.cons_status_concept_nodeid)
-        include_list = self.build_include_list(cons_details_tiles, datatype_factory)
-        filtered_consultations = Resource.objects.filter(graph_id=self.management_activity_graphid, resourceinstanceid__in=include_list)
+        active_activity_search_term = {f'{self.management_activity_status_boolean_nodeid}': True}
+        active_activity_resourceids = Tile.objects.filter(nodegroup_id=self.management_activity_status_nodegroupid, data__contains=active_activity_search_term).values_list('resourceinstance_id', flat=True)
 
-        order_config = { # if this is not up-to-date sorting will break
-            "Consultation Date: Newest to Oldest":("Consultation Date",False),
-            "Consultation Date: Oldest to Newest":("Consultation Date",True),
-            "Action Agent: A to Z":("Action Agent",False),
-            "Action Agent: Z to A":("Action Agent",True),
-            # "Consultation Type: A to Z":("Consultation Type",False),
-            # "Consultation Type: Z to A":("Consultation Type",True),
-            # "Consultation Name: A to Z":("Name",False),
-            # "Consultation Name: Z to A":("Name",True)
-        }
+        # include_list = self.build_include_list(cons_details_tiles, datatype_factory)
+        filtered_consultations = Resource.objects.filter(graph_id=self.management_activity_graphid, resourceinstanceid__in=active_activity_resourceids)
+
+        # order_config = { # if this is not up-to-date sorting will break
+        #     "Consultation Date: Newest to Oldest":("Consultation Date",False),
+        #     "Consultation Date: Oldest to Newest":("Consultation Date",True),
+        #     "Action Agent: A to Z":("Action Agent",False),
+        #     "Action Agent: Z to A":("Action Agent",True),
+        #     # "Consultation Type: A to Z":("Consultation Type",False),
+        #     # "Consultation Type: Z to A":("Consultation Type",True),
+        #     # "Consultation Name: A to Z":("Name",False),
+        #     # "Consultation Name: Z to A":("Name",True)
+        # }
 
         search_results_setting_nodeid = "d0987de3-fad8-11e6-a434-6c4008b05c4c"
         search_results_setting_nodegroupid = "d0987880-fad8-11e6-8cce-6c4008b05c4c"
         page_ct_tile = Tile.objects.get(nodegroup_id=search_results_setting_nodegroupid)
         page_ct = page_ct_tile.data[search_results_setting_nodeid]
 
-        if filtered_consultations is not None:
-            # import pdb; pdb.set_trace()
+        if filtered_consultations is not None and len(filtered_consultations) > 0:
             if page_num == -1:
                 grouped_tile_list = build_resource_dict(filtered_consultations, self.active_cons_node_list, datatype_factory, layout='table')
                 return JSONResponse({'results': grouped_tile_list})
             elif page_num >= 1:
                 grouped_tile_list = build_resource_dict(filtered_consultations, self.active_cons_node_list, datatype_factory, keyword=keyword)
-                if order_param in list(order_config.keys()) and order_param is not None and keyword is None:
-                    try:
-                        grouped_tile_list = sorted(
-                                                grouped_tile_list, 
-                                                key=lambda resource: resource[order_config[order_param][0]], 
-                                                reverse=order_config[order_param][1])
-                    except KeyError as e:
-                        print('Error: ',e)
+                # if order_param in list(order_config.keys()) and order_param is not None and keyword is None:
+                #     try:
+                #         grouped_tile_list = sorted(
+                #                                 grouped_tile_list, 
+                #                                 key=lambda resource: resource[order_config[order_param][0]], 
+                #                                 reverse=order_config[order_param][1])
+                #     except KeyError as e:
+                #         print('Error: ',e)
                 return self.get_paginated_data(grouped_tile_list, page_ct, page_num)
 
         return HttpResponseNotFound()
 
 
-    def build_include_list(self, tiles, datatype_factory):
-        # collects resourceinstances that would qualify for inclusion due to matching some specific value
-        include_list = []
-        cons_status_node = models.Node.objects.get(nodeid=self.cons_status_concept_nodeid)
-        datatype = datatype_factory.get_instance(cons_status_node.datatype)
-        for tile in tiles:
-            tile_status = datatype.get_display_value(tile, cons_status_node)
-            if tile_status in self.active_cons_status_include_concept_values:
-                include_list.append(str(tile.resourceinstance.resourceinstanceid))
+    # def build_include_list(self, tiles, datatype_factory):
+    #     # collects resourceinstances that would qualify for inclusion due to matching some specific value
+    #     include_list = []
+    #     cons_status_node = models.Node.objects.get(nodeid=self.cons_status_concept_nodeid)
+    #     datatype = datatype_factory.get_instance(cons_status_node.datatype)
+    #     for tile in tiles:
+    #         tile_status = datatype.get_display_value(tile, cons_status_node)
+    #         if tile_status in self.active_cons_status_include_concept_values:
+    #             include_list.append(str(tile.resourceinstance.resourceinstanceid))
 
-        return include_list
+    #     return include_list
 
 
     def get_paginated_data(self, grouped_tile_list, page_ct, page_num):
