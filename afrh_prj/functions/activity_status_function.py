@@ -22,7 +22,7 @@ class ActivityStatusFunction(BaseFunction):
     def save(self, tile, request):
         activity_status_nodegroupid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
         default_status_concept_value = "3f462246-9d5b-586b-cdeb-bbf4e328278f" # ?
-        activity_status_boolean_nodeid = "a7c33e22-2b8f-11eb-97a0-784f435179ea"
+        activity_status_boolean_nodeid = "13a519f2-2dbc-11eb-a471-784f435179ea"
 
         try:
 
