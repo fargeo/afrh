@@ -33,7 +33,7 @@ class ActiveConsultationsView(View):
         self.cons_details_nodegroupid = '8d41e4c0-a250-11e9-a7e3-00224800b26d'
         self.management_activity_graphid = '6da8cd00-3c8a-11ea-b9b7-027f24e6fd6b'
         self.management_activity_status_nodegroupid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
-        self.management_activity_status_boolean_nodeid = "a7c33e22-2b8f-11eb-97a0-784f435179ea"
+        self.management_activity_status_boolean_nodeid = "13a519f2-2dbc-11eb-a471-784f435179ea"
         # self.cons_status_bool_nodeid = "6a773228-db20-11e9-b6dd-784f435179ea"
         self.cons_status_concept_nodeid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
         self.active_cons_node_list = { # if this is not up-to-date sorting will break
