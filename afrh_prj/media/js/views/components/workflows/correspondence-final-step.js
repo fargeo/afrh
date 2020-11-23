@@ -18,7 +18,6 @@ define([
         this.letterTypeNodegroupId = "086248f4-e0c7-11ea-8120-784f435179ea";
         this.letterTypeNodeId = "3cde0f6e-e0c7-11ea-8120-784f435179ea";
         this.urls = arches.urls;
-        this.resourceid = params.resourceid();
         this.report = ko.observable();
 
         this.nodegroupids = params.workflow.steps

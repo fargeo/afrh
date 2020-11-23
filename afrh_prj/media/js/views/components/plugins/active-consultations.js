@@ -47,10 +47,10 @@ define([
                     "Consultation Log Date":"8d41e4cf-a250-11e9-a86d-00224800b26d"
                 },
                 "sort config":{
-                    "Consultation Date: Newest to Oldest":["Consultation Date",false],
-                    "Consultation Date: Oldest to Newest":["Consultation Date",true],
-                    "Action Agent: A to Z":("Action Agent",false),
-                    "Action Agent: Z to A":("Action Agent",true),
+                    // "Consultation Date: Newest to Oldest":["Consultation Date",false],
+                    // "Consultation Date: Oldest to Newest":["Consultation Date",true],
+                    // "Action Agent: A to Z":("Action Agent",false),
+                    // "Action Agent: Z to A":("Action Agent",true),
                     // "Consultation Type: A to Z":["Consultation Type",false],
                     // "Consultation Type: Z to A":["Consultation Type",true],
                     // "Consultation Name: A to Z":["Name",false],

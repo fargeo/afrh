@@ -47,6 +47,7 @@ class FileTemplateView(View):
     def __init__(self):
         self.doc = None
         self.resource = None
+        self.date = None
 
 
     def get(self, request):
@@ -86,15 +87,16 @@ class FileTemplateView(View):
 
         self.doc = Document(template_path)
 
+        date = datetime.today()
+        self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
+
         # if template_name == 'GLAAS Planning Letter A - No Progression - template.docx':
         #     self.edit_letter_A(self.resource, datatype_factory)
         # elif template_name == 'GLAAS Planning Letter B2 - Predetermination - template.docx':
         #     self.edit_letter_B2(self.resource, datatype_factory)
         self.edit_letter_default(self.resource, datatype_factory)
 
-        date = datetime.today()
-        date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
-        new_file_name = date+'_'+template_name
+        new_file_name = self.date+'_'+template_name
         new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', new_file_name)
 
         new_req = HttpRequest()
@@ -183,18 +185,55 @@ class FileTemplateView(View):
             'Project Area Notes': '9e69372e-779d-11ea-8977-acde48001122', # aka Submission Notes
             # 'Character Areas List': '',
             # 'Master Plan Zones List': '',
-            # 'direct ape': '',
+            'Direct Impacts': '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
+            'Indirect Impacts': 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
             # 'APE Map': 'screenshot of this map',
-            'AFRH Determination of Effect': '4cecba48-3d6d-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
-            'Notes (Management Activity A, Section 106 Review)': '9e69372e-779d-11ea-8977-acde48001122',
+            'AFRH Determination of Effect': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
+            'Submission Notes': '9e69372e-779d-11ea-8977-acde48001122',
             'AGENT': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b',
             'AGENT TYPE': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b',
             'AFRH PROJECT CONTACT (Management Activity A, Entities)': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b',
             'Procedure Type (Management Activity A, Summary)': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b',
             'Documentation Type (Management Activity A, NEPA Review)': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b',
-            # 'AUTOMATIC DATE': ''
         }
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
+
+        direct_impact_nodegroupid = '344a48d8-f47a-11ea-a92a-a683e74f6c3a'
+        archeology_zone_graphid = 'ddb9385d-39fe-11ea-b9b7-027f24e6fd6b'
+        related_arch_zone_resourceids = []
+        related_arch_zone_names = 'None'
+        within = False
+        direct_impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid), consultation.tiles))
+
+        # if one of the direct impacts is archaeology, grab the names of those resources from Direct Impacts, also set the checklist in doc
+        for t in direct_impact_tiles:
+            for related_res in t.data[direct_impact_nodegroupid]:
+                res = Resource.objects.get(pk=related_res["resourceId"])
+                if str(res.graph_id) == archeology_zone_graphid:
+                    within = True
+                    related_arch_zone_resourceids.append(related_res["resourceId"])
+
+        if within:
+            impact_dict = {
+                'Within': '\u2612', # x box
+                'Not within': '\u2610' # open box
+            }
+        else:
+            impact_dict = {
+                'Not within': '\u2612', # x box
+                'Within': '\u2610' # open box
+            }
+
+        for r in Resource.objects.filter(pk__in=related_arch_zone_resourceids):
+            if related_arch_zone_names == 'None':
+                related_arch_zone_names = r.displayname
+            else:
+                related_arch_zone_names += (', ' + r.displayname)
+
+
+        self.replace_string(self.doc, 'Related Archaeological Zones', related_arch_zone_names)
+        self.replace_string(self.doc, 'Within', impact_dict['Within'])
+        self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
 
 
     # def edit_letter_A(self, consultation, datatype_factory):
@@ -209,6 +248,7 @@ class FileTemplateView(View):
 
 
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
+        self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
         for tile in tiles:
             for key, value in list(template_dict.items()):
                 html = False
@@ -216,7 +256,7 @@ class FileTemplateView(View):
                     my_node = models.Node.objects.get(nodeid=value)
                     datatype = datatype_factory.get_instance(my_node.datatype)
                     lookup_val = datatype.get_display_value(tile, my_node)
-                    if '<' in lookup_val: # not ideal
+                    if '<' in lookup_val: # not ideal for finding html/rtf
                         html = True
                     self.replace_string(self.doc, key, lookup_val, html)
 
@@ -227,7 +267,7 @@ class FileTemplateView(View):
         # advantage of the former is that replacing run.text preserves styling, replacing p.text does not
         
         def parse_html_to_docx(p, k, v):
-            style = p.style
+            # style = p.style
             if k in p.text:
                 p.clear()
                 document_html_parser = DocumentHTMLParser(p, document)
@@ -240,7 +280,7 @@ class FileTemplateView(View):
                     parse_html_to_docx(paragraph, k, v)
                 for i, run in enumerate(paragraph.runs):
                     if k in run.text: # now check if html
-                        run_style = run.style
+                        # run_style = run.style
                         run.text = run.text.replace(k, v)
                     elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
                         paragraph.text = paragraph.text.replace(k, v)
@@ -259,7 +299,7 @@ class FileTemplateView(View):
             # head_style = styles['Header']
             # t_style = None
             # p_style = None
-            run_style = None
+            # run_style = None
 
             if len(doc.paragraphs) > 0:
                 replace_in_runs(doc.paragraphs, k, v)
