@@ -180,21 +180,21 @@ class FileTemplateView(View):
 
     def edit_letter_default(self, consultation, datatype_factory):
         template_dict = {
-            'URR#':'937529ba-3d6c-11ea-b9b7-027f24e6fd6b',
-            'Scope of Work Description': '5a8422b0-3cac-11ea-b9b7-027f24e6fd6b',
-            'Project Area Notes': '9e69372e-779d-11ea-8977-acde48001122', # aka Submission Notes
+            'URR#':{'nodeid': '937529ba-3d6c-11ea-b9b7-027f24e6fd6b', 'default':'No URR# Entered', 'found': False},
+            'Scope of Work Description': {'nodeid': '5a8422b0-3cac-11ea-b9b7-027f24e6fd6b', 'default':'No Scope of Work Description available', 'found': False},
+            'Project Area Notes': {'nodeid': '9e69372e-779d-11ea-8977-acde48001122', 'default':'No Project Area Notes entered', 'found': False}, # aka Submission Notes
             # 'Character Areas List': '',
             # 'Master Plan Zones List': '',
-            'Direct Impacts': '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
-            'Indirect Impacts': 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
+            'Direct Impacts': {'nodeid': '344a48d8-f47a-11ea-a92a-a683e74f6c3a', 'default':'No Direct Impacts identified', 'found': False},
+            'Indirect Impacts': {'nodeid': 'f36b5244-f479-11ea-a92a-a683e74f6c3a', 'default':'No Indirect Impacts identified', 'found': False},
             # 'APE Map': 'screenshot of this map',
-            'AFRH Determination of Effect': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
-            'Submission Notes': '9e69372e-779d-11ea-8977-acde48001122',
-            'AGENT': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b',
-            'AGENT TYPE': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b',
-            'AFRH PROJECT CONTACT (Management Activity A, Entities)': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b',
-            'Procedure Type (Management Activity A, Summary)': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b',
-            'Documentation Type (Management Activity A, NEPA Review)': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b',
+            'AFRH Determination of Effect': {'nodeid': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', 'default':'No Determination of Effect identified', 'found': False}, # note graph spelling may differ ("Affect")
+            'Submission Notes': {'nodeid': '9e69372e-779d-11ea-8977-acde48001122', 'default':'No Submission Notes entered', 'found': False},
+            'AGENT': {'nodeid': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b', 'default':'No Agent identified', 'found': False},
+            'AGENT TYPE': {'nodeid': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'Agent Type unselected', 'found': False},
+            'AFRH PROJECT CONTACT (Management Activity A, Entities)': {'nodeid': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'No Project Contact identified', 'found': False},
+            'Procedure Type (Management Activity A, Summary)': {'nodeid': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b', 'default':'No Procedure Type identified', 'found': False},
+            'Documentation Type (Management Activity A, NEPA Review)': {'nodeid': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'No Documentation Type identified', 'found': False},
         }
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
 
@@ -250,15 +250,26 @@ class FileTemplateView(View):
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
         self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
         for tile in tiles:
-            for key, value in list(template_dict.items()):
+            for key, val_dict in list(template_dict.items()):
                 html = False
-                if value in tile.data:
-                    my_node = models.Node.objects.get(nodeid=value)
+                if val_dict['nodeid'] in tile.data: # nodeid is key in this tile.data
+                    val_dict['found'] = True
+                    my_node = models.Node.objects.get(nodeid=val_dict['nodeid'])
                     datatype = datatype_factory.get_instance(my_node.datatype)
                     lookup_val = datatype.get_display_value(tile, my_node)
-                    if lookup_val and '<' in lookup_val: # not ideal for finding html/rtf
+                    if lookup_val is None or lookup_val == "":
+                        lookup_val = val_dict['default']
+                    if '<' in lookup_val: # not ideal for finding html/rtf
                         html = True
                     self.replace_string(self.doc, key, lookup_val, html)
+                
+        for key, val_dict in list(template_dict.items()): # for any fields remaining unpopulated, use default
+            html = False
+            if val_dict['found'] is False:
+                lookup_val = val_dict['default']
+                if '<' in lookup_val: # not ideal for finding html/rtf
+                    html = True
+                self.replace_string(self.doc, key, lookup_val, html)
 
     
     def replace_string(self, document, key, v, html=False):
