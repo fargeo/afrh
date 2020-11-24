@@ -17,6 +17,7 @@ You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
+# import folium
 import json
 import os
 import uuid
@@ -25,9 +26,10 @@ import docx
 from docx import Document
 from docx.text.paragraph import Paragraph
 from docx.oxml.xmlchemy import OxmlElement
+from docx.shared import Inches
+# from io import BytesIO
 from html.parser import HTMLParser
 from html.entities import name2codepoint
-from pprint import pprint
 from django.core.files.uploadedfile import UploadedFile
 from django.http import HttpRequest, HttpResponseNotFound
 from django.utils.translation import ugettext as _
@@ -180,38 +182,54 @@ class FileTemplateView(View):
 
     def edit_letter_default(self, consultation, datatype_factory):
         template_dict = {
-            'URR#':'937529ba-3d6c-11ea-b9b7-027f24e6fd6b',
-            'Scope of Work Description': '5a8422b0-3cac-11ea-b9b7-027f24e6fd6b',
-            'Project Area Notes': '9e69372e-779d-11ea-8977-acde48001122', # aka Submission Notes
+            'URR#':{'nodeid': '937529ba-3d6c-11ea-b9b7-027f24e6fd6b', 'default':'No URR# Entered', 'found': False},
+            'Scope of Work Description': {'nodeid': '5a8422b0-3cac-11ea-b9b7-027f24e6fd6b', 'default':'No Scope of Work Description available', 'found': False},
+            'Project Area Notes': {'nodeid': '9e69372e-779d-11ea-8977-acde48001122', 'default':'No Project Area Notes entered', 'found': False}, # aka Submission Notes
             # 'Character Areas List': '',
             # 'Master Plan Zones List': '',
-            'Direct Impacts': '344a48d8-f47a-11ea-a92a-a683e74f6c3a',
-            'Indirect Impacts': 'f36b5244-f479-11ea-a92a-a683e74f6c3a',
+            'Direct Impacts': {'nodeid': '344a48d8-f47a-11ea-a92a-a683e74f6c3a', 'default':'No Direct Impacts identified', 'found': False},
+            'Indirect Impacts': {'nodeid': 'f36b5244-f479-11ea-a92a-a683e74f6c3a', 'default':'No Indirect Impacts identified', 'found': False},
             # 'APE Map': 'screenshot of this map',
-            'AFRH Determination of Effect': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', # note graph spelling may differ ("Affect")
-            'Submission Notes': '9e69372e-779d-11ea-8977-acde48001122',
-            'AGENT': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b',
-            'AGENT TYPE': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b',
-            'AFRH PROJECT CONTACT (Management Activity A, Entities)': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b',
-            'Procedure Type (Management Activity A, Summary)': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b',
-            'Documentation Type (Management Activity A, NEPA Review)': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b',
+            'AFRH Determination of Effect': {'nodeid': '7414718a-3d6b-11ea-b9b7-027f24e6fd6b', 'default':'No Determination of Effect identified', 'found': False}, # note graph spelling may differ ("Affect")
+            'Submission Notes': {'nodeid': '9e69372e-779d-11ea-8977-acde48001122', 'default':'No Submission Notes entered', 'found': False},
+            'AGENT': {'nodeid': 'b0007bfc-415e-11ea-b9b7-027f24e6fd6b', 'default':'No Agent identified', 'found': False},
+            'AGENT TYPE': {'nodeid': '6da8cd54-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'Agent Type unselected', 'found': False},
+            'AFRH PROJECT CONTACT (Management Activity A, Entities)': {'nodeid': '6da8cd63-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'No Project Contact identified', 'found': False},
+            'Procedure Type (Management Activity A, Summary)': {'nodeid': 'feb5caf5-3c8b-11ea-b9b7-027f24e6fd6b', 'default':'No Procedure Type identified', 'found': False},
+            'Documentation Type (Management Activity A, NEPA Review)': {'nodeid': '6da8cd45-3c8a-11ea-b9b7-027f24e6fd6b', 'default':'No Documentation Type identified', 'found': False},
         }
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
 
         direct_impact_nodegroupid = '344a48d8-f47a-11ea-a92a-a683e74f6c3a'
+        indirect_impact_nodegroupid = 'f36b5244-f479-11ea-a92a-a683e74f6c3a'
         archeology_zone_graphid = 'ddb9385d-39fe-11ea-b9b7-027f24e6fd6b'
+        master_plan_zone_graphid = '12581535-3a08-11ea-b9b7-027f24e6fd6b'
+        character_area_graphid = 'f3ab0a3a-1aca-11ea-8211-acde48001122'
         related_arch_zone_resourceids = []
-        related_arch_zone_names = 'None'
+        master_plan_zones = []
+        character_areas = []
+        related_arch_zone_names = 'No Related Archaeology Zones'
+        related_mpz_names = 'No Related Master Plan Zones'
+        related_character_area_names = 'No Related Character Areas'
         within = False
-        direct_impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid), consultation.tiles))
+        impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid or str(x.nodegroup_id) == indirect_impact_nodegroupid), consultation.tiles))
 
         # if one of the direct impacts is archaeology, grab the names of those resources from Direct Impacts, also set the checklist in doc
-        for t in direct_impact_tiles:
-            for related_res in t.data[direct_impact_nodegroupid]:
-                res = Resource.objects.get(pk=related_res["resourceId"])
-                if str(res.graph_id) == archeology_zone_graphid:
-                    within = True
-                    related_arch_zone_resourceids.append(related_res["resourceId"])
+        for t in impact_tiles:
+            if str(t.nodegroup_id) == direct_impact_nodegroupid:
+                for related_res in t.data[direct_impact_nodegroupid]:
+                    res = Resource.objects.get(pk=related_res["resourceId"])
+                    if str(res.graph_id) == archeology_zone_graphid:
+                        within = True
+                        related_arch_zone_resourceids.append(related_res["resourceId"])
+
+            elif str(t.nodegroup_id) == indirect_impact_nodegroupid:
+                for related_res in t.data[indirect_impact_nodegroupid]:
+                    res = Resource.objects.get(pk=related_res["resourceId"])
+                    if str(res.graph_id) == master_plan_zone_graphid:
+                        master_plan_zones.append(related_res["resourceId"])
+                    elif str(res.graph_id) == character_area_graphid:
+                        character_areas.append(related_res["resourceId"])
 
         if within:
             impact_dict = {
@@ -225,15 +243,68 @@ class FileTemplateView(View):
             }
 
         for r in Resource.objects.filter(pk__in=related_arch_zone_resourceids):
-            if related_arch_zone_names == 'None':
+            if related_arch_zone_names == 'No Related Archaeology Zones':
                 related_arch_zone_names = r.displayname
             else:
                 related_arch_zone_names += (', ' + r.displayname)
+
+        for r in Resource.objects.filter(pk__in=master_plan_zones):
+            if related_mpz_names == 'No Related Master Plan Zones':
+                related_mpz_names = r.displayname
+            else:
+                related_mpz_names += (', ' + r.displayname)
+
+        for r in Resource.objects.filter(pk__in=character_areas):
+            if related_character_area_names == 'No Related Character Areas':
+                related_character_area_names = r.displayname
+            else:
+                related_character_area_names += (', ' + r.displayname)
 
 
         self.replace_string(self.doc, 'Related Archaeological Zones', related_arch_zone_names)
         self.replace_string(self.doc, 'Within', impact_dict['Within'])
         self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
+        self.replace_string(self.doc, 'Name (Master Plan Zones, Summary)', related_mpz_names)
+        self.replace_string(self.doc, 'Name (Character Areas, Summary)', related_character_area_names)
+
+
+        # work in progress - get map of location and save as image to docx file
+        activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
+        activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
+
+        # location_tiles = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))
+        # try:
+        #     if location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["type"] == "Point":
+        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"]
+        #     else:
+        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"][0][0]
+        # except (IndexError, KeyError):
+        #     location = None
+
+
+        # if not location:
+        #     return
+
+        # f = BytesIO()
+        # m = folium.Map(
+        #     location=location,
+        #     # tiles='Stamen Toner',
+        #     zoom_start=15
+        # )
+
+        # folium.CircleMarker(
+        #     location=location,
+        #     radius=50,
+        #     # popup='Laurelhurst Park',
+        #     color='#3186cc',
+        #     fill=True,
+        #     fill_color='#3186cc'
+        # ).add_to(m)
+        # m.save(os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', 'index.html'))
+        # m.save(f, close_file=False)
+
+        # def save(self, outfile, close_file=True, **kwargs):
+        # self.insert_image(self.doc, 'APE Map (Management Activity A, Section 106 Review)', image_obj=f)
 
 
     # def edit_letter_A(self, consultation, datatype_factory):
@@ -250,15 +321,26 @@ class FileTemplateView(View):
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
         self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
         for tile in tiles:
-            for key, value in list(template_dict.items()):
+            for key, val_dict in list(template_dict.items()):
                 html = False
-                if value in tile.data:
-                    my_node = models.Node.objects.get(nodeid=value)
+                if val_dict['nodeid'] in tile.data: # nodeid is key in this tile.data
+                    val_dict['found'] = True
+                    my_node = models.Node.objects.get(nodeid=val_dict['nodeid'])
                     datatype = datatype_factory.get_instance(my_node.datatype)
                     lookup_val = datatype.get_display_value(tile, my_node)
-                    if lookup_val and '<' in lookup_val: # not ideal for finding html/rtf
+                    if lookup_val is None or lookup_val == "":
+                        lookup_val = val_dict['default']
+                    if '<' in lookup_val: # not ideal for finding html/rtf
                         html = True
                     self.replace_string(self.doc, key, lookup_val, html)
+                
+        for key, val_dict in list(template_dict.items()): # for any fields remaining unpopulated, use default
+            html = False
+            if val_dict['found'] is False:
+                lookup_val = val_dict['default']
+                if '<' in lookup_val: # not ideal for finding html/rtf
+                    html = True
+                self.replace_string(self.doc, key, lookup_val, html)
 
     
     def replace_string(self, document, key, v, html=False):
@@ -315,10 +397,55 @@ class FileTemplateView(View):
                     iterate_tables(section.header.tables, k, v)
 
     
-    def insert_image(self, document, k, v, image_path=None, config=None):
-        # going to need to write custom logic depending on how images should be placed/styled
+    def insert_image(self, document, k, image_path=None, image_obj=None, config=None):
+        
+        def replace_in_runs(p_list, k):
+            for paragraph in p_list:
+                for i, run in enumerate(paragraph.runs):
+                    if k in run.text: # now check if html
+                        # run_style = run.style
+                        if image_obj:
+                            document.add_picture(image_obj, width=Inches(2.0))
+                        elif image_path:
+                            document.add_picture(image_path, width=Inches(2.0))
+                        # run.text = run.text.replace(k, v)
+                    # elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
+                    #     paragraph.text = paragraph.text.replace(k, v)
 
-        return True
+        def iterate_tables(t_list, k):
+            for table in t_list:
+                for row in table.rows:
+                    for cell in row.cells:
+                        replace_in_runs(cell.paragraphs, k)
+
+        
+        if k is not None:
+            k = "{{"+k+"}}"
+
+            if len(document.paragraphs) > 0:
+                replace_in_runs(document.paragraphs, k)
+
+            # if len(document.tables) > 0:
+            #     iterate_tables(document.tables, k)
+            
+            # if len(document.sections) > 0:
+            #     for section in document.sections:
+            #         replace_in_runs(section.footer.paragraphs, k)
+            #         iterate_tables(section.footer.tables, k)
+            #         replace_in_runs(section.header.paragraphs, k)
+            #         iterate_tables(section.header.tables, k)
+
+        def insert_paragraph_after(self, paragraph, text=None, style=None):
+            """Insert a new paragraph after the given paragraph."""
+            new_p = OxmlElement("w:p")
+            paragraph._p.addnext(new_p)
+            new_para = Paragraph(new_p, paragraph._parent)
+            if text:
+                new_para.add_run(text)
+            if style is not None:
+                new_para.style = style
+            return new_para
+
 
 
     def insert_custom(self, document, k, v, config=None):

@@ -21,14 +21,18 @@ class ActivityStatusFunction(BaseFunction):
 
     def save(self, tile, request):
         activity_status_nodegroupid = "83f05a05-3c8c-11ea-b9b7-027f24e6fd6b"
-        default_status_concept_value = "3f462246-9d5b-586b-cdeb-bbf4e328278f" # ?
+        default_status_concept_value = "" # ?
         activity_status_boolean_nodeid = "13a519f2-2dbc-11eb-a471-784f435179ea"
 
         try:
 
             status_tile = Tile.objects.get(nodegroup_id=activity_status_nodegroupid, resourceinstance=tile.resourceinstance)
             # active = status_tile.data[activity_status_nodegroupid] == default_status_concept_value
-            active = status_tile.data[activity_status_boolean_nodeid] # placeholder
+            try:
+                active = status_tile.data[activity_status_boolean_nodeid] # placeholder; must identify concept values in status node considered "active" -- see comment above
+            except KeyError: # data loaded with older version of graph (before boolean node added)
+                status_tile.data[activity_status_boolean_nodeid] = True
+                active = True
             if active and not status_tile.data[activity_status_boolean_nodeid]:
                 status_tile.data[activity_status_boolean_nodeid] = True
                 status_tile.save()
