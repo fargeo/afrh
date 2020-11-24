@@ -199,19 +199,35 @@ class FileTemplateView(View):
         self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
 
         direct_impact_nodegroupid = '344a48d8-f47a-11ea-a92a-a683e74f6c3a'
+        indirect_impact_nodegroupid = 'f36b5244-f479-11ea-a92a-a683e74f6c3a'
         archeology_zone_graphid = 'ddb9385d-39fe-11ea-b9b7-027f24e6fd6b'
+        master_plan_zone_graphid = '12581535-3a08-11ea-b9b7-027f24e6fd6b'
+        character_area_graphid = 'f3ab0a3a-1aca-11ea-8211-acde48001122'
         related_arch_zone_resourceids = []
-        related_arch_zone_names = 'None'
+        master_plan_zones = []
+        character_areas = []
+        related_arch_zone_names = 'No Related Archaeology Zones'
+        related_mpz_names = 'No Related Master Plan Zones'
+        related_character_area_names = 'No Related Character Areas'
         within = False
-        direct_impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid), consultation.tiles))
+        impact_tiles = list(filter(lambda x: (str(x.nodegroup_id) == direct_impact_nodegroupid or str(x.nodegroup_id) == indirect_impact_nodegroupid), consultation.tiles))
 
         # if one of the direct impacts is archaeology, grab the names of those resources from Direct Impacts, also set the checklist in doc
-        for t in direct_impact_tiles:
-            for related_res in t.data[direct_impact_nodegroupid]:
-                res = Resource.objects.get(pk=related_res["resourceId"])
-                if str(res.graph_id) == archeology_zone_graphid:
-                    within = True
-                    related_arch_zone_resourceids.append(related_res["resourceId"])
+        for t in impact_tiles:
+            if str(t.nodegroup_id) == direct_impact_nodegroupid:
+                for related_res in t.data[direct_impact_nodegroupid]:
+                    res = Resource.objects.get(pk=related_res["resourceId"])
+                    if str(res.graph_id) == archeology_zone_graphid:
+                        within = True
+                        related_arch_zone_resourceids.append(related_res["resourceId"])
+
+            elif str(t.nodegroup_id) == indirect_impact_nodegroupid:
+                for related_res in t.data[indirect_impact_nodegroupid]:
+                    res = Resource.objects.get(pk=related_res["resourceId"])
+                    if str(res.graph_id) == master_plan_zone_graphid:
+                        master_plan_zones.append(related_res["resourceId"])
+                    elif str(res.graph_id) == character_area_graphid:
+                        character_areas.append(related_res["resourceId"])
 
         if within:
             impact_dict = {
@@ -225,15 +241,29 @@ class FileTemplateView(View):
             }
 
         for r in Resource.objects.filter(pk__in=related_arch_zone_resourceids):
-            if related_arch_zone_names == 'None':
+            if related_arch_zone_names == 'No Related Archaeology Zones':
                 related_arch_zone_names = r.displayname
             else:
                 related_arch_zone_names += (', ' + r.displayname)
+
+        for r in Resource.objects.filter(pk__in=master_plan_zones):
+            if related_mpz_names == 'No Related Master Plan Zones':
+                related_mpz_names = r.displayname
+            else:
+                related_mpz_names += (', ' + r.displayname)
+
+        for r in Resource.objects.filter(pk__in=character_areas):
+            if related_character_area_names == 'No Related Character Areas':
+                related_character_area_names = r.displayname
+            else:
+                related_character_area_names += (', ' + r.displayname)
 
 
         self.replace_string(self.doc, 'Related Archaeological Zones', related_arch_zone_names)
         self.replace_string(self.doc, 'Within', impact_dict['Within'])
         self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
+        self.replace_string(self.doc, 'Name (Master Plan Zones, Summary)', related_mpz_names)
+        self.replace_string(self.doc, 'Name (Character Areas, Summary)', related_character_area_names)
 
 
     # def edit_letter_A(self, consultation, datatype_factory):
