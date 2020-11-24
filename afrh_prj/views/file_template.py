@@ -17,6 +17,7 @@ You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
+# import folium
 import json
 import os
 import uuid
@@ -25,9 +26,10 @@ import docx
 from docx import Document
 from docx.text.paragraph import Paragraph
 from docx.oxml.xmlchemy import OxmlElement
+from docx.shared import Inches
+# from io import BytesIO
 from html.parser import HTMLParser
 from html.entities import name2codepoint
-from pprint import pprint
 from django.core.files.uploadedfile import UploadedFile
 from django.http import HttpRequest, HttpResponseNotFound
 from django.utils.translation import ugettext as _
@@ -266,6 +268,45 @@ class FileTemplateView(View):
         self.replace_string(self.doc, 'Name (Character Areas, Summary)', related_character_area_names)
 
 
+        # work in progress - get map of location and save as image to docx file
+        activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
+        activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
+
+        # location_tiles = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))
+        # try:
+        #     if location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["type"] == "Point":
+        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"]
+        #     else:
+        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"][0][0]
+        # except (IndexError, KeyError):
+        #     location = None
+
+
+        # if not location:
+        #     return
+
+        # f = BytesIO()
+        # m = folium.Map(
+        #     location=location,
+        #     # tiles='Stamen Toner',
+        #     zoom_start=15
+        # )
+
+        # folium.CircleMarker(
+        #     location=location,
+        #     radius=50,
+        #     # popup='Laurelhurst Park',
+        #     color='#3186cc',
+        #     fill=True,
+        #     fill_color='#3186cc'
+        # ).add_to(m)
+        # m.save(os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', 'index.html'))
+        # m.save(f, close_file=False)
+
+        # def save(self, outfile, close_file=True, **kwargs):
+        # self.insert_image(self.doc, 'APE Map (Management Activity A, Section 106 Review)', image_obj=f)
+
+
     # def edit_letter_A(self, consultation, datatype_factory):
     #     template_dict = {
     #         'Case Officer':'8d41e4d4-a250-11e9-a3ff-00224800b26d',
@@ -356,10 +397,55 @@ class FileTemplateView(View):
                     iterate_tables(section.header.tables, k, v)
 
     
-    def insert_image(self, document, k, v, image_path=None, config=None):
-        # going to need to write custom logic depending on how images should be placed/styled
+    def insert_image(self, document, k, image_path=None, image_obj=None, config=None):
+        
+        def replace_in_runs(p_list, k):
+            for paragraph in p_list:
+                for i, run in enumerate(paragraph.runs):
+                    if k in run.text: # now check if html
+                        # run_style = run.style
+                        if image_obj:
+                            document.add_picture(image_obj, width=Inches(2.0))
+                        elif image_path:
+                            document.add_picture(image_path, width=Inches(2.0))
+                        # run.text = run.text.replace(k, v)
+                    # elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
+                    #     paragraph.text = paragraph.text.replace(k, v)
 
-        return True
+        def iterate_tables(t_list, k):
+            for table in t_list:
+                for row in table.rows:
+                    for cell in row.cells:
+                        replace_in_runs(cell.paragraphs, k)
+
+        
+        if k is not None:
+            k = "{{"+k+"}}"
+
+            if len(document.paragraphs) > 0:
+                replace_in_runs(document.paragraphs, k)
+
+            # if len(document.tables) > 0:
+            #     iterate_tables(document.tables, k)
+            
+            # if len(document.sections) > 0:
+            #     for section in document.sections:
+            #         replace_in_runs(section.footer.paragraphs, k)
+            #         iterate_tables(section.footer.tables, k)
+            #         replace_in_runs(section.header.paragraphs, k)
+            #         iterate_tables(section.header.tables, k)
+
+        def insert_paragraph_after(self, paragraph, text=None, style=None):
+            """Insert a new paragraph after the given paragraph."""
+            new_p = OxmlElement("w:p")
+            paragraph._p.addnext(new_p)
+            new_para = Paragraph(new_p, paragraph._parent)
+            if text:
+                new_para.add_run(text)
+            if style is not None:
+                new_para.style = style
+            return new_para
+
 
 
     def insert_custom(self, document, k, v, config=None):
