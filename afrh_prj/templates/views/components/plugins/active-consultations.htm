@@ -13,7 +13,7 @@
 
 <!-- ko if: loading() === false -->
 <div class="active-cons-container" style="">
-    <div class="sticky">
+    <div class="sticky" data-bind="visible: active_items().length > 0">
         <div class="active-cons-filters" data-bind="visible: layout() === 'grid'">
             <input data-bind="value: keyword" placeholder="find..."></input>
             <button class="btn btn-md btn-primary filter" data-bind="click: keywordSearch">{% trans "Search" %}</button>
