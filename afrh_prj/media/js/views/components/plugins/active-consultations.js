@@ -8,7 +8,7 @@ define([
     'bindings/chosen',
     'bindings/mapbox-gl',
     'widgets'
-], function(ko, arches, $, moment, AlertViewModel, geojsonExtent) {
+], function(ko, arches, $, moment, geojsonExtent) {
     return ko.components.register('active-consultations',  {
         viewModel: function(params) {
             var self = this;
@@ -225,7 +225,7 @@ define([
                     error: function(response, status, error) {
                         console.log(response);
                         if(response.statusText !== 'abort'){
-                            this.viewModel.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
+                            self.loading(false);
                         }
                     }
                 });
