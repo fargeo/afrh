@@ -43,7 +43,8 @@ class ActiveConsultationsView(View):
             "Scope of Work":"5a8422b0-3cac-11ea-b9b7-027f24e6fd6b",
             "Target Date":"8d41e4cb-a250-11e9-9cf2-00224800b26d",
             "Action Agent":"b0007bfc-415e-11ea-b9b7-027f24e6fd6b",
-            "Consultation Date":"6da8cd4c-3c8a-11ea-b9b7-027f24e6fd6b"
+            "Consultation Date":"6da8cd4c-3c8a-11ea-b9b7-027f24e6fd6b",
+            "Consultation Type": "502f401e-3cae-11ea-b9b7-027f24e6fd6b"
         }
         self.active_cons_status_include_concept_values = [
             "Reviews Complete - Work Not Started",

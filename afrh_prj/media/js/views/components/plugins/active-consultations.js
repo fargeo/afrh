@@ -244,7 +244,7 @@ define([
                             results.push([
                                 $('<a></a>').attr("href",link).text(consultation['Management Activity Name'])[0].outerHTML,
                                 $('<a></a>').attr("href",link).text(consultation['Consultation Type'])[0].outerHTML,
-                                $('<a></a>').attr("href",link).text(consultation['Target Date'])[0].outerHTML,
+                                $('<a></a>').attr("href",link).text(consultation['Consultation Date'])[0].outerHTML,
                                 $('<a></a>').attr("href",link).text(consultation['Agent'])[0].outerHTML,
                                 $('<a></a>').attr("href",link).html(consultation['Scope of Work Description'])[0].outerHTML
                             ]);
