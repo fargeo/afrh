@@ -3,7 +3,6 @@ define([
     'arches',
     'jquery',
     'moment',
-    'viewmodels/alert',
     'geojson-extent',
     'bindings/chosen',
     'bindings/mapbox-gl',

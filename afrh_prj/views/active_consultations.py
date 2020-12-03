@@ -182,11 +182,11 @@ def build_resource_dict(consultations, active_cons_node_list, datatype_factory, 
     active_cons_list_keys = list(active_cons_node_list.keys())
     for consultation in consultations:
         resource = {}
-        resource['resourceinstanceid'] = consultation.resourceinstanceid
+        resource['resourceinstanceid'] = str(consultation.resourceinstanceid)
         consultation.load_tiles()
         for tile in consultation.tiles:
             for nodeid, nodevalue in list(tile.data.items()):
-                if nodeid in active_cons_list_vals:
+                if str(nodeid) in active_cons_list_vals:
                     node = models.Node.objects.get(nodeid=nodeid)
                     try:
                         datatype = datatype_factory.get_instance(node.datatype)
