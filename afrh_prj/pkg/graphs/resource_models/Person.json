@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Descriptions",
                     "nodegroup_id": "5b2c8a9c-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 4,
@@ -42,7 +42,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "TimeSpan",
                     "nodegroup_id": "5b2c8aae-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 1,
@@ -68,7 +68,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Roles",
                     "nodegroup_id": "5b2c8a9f-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 3,
@@ -106,7 +106,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Names",
                     "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 0,
@@ -208,7 +208,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Information Resources",
                     "nodegroup_id": "cead7e4a-6a4b-11ea-a42b-acde48001122",
                     "sortorder": null,
@@ -234,7 +234,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Inventory Resources",
                     "nodegroup_id": "2c8e1cc0-689b-11ea-9c7f-acde48001122",
                     "sortorder": null,
@@ -277,6 +277,7 @@
                         "label": "Role Time Span Note",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "5b2c8ae0-398a-11ea-b9b7-027f24e6fd6b",
@@ -390,6 +391,7 @@
                         "label": "Related Inventory Resource Notes",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "58d3886a-689b-11ea-9c7f-acde48001122",
@@ -424,6 +426,7 @@
                         "label": "External Cross Reference Source",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "581c12dc-415b-11ea-b9b7-027f24e6fd6b",
@@ -471,6 +474,7 @@
                         "label": "External Cross Reference Number",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "581c12db-415b-11ea-b9b7-027f24e6fd6b",
@@ -532,6 +536,7 @@
                         "label": "File Name",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "5b2c8ad2-398a-11ea-b9b7-027f24e6fd6b",
@@ -578,6 +583,7 @@
                         "label": "Text of Name",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "5b2c8ad0-398a-11ea-b9b7-027f24e6fd6b",
@@ -1164,27 +1170,27 @@
                 {
                     "config": {
                         "description": {
-                            "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
-                            "string_template": "<Name Type>, <Actor/Organization Name>, <Names>"
+                            "nodegroup_id": "5b2c8a9c-398a-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Description>"
                         },
                         "map_popup": {
-                            "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
-                            "string_template": "<Name Type>, <Actor/Organization Name>, <Names>"
+                            "nodegroup_id": "5b2c8a9c-398a-11ea-b9b7-027f24e6fd6b",
+                            "string_template": "<Description>"
                         },
                         "name": {
                             "nodegroup_id": "5b2c8aab-398a-11ea-b9b7-027f24e6fd6b",
-                            "string_template": "<Name Type>, <Actor/Organization Name>, <Names>"
+                            "string_template": "<Actor/Organization Name>"
                         },
                         "triggering_nodegroups": []
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
-                    "id": "55cbe454-0fdb-11eb-ae9e-acde48001122"
+                    "id": "359e7e32-34eb-11eb-b34a-acde48001122"
                 }
             ],
             "graphid": "5b2c8a98-398a-11ea-b9b7-027f24e6fd6b",
             "iconclass": "fa fa-user",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -2168,8 +2174,8 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
+        "db": "PostgreSQL 12.3 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
+        "git hash": "889ea2d10 2020-12-02 15:08:45 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
