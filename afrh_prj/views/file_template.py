@@ -28,6 +28,7 @@ from docx.text.paragraph import Paragraph
 from docx.oxml.xmlchemy import OxmlElement
 from docx.shared import Inches
 # from io import BytesIO
+from afrh_prj.utils.create_static_map import StaticMapCreator
 from html.parser import HTMLParser
 from html.entities import name2codepoint
 from django.core.files.uploadedfile import UploadedFile
@@ -50,23 +51,23 @@ class FileTemplateView(View):
         self.doc = None
         self.resource = None
         self.date = None
+        self.file_list_node_id = '2541f898-e0c7-11ea-8120-784f435179ea'
 
     def get(self, request):
         parenttile_id = request.GET.get('parenttile_id')
         parent_tile = Tile.objects.get(tileid=parenttile_id)
         letter_tiles = Tile.objects.filter(parenttile=parent_tile)
-        file_list_node_id = "2541f898-e0c7-11ea-8120-784f435179ea"
         url = None
         for tile in letter_tiles:
             if url is not None:
                 break
-            for data_obj in tile.data[file_list_node_id]:
+            for data_obj in tile.data[self.file_list_node_id]:
                 if data_obj['status'] == 'uploaded':
                     url = data_obj['url']
                     break
 
         if url is not None:
-            return JSONResponse({'msg':'success','download':url })
+            return JSONResponse({'msg': 'success', 'download': url})
         return HttpResponseNotFound("No letters tile matching query by parent tile")
     
     def post(self, request): 
@@ -87,9 +88,8 @@ class FileTemplateView(View):
         self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
         self.edit_letter_default(self.resource, datatype_factory)
 
-        new_file_name = self.date+'_'+template_name
-        new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', new_file_name)
-
+        new_file_name = self.date + '_' + template_name
+        new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles', 'docx', new_file_name)
         new_req = HttpRequest()
         new_req.method = 'POST'
         new_req.user = request.user
@@ -100,12 +100,11 @@ class FileTemplateView(View):
         saved_file = open(new_file_path, 'rb')
         stat = os.stat(new_file_path)
         file_data = UploadedFile(saved_file)
-        file_list_node_id = "2541f898-e0c7-11ea-8120-784f435179ea"
 
         tile = json.dumps({
             "tileid":None,
             "data": {
-                file_list_node_id: [{
+                self.file_list_node_id: [{
                     "name":new_file_name,
                     "accepted":True,
                     "height":0,
@@ -120,7 +119,7 @@ class FileTemplateView(View):
                     "content":"blob:"+host+"/{0}".format(uuid.uuid4())
                 }]
             },
-            "nodegroup_id":file_list_node_id,
+            "nodegroup_id":self.file_list_node_id,
             "parenttile_id":parenttile_id,
             "resourceinstance_id":resourceinstance_id,
             "sortorder":0,
@@ -131,7 +130,7 @@ class FileTemplateView(View):
         new_req.method = 'POST'
         new_req.user = request.user
         new_req.POST['data'] = tile
-        new_req.FILES['file-list_' + file_list_node_id] = file_data
+        new_req.FILES['file-list_' + self.file_list_node_id] = file_data
         new_tile_data_instance = TileData()
         post_resp = TileData.post(new_tile_data_instance, new_req)
 
@@ -228,52 +227,17 @@ class FileTemplateView(View):
         # work in progress - get map of location and save as image to docx file
         activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
         activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
+        
+        try:
+            location = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))[0]
+        except (IndexError, KeyError):
+            return
 
-        # location_tiles = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))
-        # try:
-        #     if location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["type"] == "Point":
-        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"]
-        #     else:
-        #         location = location_tiles[0].data[activity_spatial_location_coordinates_nodeid]["features"][0]["geometry"]["coordinates"][0][0]
-        # except (IndexError, KeyError):
-        #     location = None
-
-
-        # if not location:
-        #     return
-
-        # f = BytesIO()
-        # m = folium.Map(
-        #     location=location,
-        #     # tiles='Stamen Toner',
-        #     zoom_start=15
-        # )
-
-        # folium.CircleMarker(
-        #     location=location,
-        #     radius=50,
-        #     # popup='Laurelhurst Park',
-        #     color='#3186cc',
-        #     fill=True,
-        #     fill_color='#3186cc'
-        # ).add_to(m)
-        # m.save(os.path.join(settings.APP_ROOT, 'uploadedfiles/docx', 'index.html'))
-        # m.save(f, close_file=False)
-
-        # def save(self, outfile, close_file=True, **kwargs):
-        # self.insert_image(self.doc, 'APE Map (Management Activity A, Section 106 Review)', image_obj=f)
-
-
-    # def edit_letter_A(self, consultation, datatype_factory):
-    #     template_dict = {
-    #         'Case Officer':'8d41e4d4-a250-11e9-a3ff-00224800b26d',
-    #         'Completion Date': '8d41e4cd-a250-11e9-a25b-00224800b26d',
-    #         'Proposal': '8d41e4bd-a250-11e9-89e8-00224800b26d',
-    #         'Log Date': '8d41e4cf-a250-11e9-a86d-00224800b26d',
-    #         'Action': 'caf5bff8-a3d7-11e9-a37c-00224800b26d'
-    #     }
-    #     self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
-
+        map_output_path = os.path.join(settings.APP_ROOT, "temp", "temp_map.png")
+        feature_collection = location.data[activity_spatial_location_coordinates_nodeid]
+        static_map_creator = StaticMapCreator()
+        static_map_creator.create_map(feature_collection, map_output_path, height=750, width=1200)
+        self.insert_image(self.doc, "APE Map", image_path=map_output_path)
 
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
         self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
@@ -349,27 +313,18 @@ class FileTemplateView(View):
         
         def replace_in_runs(p_list, k):
             for paragraph in p_list:
-                for i, run in enumerate(paragraph.runs):
-                    if k in run.text: # now check if html
-                        # run_style = run.style
-                        if image_obj:
-                            document.add_picture(image_obj, width=Inches(2.0))
-                        elif image_path:
-                            document.add_picture(image_path, width=Inches(2.0))
-                        # run.text = run.text.replace(k, v)
-                    # elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
-                    #     paragraph.text = paragraph.text.replace(k, v)
+                for run in paragraph.runs:
+                    if k in run.text and image_path:
+                        run.text = run.text.replace(k, '')
+                        run.add_picture(image_path)
 
         def iterate_tables(t_list, k):
             for table in t_list:
                 for row in table.rows:
                     for cell in row.cells:
                         replace_in_runs(cell.paragraphs, k)
-
         
         if k is not None:
-            k = "{{"+k+"}}"
-
             if len(document.paragraphs) > 0:
                 replace_in_runs(document.paragraphs, k)
 
