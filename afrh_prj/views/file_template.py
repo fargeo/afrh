@@ -51,7 +51,6 @@ class FileTemplateView(View):
         self.resource = None
         self.date = None
 
-
     def get(self, request):
         parenttile_id = request.GET.get('parenttile_id')
         parent_tile = Tile.objects.get(tileid=parenttile_id)
@@ -70,17 +69,12 @@ class FileTemplateView(View):
             return JSONResponse({'msg':'success','download':url })
         return HttpResponseNotFound("No letters tile matching query by parent tile")
     
-    
     def post(self, request): 
-        # data = JSONDeserializer().deserialize(request.body)
         datatype_factory = DataTypeFactory()
-        # template_id = request.POST.get('template_id')
         parenttile_id = request.POST.get('parenttile_id')
         resourceinstance_id = request.POST.get('resourceinstance_id', None)
         self.resource = Resource.objects.get(resourceinstanceid=resourceinstance_id)
         self.resource.load_tiles()
-
-        # template_name = self.get_template_path(template_id)
         template_name = "afrh_1.docx"
         template_path = os.path.join(settings.APP_ROOT, 'docx', template_name)
 
@@ -91,11 +85,6 @@ class FileTemplateView(View):
 
         date = datetime.today()
         self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
-
-        # if template_name == 'GLAAS Planning Letter A - No Progression - template.docx':
-        #     self.edit_letter_A(self.resource, datatype_factory)
-        # elif template_name == 'GLAAS Planning Letter B2 - Predetermination - template.docx':
-        #     self.edit_letter_B2(self.resource, datatype_factory)
         self.edit_letter_default(self.resource, datatype_factory)
 
         new_file_name = self.date+'_'+template_name
@@ -144,41 +133,12 @@ class FileTemplateView(View):
         new_req.POST['data'] = tile
         new_req.FILES['file-list_' + file_list_node_id] = file_data
         new_tile_data_instance = TileData()
-
         post_resp = TileData.post(new_tile_data_instance, new_req)
 
         if post_resp.status_code == 200:
             return JSONResponse({'tile':tile, 'status':'success' })
 
         return HttpResponseNotFound(post_resp.status_code)
-
-
-    # def get_template_path(self, template_id):
-    #     template_dict = { # keys are conceptids from "Letters" concept list; values are known file names
-    #         "a26c77ff-1d04-4b76-a45f-417f7ed24333":'', # Addit Cond Text
-    #         "8c12a812-8000-4ec9-913d-c6fd516117f2":'', # Arch Rec Text
-    #         "01dec356-e72e-40e6-b1b1-b847b9799d2f":'GLAAS Planning Letter A - No Progression - template.docx', # Letter A
-    #         "320abc26-db82-44a6-be11-8d44aaa23365":'', # Letter A2
-    #         "fd15c6c7-e94d-4914-8d51-a98bda6f4a7b":'', # Letter B1
-    #         "8cc91474-11ce-47d9-b886-f0e3fc49d277":'GLAAS Planning Letter B2 - Predetermination - template.docx', # Letter B2
-    #         "08bb630d-a27b-45bc-a13f-567b428018c5":'GLAAS Planning Letter C - Condition two stage - template.docx' # Letter C
-    #         }
-    #     for key, value in list(template_dict.items()):
-    #         if key == template_id:
-    #             return value
-
-    #     return None
-
-
-    """
-    def edit_letter_X(self, consultation, datatype_factory):
-        # dict of string/node pairs specific to docx template
-        template_dict = {
-           string_key1: 'node_id1',
-           string_key2: 'node_id2'
-        }
-        self.replace_in_letter(consultation.tiles, template_dict, datatype_factory)
-    """
 
     def edit_letter_default(self, consultation, datatype_factory):
         template_dict = {
@@ -260,14 +220,11 @@ class FileTemplateView(View):
             else:
                 related_character_area_names += (', ' + r.displayname)
 
-
         self.replace_string(self.doc, 'Related Archaeological Zones', related_arch_zone_names)
         self.replace_string(self.doc, 'Within', impact_dict['Within'])
         self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
         self.replace_string(self.doc, 'Name (Master Plan Zones, Summary)', related_mpz_names)
         self.replace_string(self.doc, 'Name (Character Areas, Summary)', related_character_area_names)
-
-
         # work in progress - get map of location and save as image to docx file
         activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
         activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
@@ -342,7 +299,6 @@ class FileTemplateView(View):
                     html = True
                 self.replace_string(self.doc, key, lookup_val, html)
 
-    
     def replace_string(self, document, key, v, html=False):
         # Note that the intent here is to preserve how things are styled in the docx
         # easiest way is to iterate through p.runs, not as fast as iterating through parent.paragraphs
@@ -355,16 +311,14 @@ class FileTemplateView(View):
                 document_html_parser = DocumentHTMLParser(p, document)
                 document_html_parser.insert_into_paragraph_and_feed(v)
 
-        
         def replace_in_runs(p_list, k, v):
             for paragraph in p_list:
                 if html is True:
                     parse_html_to_docx(paragraph, k, v)
                 for i, run in enumerate(paragraph.runs):
-                    if k in run.text: # now check if html
-                        # run_style = run.style
+                    if k in run.text:
                         run.text = run.text.replace(k, v)
-                    elif i == (len(paragraph.runs) - 1) and k in paragraph.text: # backstop case: rogue text outside of run obj - must fix template
+                    elif i == (len(paragraph.runs) - 1) and k in paragraph.text:
                         paragraph.text = paragraph.text.replace(k, v)
 
         def iterate_tables(t_list, k, v):
@@ -376,12 +330,6 @@ class FileTemplateView(View):
         if v is not None and key is not None:
             k = "{{"+key+"}}"
             doc = document
-            # some of these are probably unnecessary
-            # foot_style = styles['Footer']
-            # head_style = styles['Header']
-            # t_style = None
-            # p_style = None
-            # run_style = None
 
             if len(doc.paragraphs) > 0:
                 replace_in_runs(doc.paragraphs, k, v)
@@ -425,16 +373,6 @@ class FileTemplateView(View):
             if len(document.paragraphs) > 0:
                 replace_in_runs(document.paragraphs, k)
 
-            # if len(document.tables) > 0:
-            #     iterate_tables(document.tables, k)
-            
-            # if len(document.sections) > 0:
-            #     for section in document.sections:
-            #         replace_in_runs(section.footer.paragraphs, k)
-            #         iterate_tables(section.footer.tables, k)
-            #         replace_in_runs(section.header.paragraphs, k)
-            #         iterate_tables(section.header.tables, k)
-
         def insert_paragraph_after(self, paragraph, text=None, style=None):
             """Insert a new paragraph after the given paragraph."""
             new_p = OxmlElement("w:p")
@@ -446,11 +384,8 @@ class FileTemplateView(View):
                 new_para.style = style
             return new_para
 
-
-
     def insert_custom(self, document, k, v, config=None):
         # perhaps replaces {{custom_object}} with pre-determined text structure with custom style/format
-
         return True
 
         
@@ -589,7 +524,7 @@ class DocumentHTMLParser(HTMLParser):
             self.add_hyperlink(self.paragraph, self.hyperlink, data, color)
             self.hyperlink = False
         elif self.td_cursor is True:
-            self.table.cell(self.table_rows-1, self.table_cols-1).add_paragraph(data) #formatting?
+            self.table.cell(self.table_rows-1, self.table_cols-1).add_paragraph(data)
         else:
             self.run.add_text(data)
 
