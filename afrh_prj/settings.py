@@ -147,6 +147,10 @@ CACHES = {
     }
 }
 
+BYPASS_CARDINALITY_TILE_VALIDATION = True
+BYPASS_UNIQUE_CONSTRAINT_TILE_VALIDATION = False
+BYPASS_REQUIRED_VALUE_TILE_VALIDATION = False
+
 #Identify the usernames and duration (seconds) for which you want to cache the time wheel
 CACHE_BY_USER = {'anonymous': 3600 * 24}
 
