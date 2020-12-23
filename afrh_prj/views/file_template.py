@@ -130,9 +130,8 @@ class FileTemplateView(View):
         new_req.FILES['file-list_' + self.file_list_node_id] = file_data
         new_tile_data_instance = TileData()
         post_resp = TileData.post(new_tile_data_instance, new_req)
-
         if post_resp.status_code == 200:
-            return JSONResponse({'tile':tile, 'status':'success' })
+            return JSONResponse({'tile':json.loads(post_resp.content), 'status':'success' })
 
         return HttpResponseNotFound(post_resp.status_code)
 

@@ -63,8 +63,9 @@ define([
                     "parenttile_id":tile.parenttile_id
                 },
                 context: self,
-                success: function(){
-                    self.downloadFile(tile);
+                success: function(data){
+                    self.dataURL(data.tile.data['2541f898-e0c7-11ea-8120-784f435179ea'][0].url);
+                    self.loading(false);
                 },
                 error: function(response) {
                     if(response.statusText !== 'abort'){
