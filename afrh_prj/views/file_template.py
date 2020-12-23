@@ -161,6 +161,8 @@ class FileTemplateView(View):
         archeology_zone_graphid = 'ddb9385d-39fe-11ea-b9b7-027f24e6fd6b'
         master_plan_zone_graphid = '12581535-3a08-11ea-b9b7-027f24e6fd6b'
         character_area_graphid = 'f3ab0a3a-1aca-11ea-8211-acde48001122'
+        activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
+        activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
         related_arch_zone_resourceids = []
         master_plan_zones = []
         character_areas = []
@@ -221,9 +223,6 @@ class FileTemplateView(View):
         self.replace_string(self.doc, 'Not within', impact_dict['Not within'])
         self.replace_string(self.doc, 'Name (Master Plan Zones, Summary)', related_mpz_names)
         self.replace_string(self.doc, 'Name (Character Areas, Summary)', related_character_area_names)
-        # work in progress - get map of location and save as image to docx file
-        activity_spatial_location_nodegroupid = '429130d2-6b27-11ea-b9b7-027f24e6fd6b'
-        activity_spatial_location_coordinates_nodeid = '4d12497f-6b27-11ea-b9b7-027f24e6fd6b'
         
         try:
             location = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))[0]
