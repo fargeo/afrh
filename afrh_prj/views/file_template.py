@@ -227,7 +227,7 @@ class FileTemplateView(View):
         
         try:
             location = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))[0]
-            map_output_path = os.path.join(settings.APP_ROOT, "temp", "temp_map.png")
+            map_output_path = os.path.join(settings.APP_ROOT, "docx", "temp", "temp_map.png")
             feature_collection = location.data[activity_spatial_location_coordinates_nodeid]
             static_map_creator = StaticMapCreator()
             static_map_creator.create_map(feature_collection, map_output_path, height=500, width=800)
