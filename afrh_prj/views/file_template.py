@@ -43,7 +43,9 @@ from arches.app.models.tile import Tile
 from arches.app.utils.betterJSONSerializer import JSONSerializer, JSONDeserializer
 from arches.app.utils.response import JSONResponse
 from arches.app.views.tile import TileData
+import logging
 
+logger = logging.getLogger(__name__)
 
 class FileTemplateView(View):
 
@@ -70,68 +72,71 @@ class FileTemplateView(View):
             return JSONResponse({'msg': 'success', 'download': url})
         return HttpResponseNotFound("No letters tile matching query by parent tile")
     
-    def post(self, request): 
-        datatype_factory = DataTypeFactory()
-        parenttile_id = request.POST.get('parenttile_id')
-        resourceinstance_id = request.POST.get('resourceinstance_id', None)
-        self.resource = Resource.objects.get(resourceinstanceid=resourceinstance_id)
-        self.resource.load_tiles()
-        template_name = "afrh_1.docx"
-        template_path = os.path.join(settings.APP_ROOT, 'docx', template_name)
+    def post(self, request):
+        try:
+            datatype_factory = DataTypeFactory()
+            parenttile_id = request.POST.get('parenttile_id')
+            resourceinstance_id = request.POST.get('resourceinstance_id', None)
+            self.resource = Resource.objects.get(resourceinstanceid=resourceinstance_id)
+            self.resource.load_tiles()
+            template_name = "afrh_1.docx"
+            template_path = os.path.join(settings.APP_ROOT, 'docx', template_name)
 
-        if not os.path.exists(os.path.join(settings.APP_ROOT, 'uploadedfiles','docx')):
-            os.mkdir(os.path.join(settings.APP_ROOT, 'uploadedfiles','docx'))
+            if not os.path.exists(os.path.join(settings.APP_ROOT, 'uploadedfiles','docx')):
+                os.mkdir(os.path.join(settings.APP_ROOT, 'uploadedfiles','docx'))
 
-        self.doc = Document(template_path)
-        self.date = datetime.now().strftime("%Y-%m-%d")
-        self.edit_letter_default(self.resource, datatype_factory)
-        new_file_name = f"{self.date}_{template_name}"
-        new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles', 'docx', new_file_name)
-        new_req = HttpRequest()
-        new_req.method = 'POST'
-        new_req.user = request.user
-        new_req.POST['data'] = None
-        host = request.get_host()
+            self.doc = Document(template_path)
+            self.date = datetime.now().strftime("%Y-%m-%d")
+            self.edit_letter_default(self.resource, datatype_factory)
+            new_file_name = f"{self.date}_{template_name}"
+            new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles', 'docx', new_file_name)
+            new_req = HttpRequest()
+            new_req.method = 'POST'
+            new_req.user = request.user
+            new_req.POST['data'] = None
+            host = request.get_host()
 
-        self.doc.save(new_file_path)
-        saved_file = open(new_file_path, 'rb')
-        stat = os.stat(new_file_path)
-        file_data = UploadedFile(saved_file)
+            self.doc.save(new_file_path)
+            saved_file = open(new_file_path, 'rb')
+            stat = os.stat(new_file_path)
+            file_data = UploadedFile(saved_file)
 
-        tile = json.dumps({
-            "tileid":None,
-            "data": {
-                self.file_list_node_id: [{
-                    "name": new_file_name,
-                    "accepted": True,
-                    "height": 0,
-                    "lastModified": stat.st_mtime,
-                    "size": stat.st_size,
-                    "status": "queued",
-                    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                    "width": 0,
-                    "url": None,
-                    "file_id": None,
-                    "index": 0,
-                    "content": "blob:"+host+"/{0}".format(uuid.uuid4())
-                }]
-            },
-            "nodegroup_id": self.file_list_node_id,
-            "parenttile_id": parenttile_id,
-            "resourceinstance_id": resourceinstance_id,
-            "sortorder": 0,
-            "tiles": {}
-        })
+            tile = json.dumps({
+                "tileid":None,
+                "data": {
+                    self.file_list_node_id: [{
+                        "name": new_file_name,
+                        "accepted": True,
+                        "height": 0,
+                        "lastModified": stat.st_mtime,
+                        "size": stat.st_size,
+                        "status": "queued",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "width": 0,
+                        "url": None,
+                        "file_id": None,
+                        "index": 0,
+                        "content": "blob:"+host+"/{0}".format(uuid.uuid4())
+                    }]
+                },
+                "nodegroup_id": self.file_list_node_id,
+                "parenttile_id": parenttile_id,
+                "resourceinstance_id": resourceinstance_id,
+                "sortorder": 0,
+                "tiles": {}
+            })
 
-        new_req = HttpRequest()
-        new_req.method = 'POST'
-        new_req.user = request.user
-        new_req.POST['data'] = tile
-        new_req.FILES['file-list_' + self.file_list_node_id] = file_data
-        new_tile_data_instance = TileData()
-        post_resp = TileData.post(new_tile_data_instance, new_req)
-        if post_resp.status_code == 200:
-            return JSONResponse({'tile':json.loads(post_resp.content), 'status':'success' })
+            new_req = HttpRequest()
+            new_req.method = 'POST'
+            new_req.user = request.user
+            new_req.POST['data'] = tile
+            new_req.FILES['file-list_' + self.file_list_node_id] = file_data
+            new_tile_data_instance = TileData()
+            post_resp = TileData.post(new_tile_data_instance, new_req)
+            if post_resp.status_code == 200:
+                return JSONResponse({'tile':json.loads(post_resp.content), 'status':'success' })
+        except Exception as e:
+            logger.exception(e)
 
         return HttpResponseNotFound(post_resp.status_code)
 
