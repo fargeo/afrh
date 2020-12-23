@@ -232,11 +232,14 @@ class FileTemplateView(View):
             location = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))[0]
             map_output_path = os.path.join(settings.APP_ROOT, "docx", "temp", "temp_map.png")
             feature_collection = location.data[activity_spatial_location_coordinates_nodeid]
+            logger.error(str(feature_collection))
             static_map_creator = StaticMapCreator()
             static_map_creator.create_map(feature_collection, map_output_path, height=500, width=800)
             self.insert_image(self.doc, "APE Map", image_path=map_output_path)
         except (IndexError, KeyError):
             self.replace_string(self.doc, "APE Map", "\tNo APE Defined", usebraces=False)
+        except Exception as e:
+            logger.exception(e)
 
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
         self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
