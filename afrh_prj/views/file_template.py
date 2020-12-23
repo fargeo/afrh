@@ -83,12 +83,9 @@ class FileTemplateView(View):
             os.mkdir(os.path.join(settings.APP_ROOT, 'uploadedfiles','docx'))
 
         self.doc = Document(template_path)
-
-        date = datetime.today()
-        self.date = date.strftime("%Y")+'-'+date.strftime("%m")+'-'+date.strftime("%d")
+        self.date = datetime.now().strftime("%Y-%m-%d")
         self.edit_letter_default(self.resource, datatype_factory)
-
-        new_file_name = self.date + '_' + template_name
+        new_file_name = f"{self.date}_{template_name}"
         new_file_path = os.path.join(settings.APP_ROOT, 'uploadedfiles', 'docx', new_file_name)
         new_req = HttpRequest()
         new_req.method = 'POST'
