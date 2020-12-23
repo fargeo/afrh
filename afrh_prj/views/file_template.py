@@ -227,14 +227,13 @@ class FileTemplateView(View):
         
         try:
             location = list(filter(lambda x: (str(x.nodegroup_id) == activity_spatial_location_nodegroupid), consultation.tiles))[0]
+            map_output_path = os.path.join(settings.APP_ROOT, "temp", "temp_map.png")
+            feature_collection = location.data[activity_spatial_location_coordinates_nodeid]
+            static_map_creator = StaticMapCreator()
+            static_map_creator.create_map(feature_collection, map_output_path, height=500, width=800)
+            self.insert_image(self.doc, "APE Map", image_path=map_output_path)
         except (IndexError, KeyError):
-            return
-
-        map_output_path = os.path.join(settings.APP_ROOT, "temp", "temp_map.png")
-        feature_collection = location.data[activity_spatial_location_coordinates_nodeid]
-        static_map_creator = StaticMapCreator()
-        static_map_creator.create_map(feature_collection, map_output_path, height=750, width=1200)
-        self.insert_image(self.doc, "APE Map", image_path=map_output_path)
+            self.replace_string(self.doc, "APE Map", "\tNo APE Defined", usebraces=False)
 
     def replace_in_letter(self, tiles, template_dict, datatype_factory):
         self.replace_string(self.doc, 'AUTOMATIC DATE', self.date)
@@ -260,7 +259,7 @@ class FileTemplateView(View):
                     html = True
                 self.replace_string(self.doc, key, lookup_val, html)
 
-    def replace_string(self, document, key, v, html=False):
+    def replace_string(self, document, key, v, html=False, usebraces=True):
         # Note that the intent here is to preserve how things are styled in the docx
         # easiest way is to iterate through p.runs, not as fast as iterating through parent.paragraphs
         # advantage of the former is that replacing run.text preserves styling, replacing p.text does not
@@ -289,7 +288,10 @@ class FileTemplateView(View):
                         replace_in_runs(cell.paragraphs, k, v)
         
         if v is not None and key is not None:
-            k = "{{"+key+"}}"
+            if usebraces:
+                k = "{{"+key+"}}"
+            else:
+                k = key
             doc = document
 
             if len(doc.paragraphs) > 0:
