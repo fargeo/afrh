@@ -74,6 +74,6 @@ class StaticMapCreator(object):
                 self.convert_from_line(coords)
             if geom_type == "Point":
                 self.convert_from_point(coords)
-        self.context.set_zoom(18)
+        # self.context.set_zoom(17)
         image = self.context.render_cairo(width, height)
         image.write_to_png(output)
