@@ -102,25 +102,25 @@ class FileTemplateView(View):
             "tileid":None,
             "data": {
                 self.file_list_node_id: [{
-                    "name":new_file_name,
-                    "accepted":True,
-                    "height":0,
-                    "lastModified":stat.st_mtime,
-                    "size":stat.st_size,
-                    "status":"queued",
-                    "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                    "width":0,
-                    "url":None,
-                    "file_id":None,
-                    "index":0,
-                    "content":"blob:"+host+"/{0}".format(uuid.uuid4())
+                    "name": new_file_name,
+                    "accepted": True,
+                    "height": 0,
+                    "lastModified": stat.st_mtime,
+                    "size": stat.st_size,
+                    "status": "queued",
+                    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "width": 0,
+                    "url": None,
+                    "file_id": None,
+                    "index": 0,
+                    "content": "blob:"+host+"/{0}".format(uuid.uuid4())
                 }]
             },
-            "nodegroup_id":self.file_list_node_id,
-            "parenttile_id":parenttile_id,
-            "resourceinstance_id":resourceinstance_id,
-            "sortorder":0,
-            "tiles":{}
+            "nodegroup_id": self.file_list_node_id,
+            "parenttile_id": parenttile_id,
+            "resourceinstance_id": resourceinstance_id,
+            "sortorder": 0,
+            "tiles": {}
         })
 
         new_req = HttpRequest()
@@ -336,10 +336,6 @@ class FileTemplateView(View):
             if style is not None:
                 new_para.style = style
             return new_para
-
-    def insert_custom(self, document, k, v, config=None):
-        # perhaps replaces {{custom_object}} with pre-determined text structure with custom style/format
-        return True
 
         
 class DocumentHTMLParser(HTMLParser):
