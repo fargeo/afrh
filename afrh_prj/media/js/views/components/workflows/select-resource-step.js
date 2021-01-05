@@ -10,17 +10,7 @@ define([
         var self = this;
         NewTileStep.apply(this, [params]);
         this.resValue = ko.observable();
-        // if (!params.resourceid()) {
-        //     params.resourceid(params.workflow.state.resourceid);
-        // }
-        // if (params.workflow.state.steps[params._index]) {
-        //     params.tileid(params.workflow.state.steps[params._index].tileid);
-        // }
         this.disableResourceSelection = ko.observable(false);
-        // if (params.workflow.state.resourceid) {
-        //     this.resValue(params.workflow.state.resourceid);
-        //     this.disableResourceSelection(true);
-        // }
         this.loading(true);
         this.graphids = [params.graphid()];
         this.nameheading = params.nameheading;
@@ -47,7 +37,6 @@ define([
             }
             if (self.completeOnSave === true) { self.complete(true); }
         };
-
     }
 
     ko.components.register('select-resource-step', {

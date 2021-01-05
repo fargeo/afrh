@@ -2,15 +2,12 @@ define([
     'jquery',
     'arches',
     'knockout',
-    'knockout-mapping',
     'views/components/workflows/new-tile-step',
-    'views/components/workflows/final-step',
     'viewmodels/alert'
-], function($, arches, ko, koMapping, NewTileStep, FinalStep, AlertViewModel) {
+], function($, arches, ko, NewTileStep, AlertViewModel) {
     function viewModel(params) {
 
         NewTileStep.apply(this, [params]);
-        // FinalStep.apply(this, [params]);
         var self = this;
         self.loading(true);
         params.tile = self.tile;
@@ -29,7 +26,6 @@ define([
         this.getJSON = function() {
             $.ajax({
                 type: "GET",
-                // url: arches.urls.plugin('init-workflow'),
                 data: {
                     "json":true
                 },
@@ -64,7 +60,7 @@ define([
                 },
                 context: self,
                 success: function(data){
-                    self.dataURL(data.tile.data['2541f898-e0c7-11ea-8120-784f435179ea'][0].url);
+                    self.dataURL(data.tile.data[self.letterFileNodeId][0].url);
                     self.loading(false);
                 },
                 error: function(response) {
