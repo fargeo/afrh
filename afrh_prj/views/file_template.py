@@ -74,8 +74,11 @@ class FileTemplateView(View):
     
     def post(self, request):
         try:
-            datatype_factory = DataTypeFactory()
             parenttile_id = request.POST.get('parenttile_id')
+            file_tiles = Tile.objects.filter(parenttile=parenttile_id)
+            if len(file_tiles) > 0:
+                return JSONResponse({'tile': file_tiles[0].serialize(), 'status':'success' })
+            datatype_factory = DataTypeFactory()
             resourceinstance_id = request.POST.get('resourceinstance_id', None)
             self.resource = Resource.objects.get(resourceinstanceid=resourceinstance_id)
             self.resource.load_tiles()

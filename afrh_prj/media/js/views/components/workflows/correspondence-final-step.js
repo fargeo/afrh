@@ -17,6 +17,7 @@ define([
         this.urls = arches.urls;
         this.report = ko.observable();
 
+        params.parenttileid(params.workflow.state.steps[0].tileid)
         this.nodegroupids = params.workflow.steps
             .filter(function(step){return ko.unwrap(step.nodegroupid);})
             .map(function(x){return ko.unwrap(x.nodegroupid);});
