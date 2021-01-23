@@ -5,67 +5,6 @@
             "cards": [
                 {
                     "active": true,
-                    "cardid": "b1d27a08-3bbf-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "b1d27a08-3bbf-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "9df597d9-46c9-4aa0-a0e1-d5a6969273b9",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Modification",
-                    "nodegroup_id": "b1d27a06-3bbf-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 10,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "87fad7bb-46c4-11ea-b9b7-027f24e6fd6b",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "basemap": "streets",
-                        "centerX": 3,
-                        "centerY": 8.5,
-                        "overlayConfigs": [],
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": 0
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "87fad7bb-46c4-11ea-b9b7-027f24e6fd6b",
-                            "constraintid": "9a71fcf9-4027-432c-926d-a0463f401443",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Spatial Location",
-                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 4,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "76f32c54-6ac3-11ea-b559-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -631,6 +570,67 @@
                     "name": "Forms",
                     "nodegroup_id": "ed7aad08-3bce-11ea-b9b7-027f24e6fd6b",
                     "sortorder": 8,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b1d27a08-3bbf-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "b1d27a08-3bbf-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "9df597d9-46c9-4aa0-a0e1-d5a6969273b9",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Modification",
+                    "nodegroup_id": "b1d27a06-3bbf-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 10,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "87fad7bb-46c4-11ea-b9b7-027f24e6fd6b",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "basemap": "streets",
+                        "centerX": 3,
+                        "centerY": 8.5,
+                        "overlayConfigs": [],
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": 0
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "87fad7bb-46c4-11ea-b9b7-027f24e6fd6b",
+                            "constraintid": "9a71fcf9-4027-432c-926d-a0463f401443",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Spatial Location",
+                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 4,
                     "visible": true
                 }
             ],
@@ -5986,47 +5986,6 @@
                 },
                 {
                     "config": {
-                        "addToMap": false,
-                        "advancedStyle": "",
-                        "advancedStyling": false,
-                        "clusterDistance": 20,
-                        "clusterMaxZoom": 5,
-                        "clusterMinPoints": 3,
-                        "fillColor": "rgba(251,15,40,0)",
-                        "haloRadius": 4,
-                        "haloWeight": 4,
-                        "layerActivated": true,
-                        "layerIcon": "",
-                        "layerLegend": "",
-                        "layerName": "",
-                        "lineColor": "rgba(251,15,40,0.7)",
-                        "lineHaloColor": "rgba(251,15,40,0.7)",
-                        "outlineColor": "rgba(251,15,40,0.93)",
-                        "outlineWeight": 2,
-                        "pointColor": "rgba(251,15,40,0.7)",
-                        "pointHaloColor": "rgba(251,15,40,0.7)",
-                        "radius": 2,
-                        "simplification": 0.3,
-                        "weight": 2
-                    },
-                    "datatype": "geojson-feature-collection",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Spatial Coordinates",
-                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
-                    "nodeid": "87fad7bc-46c4-11ea-b9b7-027f24e6fd6b",
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "rdmCollection": "3fcc3078-ede8-4f1d-a3f1-ec03e592821a"
                     },
                     "datatype": "concept-list",
@@ -6103,7 +6062,7 @@
                     "nodeid": "6695b7d8-3d77-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 6
+                    "sortorder": 7
                 },
                 {
                     "config": {
@@ -6123,7 +6082,7 @@
                     "nodeid": "aba02f76-3d76-11ea-b9b7-027f24e6fd6b",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "sortorder": 7
+                    "sortorder": 6
                 },
                 {
                     "config": null,
@@ -6162,6 +6121,47 @@
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
                     "sortorder": 3
+                },
+                {
+                    "config": {
+                        "addToMap": true,
+                        "advancedStyle": "",
+                        "advancedStyling": false,
+                        "clusterDistance": 20,
+                        "clusterMaxZoom": 5,
+                        "clusterMinPoints": 3,
+                        "fillColor": "rgba(251,15,40,0)",
+                        "haloRadius": 4,
+                        "haloWeight": 4,
+                        "layerActivated": true,
+                        "layerIcon": "",
+                        "layerLegend": "",
+                        "layerName": "",
+                        "lineColor": "rgba(251,15,40,0.7)",
+                        "lineHaloColor": "rgba(251,15,40,0.7)",
+                        "outlineColor": "rgba(251,15,40,0.93)",
+                        "outlineWeight": 2,
+                        "pointColor": "rgba(251,15,40,0.7)",
+                        "pointHaloColor": "rgba(251,15,40,0.7)",
+                        "radius": "2",
+                        "simplification": 0.3,
+                        "weight": 2
+                    },
+                    "datatype": "geojson-feature-collection",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Spatial Coordinates",
+                    "nodegroup_id": "87fad7b9-46c4-11ea-b9b7-027f24e6fd6b",
+                    "nodeid": "87fad7bc-46c4-11ea-b9b7-027f24e6fd6b",
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
