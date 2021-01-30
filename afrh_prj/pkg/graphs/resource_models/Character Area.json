@@ -171,51 +171,98 @@
             ],
             "cards_x_nodes_x_widgets": [
                 {
-                    "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
+                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
                     "config": {
+                        "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "Spatial Location Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
+                        "label": "Time Span Begin",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
                     },
-                    "id": "c7121256-46c3-11ea-b9b7-027f24e6fd6b",
-                    "label": "Spatial Location Notes",
-                    "node_id": "c7121255-46c3-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": 1,
+                    "id": "4cab123c-4928-11ea-b9b7-027f24e6fd6b",
+                    "label": "Time Span Begin",
+                    "node_id": "6958a5a4-46b2-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
                 },
                 {
-                    "card_id": "2b84d13e-1acb-11ea-8211-acde48001122",
+                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
-                        "label": "Guideline Type",
+                        "label": "Significance",
                         "options": [],
                         "placeholder": "Select an option"
                     },
-                    "id": "2b84d436-1acb-11ea-8211-acde48001122",
-                    "label": "Guideline Type",
-                    "node_id": "2b84d3b4-1acb-11ea-8211-acde48001122",
-                    "sortorder": 0,
+                    "id": "4cab1236-4928-11ea-b9b7-027f24e6fd6b",
+                    "label": "Significance",
+                    "node_id": "28ce754a-46b2-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
-                    "card_id": "2b84d13e-1acb-11ea-8211-acde48001122",
+                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Time Span End",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "4cab123e-4928-11ea-b9b7-027f24e6fd6b",
+                    "label": "Time Span End",
+                    "node_id": "93fae448-46b2-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
                     "config": {
                         "defaultValue": "",
-                        "label": "Guideline",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
+                        "label": "Time Span Type",
+                        "options": [],
+                        "placeholder": "Select an option"
                     },
-                    "id": "2b84d486-1acb-11ea-8211-acde48001122",
-                    "label": "Guideline",
-                    "node_id": "2b84d2a6-1acb-11ea-8211-acde48001122",
-                    "sortorder": 1,
+                    "id": "4cab1238-4928-11ea-b9b7-027f24e6fd6b",
+                    "label": "Time Span Type",
+                    "node_id": "3300b2e4-46b2-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
+                    "config": {
+                        "label": "Related Inventory Resource",
+                        "placeholder": null
+                    },
+                    "id": "8174e9f8-689b-11ea-9c7f-acde48001122",
+                    "label": "Related Inventory Resource",
+                    "node_id": "8174e318-689b-11ea-9c7f-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Cultural Period(s)",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4cab123a-4928-11ea-b9b7-027f24e6fd6b",
+                    "label": "Cultural Period(s)",
+                    "node_id": "4ea6a300-46b2-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
                 {
                     "card_id": "4562d5c4-1acb-11ea-8211-acde48001122",
@@ -255,6 +302,7 @@
                         "label": "Identification",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "5e33bb4e-1ad6-11ea-8211-acde48001122",
@@ -265,22 +313,119 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
+                    "card_id": "2b84d13e-1acb-11ea-8211-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Guideline Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "2b84d436-1acb-11ea-8211-acde48001122",
+                    "label": "Guideline Type",
+                    "node_id": "2b84d3b4-1acb-11ea-8211-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "2b84d13e-1acb-11ea-8211-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Guideline",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "2b84d486-1acb-11ea-8211-acde48001122",
+                    "label": "Guideline",
+                    "node_id": "2b84d2a6-1acb-11ea-8211-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource Relation Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "9fd53132-689b-11ea-9c7f-acde48001122",
+                    "label": "Related Inventory Resource Relation Type",
+                    "node_id": "8174e6ce-689b-11ea-9c7f-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "Time Span Begin",
+                        "label": "Related Inventory Resource From Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
                         "viewMode": "days"
                     },
-                    "id": "4cab123c-4928-11ea-b9b7-027f24e6fd6b",
-                    "label": "Time Span Begin",
-                    "node_id": "6958a5a4-46b2-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
+                    "id": "9fd5e910-689b-11ea-9c7f-acde48001122",
+                    "label": "Related Inventory Resource From Date",
+                    "node_id": "8174e7dc-689b-11ea-9c7f-acde48001122",
+                    "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource To Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "9fd657b0-689b-11ea-9c7f-acde48001122",
+                    "label": "Related Inventory Resource To Date",
+                    "node_id": "8174e8ae-689b-11ea-9c7f-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Related Inventory Resource Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "9fd6cd08-689b-11ea-9c7f-acde48001122",
+                    "label": "Related Inventory Resource Notes",
+                    "node_id": "8174e98a-689b-11ea-9c7f-acde48001122",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Spatial Location Notes",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "c7121256-46c3-11ea-b9b7-027f24e6fd6b",
+                    "label": "Spatial Location Notes",
+                    "node_id": "c7121255-46c3-11ea-b9b7-027f24e6fd6b",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
                     "card_id": "c7121253-46c3-11ea-b9b7-027f24e6fd6b",
@@ -371,149 +516,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Significance",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4cab1236-4928-11ea-b9b7-027f24e6fd6b",
-                    "label": "Significance",
-                    "node_id": "28ce754a-46b2-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Time Span End",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "4cab123e-4928-11ea-b9b7-027f24e6fd6b",
-                    "label": "Time Span End",
-                    "node_id": "93fae448-46b2-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Time Span Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4cab1238-4928-11ea-b9b7-027f24e6fd6b",
-                    "label": "Time Span Type",
-                    "node_id": "3300b2e4-46b2-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "95c7f67c-4154-11ea-b9b7-027f24e6fd6b",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Cultural Period(s)",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4cab123a-4928-11ea-b9b7-027f24e6fd6b",
-                    "label": "Cultural Period(s)",
-                    "node_id": "4ea6a300-46b2-11ea-b9b7-027f24e6fd6b",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
-                },
-                {
-                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
-                    "config": {
-                        "label": "Related Inventory Resource",
-                        "placeholder": null
-                    },
-                    "id": "8174e9f8-689b-11ea-9c7f-acde48001122",
-                    "label": "Related Inventory Resource",
-                    "node_id": "8174e318-689b-11ea-9c7f-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
-                {
-                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource Relation Type",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "9fd53132-689b-11ea-9c7f-acde48001122",
-                    "label": "Related Inventory Resource Relation Type",
-                    "node_id": "8174e6ce-689b-11ea-9c7f-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource From Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "9fd5e910-689b-11ea-9c7f-acde48001122",
-                    "label": "Related Inventory Resource From Date",
-                    "node_id": "8174e7dc-689b-11ea-9c7f-acde48001122",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource To Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "9fd657b0-689b-11ea-9c7f-acde48001122",
-                    "label": "Related Inventory Resource To Date",
-                    "node_id": "8174e8ae-689b-11ea-9c7f-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "8174e57a-689b-11ea-9c7f-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Related Inventory Resource Notes",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "9fd6cd08-689b-11ea-9c7f-acde48001122",
-                    "label": "Related Inventory Resource Notes",
-                    "node_id": "8174e98a-689b-11ea-9c7f-acde48001122",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }
             ],
             "color": null,
@@ -740,7 +742,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "f3ab0a3a-1aca-11ea-8211-acde48001122",
-                    "id": "57eac354-0fdb-11eb-ae9e-acde48001122"
+                    "id": "95f6eac4-5b80-11eb-a49c-acde48001122"
                 }
             ],
             "graphid": "f3ab0a3a-1aca-11ea-8211-acde48001122",
@@ -913,7 +915,12 @@
                         "graphid": [
                             "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b"
                         ],
-                        "graphs": []
+                        "graphs": [
+                            {
+                                "graphid": "8fcecadf-3bb2-11ea-b9b7-027f24e6fd6b",
+                                "name": "Inventory Resource"
+                            }
+                        ]
                     },
                     "datatype": "resource-instance",
                     "description": null,
@@ -1279,9 +1286,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
+        "db": "PostgreSQL 12.2 (Debian 12.2-2.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit",
+        "git hash": "9b84ef54d 2021-01-11 20:16:19 -0800",
         "os": "Darwin",
-        "os version": "19.6.0"
+        "os version": "20.2.0"
     }
 }

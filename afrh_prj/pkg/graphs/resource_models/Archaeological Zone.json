@@ -170,6 +170,7 @@
                         "label": "Identification",
                         "maxLength": null,
                         "placeholder": "Enter text",
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "1d2ea563-3a05-11ea-b9b7-027f24e6fd6b",
@@ -566,7 +567,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
-                    "id": "5680432c-0fdb-11eb-ae9e-acde48001122"
+                    "id": "92297a56-5b80-11eb-a49c-acde48001122"
                 }
             ],
             "graphid": "ddb9385d-39fe-11ea-b9b7-027f24e6fd6b",
@@ -957,9 +958,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "1285d7e6a 2020-10-19 12:09:11 -0700",
+        "db": "PostgreSQL 12.2 (Debian 12.2-2.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit",
+        "git hash": "9b84ef54d 2021-01-11 20:16:19 -0800",
         "os": "Darwin",
-        "os version": "19.6.0"
+        "os version": "20.2.0"
     }
 }
