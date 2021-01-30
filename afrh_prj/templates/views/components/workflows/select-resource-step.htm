@@ -1,6 +1,12 @@
 
 <div class="padded-workflow-step">
     <div class="workflows-get-tile-value card-component"><h4 data-bind="">Select A Management Activity</h4>
+        <!--ko if: resourceDisplayName() -->
+        <div class="card col-xs-12" style="max-width: 615px; padding-left:10px; padding-right:5px">
+         <input class="form-control input-lg widget-input row" disabled data-bind="textInput: resourceDisplayName"></input>
+        </div>
+        <!-- /ko -->
+        <!--ko ifnot: resourceDisplayName() -->
         <div>
             <!-- ko component: {
                 name: 'resource-instance-select-widget',
@@ -14,6 +20,7 @@
                 }
             } --><!-- /ko -->
         </div>
+        <!-- /ko -->
     </div>
     <!-- ko if: card() -->
     <div>

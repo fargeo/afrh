@@ -10,30 +10,42 @@ define([
         var self = this;
         NewTileStep.apply(this, [params]);
         this.resValue = ko.observable();
-        // if (!params.resourceid()) {
-        //     params.resourceid(params.workflow.state.resourceid);
-        // }
-        // if (params.workflow.state.steps[params._index]) {
-        //     params.tileid(params.workflow.state.steps[params._index].tileid);
-        // }
         this.disableResourceSelection = ko.observable(false);
-        // if (params.workflow.state.resourceid) {
-        //     this.resValue(params.workflow.state.resourceid);
-        //     this.disableResourceSelection(true);
-        // }
         this.loading(true);
         this.graphids = [params.graphid()];
         this.nameheading = params.nameheading;
         this.namelabel = params.namelabel;
         this.resValue.subscribe(function(val){
-            if (ko.unwrap(self.tile)) {
+            if (ko.unwrap(self.tile) && !self.tile().resourceinstance_id) {
                 self.tile().resourceinstance_id = ko.unwrap(val[0].resourceId);
             }
             params.resourceid(ko.unwrap(val[0].resourceId));
         }, this);
+        this.resourceDisplayName = ko.observable();
+        var lookupResourceInstanceData = function(resourceid) {
+            return window.fetch(arches.urls.search_results + "?id=" + resourceid)
+                .then(function(response){
+                    if(response.ok) {
+                        return response.json();
+                    }
+                })
+                .then(function(json) {
+                    return json["results"]["hits"]["hits"][0]["_source"];
+                })
+        };
 
         this.card.subscribe(function(val){ if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
-        this.tile.subscribe(function(val){ if(ko.unwrap(val) != undefined) { this.loading(false); } }, this);
+        this.tile.subscribe(function(val){ 
+            if(ko.unwrap(val) != undefined) { 
+                this.loading(false); 
+            } 
+            if (val.resourceinstance_id) {
+                var resourceInfo = lookupResourceInstanceData(val.resourceinstance_id);
+                resourceInfo.then(function(instance){
+                    self.resourceDisplayName(instance.displayname);
+                });
+            }
+        }, this);
         params.tile = self.tile;
 
         self.onSaveSuccess = function(tiles) {
@@ -47,7 +59,6 @@ define([
             }
             if (self.completeOnSave === true) { self.complete(true); }
         };
-
     }
 
     ko.components.register('select-resource-step', {

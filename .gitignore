@@ -2,6 +2,7 @@
 afrh_prj/media/packages/
 afrh_prj/logs/*.log
 afrh_prj/uploadedfiles
+afrh_prj/docx/temp/*
 afrh_prj/arches.log
 *.sublime*
 afrh_prj/settings_local.py
